@@ -1,19 +1,21 @@
 import feedparser
 import datetime
 import os
+from urllib.parse import quote  # 用于 URL 编码
 
 def arxiv_search(query, max_results=5):
     base_url = 'http://export.arxiv.org/api/query?'
-    search_url = f'search_query={query}&start=0&max_results={max_results}'
+    # 对查询参数进行 URL 编码
+    encoded_query = quote(query)
+    search_url = f'search_query={encoded_query}&start=0&max_results={max_results}'
     response = feedparser.parse(base_url + search_url)
     return response.entries
 
 def save_results_as_html(entries):
     today = datetime.datetime.now().strftime("%Y-%m-%d")
-    os.makedirs("docs", exist_ok=True)  # 确保 docs 目录存在
-    filename = f"docs/arxiv_{today}.html"  # 每日爬取结果以日期命名
+    os.makedirs("docs", exist_ok=True)
+    filename = f"docs/arxiv_{today}.html"
 
-    # 生成每日的结果页面
     with open(filename, "w", encoding="utf-8") as f:
         f.write(f"<!DOCTYPE html>\n<html>\n<head>\n<title>arXiv Papers - {today}</title>\n</head>\n<body>\n")
         f.write(f"<h1>📚 arXiv Papers on {today}</h1>\n")
@@ -27,9 +29,7 @@ def save_results_as_html(entries):
 
         f.write("</body>\n</html>")
 
-    # 更新 index.html 页面，添加历史链接
     update_index(today)
-
     print(f"✅ Results saved to {filename}")
 
 def update_index(latest_date):
@@ -42,16 +42,13 @@ def update_index(latest_date):
             f.write("</ul>\n")
             f.write("</body>\n</html>")
 
-    # 读取现有 index.html
     with open(index_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # 防止重复添加同一天的链接
     new_entry = f'<li><a href="arxiv_{latest_date}.html">{latest_date} Papers</a></li>\n'
     if new_entry not in content:
         content = content.replace("<ul>\n", f"<ul>\n{new_entry}")
 
-    # 保存更新后的 index.html
     with open(index_file, "w", encoding="utf-8") as f:
         f.write(content)
 
