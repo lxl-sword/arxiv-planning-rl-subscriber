@@ -55,7 +55,7 @@ def save_results_as_html(entries):
                 
 
         f.write("</body>\n</html>")
-
+    update_index(today)
     print(f"✅ Results saved to {filename}")
     
 
