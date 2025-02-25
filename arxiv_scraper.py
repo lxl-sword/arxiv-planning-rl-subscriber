@@ -120,8 +120,8 @@ def update_index(latest_date):
 
 if __name__ == "__main__":
     query = 'all:planning+AND+all:"reinforcement%20learning"'
-    #results = arxiv_search(query, max_results=10000)
+    results = arxiv_search(query, max_results=20)
     #results = arxiv_search_today(query, max_results=20)
-    results = arxiv_search_previous_day(query, max_results=100)
+    #results = arxiv_search_previous_day(query, max_results=100)
     if results:
         save_results_as_html(results)
