@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-02-26</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-02-26</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.18015v1' target='_blank'>From planning to policy: distilling $\texttt{Skill-RRT}$ for
+  long-horizon prehensile and non-prehensile manipulation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Haewon Jung, Donguk Lee, Haecheol Park, JunHyeop Kim, Beomjoon Kim</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-25 09:23:52</h6>
+<p class='card-text'>Current robots face challenges in manipulation tasks that require a long
+sequence of prehensile and non-prehensile skills. This involves handling
+contact-rich interactions and chaining multiple skills while considering their
+long-term consequences. This paper presents a framework that leverages
+imitation learning to distill a planning algorithm, capable of solving
+long-horizon problems but requiring extensive computation time, into a policy
+for efficient action inference. We introduce $\texttt{Skill-RRT}$, an extension
+of the rapidly-exploring random tree (RRT) that incorporates skill
+applicability checks and intermediate object pose sampling for efficient
+long-horizon planning. To enable skill chaining, we propose
+$\textit{connectors}$, goal-conditioned policies that transition between skills
+while minimizing object disturbance. Using lazy planning, connectors are
+selectively trained on relevant transitions, reducing the cost of training.
+High-quality demonstrations are generated with $\texttt{Skill-RRT}$ and refined
+by a noise-based replay mechanism to ensure robust policy performance. The
+distilled policy, trained entirely in simulation, zero-shot transfer to the
+real world, and achieves over 80% success rates across three challenging
+manipulation tasks. In simulation, our approach outperforms the
+state-of-the-art skill-based reinforcement learning method, $\texttt{MAPLE}$,
+and $\texttt{Skill-RRT}$.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.17813v1' target='_blank'>Safe Multi-Agent Navigation guided by Goal-Conditioned Safe
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Meng Feng, Viraj Parimi, Brian Williams</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-25 03:38:52</h6>
+<p class='card-text'>Safe navigation is essential for autonomous systems operating in hazardous
+environments. Traditional planning methods excel at long-horizon tasks but rely
+on a predefined graph with fixed distance metrics. In contrast, safe
+Reinforcement Learning (RL) can learn complex behaviors without relying on
+manual heuristics but fails to solve long-horizon tasks, particularly in
+goal-conditioned and multi-agent scenarios.
+  In this paper, we introduce a novel method that integrates the strengths of
+both planning and safe RL. Our method leverages goal-conditioned RL and safe RL
+to learn a goal-conditioned policy for navigation while concurrently estimating
+cumulative distance and safety levels using learned value functions via an
+automated self-training algorithm. By constructing a graph with states from the
+replay buffer, our method prunes unsafe edges and generates a waypoint-based
+plan that the agent follows until reaching its goal, effectively balancing
+faster and safer routes over extended distances.
+  Utilizing this unified high-level graph and a shared low-level
+goal-conditioned safe RL policy, we extend this approach to address the
+multi-agent safe navigation problem. In particular, we leverage Conflict-Based
+Search (CBS) to create waypoint-based plans for multiple agents allowing for
+their safe navigation over extended horizons. This integration enhances the
+scalability of goal-conditioned safe RL in multi-agent scenarios, enabling
+efficient coordination among agents.
+  Extensive benchmarking against state-of-the-art baselines demonstrates the
+effectiveness of our method in achieving distance goals safely for multiple
+agents in complex and hazardous environments. Our code will be released to
+support future research.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.17758v1' target='_blank'>Applications of deep reinforcement learning to urban transit network
+  design</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Andrew Holliday</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-25 01:24:20</h6>
+<p class='card-text'>This thesis concerns the use of reinforcement learning to train neural
+networks to aid in the design of public transit networks. The Transit Network
+Design Problem (TNDP) is an optimization problem of considerable practical
+importance. Given a city with an existing road network and travel demands, the
+goal is to find a set of transit routes - each of which is a path through the
+graph - that collectively satisfy all demands, while minimizing a cost function
+that may depend both on passenger satisfaction and operating costs. The
+existing literature on this problem mainly considers metaheuristic optimization
+algorithms, such as genetic algorithms and ant-colony optimization. By
+contrast, we begin by taking a reinforcement learning approach, formulating the
+construction of a set of transit routes as a Markov Decision Process (MDP) and
+training a neural net policy to act as the agent in this MDP. We then show
+that, beyond using this policy to plan a transit network directly, it can be
+combined with existing metaheuristic algorithms, both to initialize the
+solution and to suggest promising moves at each step of a search through
+solution space. We find that such hybrid algorithms, which use a neural policy
+trained via reinforcement learning as a core component within a classical
+metaheuristic framework, can plan transit networks that are superior to those
+planned by either the neural policy or the metaheuristic algorithm. We
+demonstrate the utility of our approach by using it to redesign the transit
+network for the city of Laval, Quebec, and show that in simulation, the
+resulting transit network provides better service at lower cost than the
+existing transit network.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.16718v1' target='_blank'>NatSGLD: A Dataset with Speech, Gesture, Logic, and Demonstration for
+  Robot Learning in Natural Human-Robot Interaction</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Snehesh Shrestha, Yantian Zha, Saketh Banagiri, Ge Gao, Yiannis Aloimonos, Cornelia Fermüller</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-23 21:27:06</h6>
+<p class='card-text'>Recent advances in multimodal Human-Robot Interaction (HRI) datasets
+emphasize the integration of speech and gestures, allowing robots to absorb
+explicit knowledge and tacit understanding. However, existing datasets
+primarily focus on elementary tasks like object pointing and pushing, limiting
+their applicability to complex domains. They prioritize simpler human command
+data but place less emphasis on training robots to correctly interpret tasks
+and respond appropriately. To address these gaps, we present the NatSGLD
+dataset, which was collected using a Wizard of Oz (WoZ) method, where
+participants interacted with a robot they believed to be autonomous. NatSGLD
+records humans' multimodal commands (speech and gestures), each paired with a
+demonstration trajectory and a Linear Temporal Logic (LTL) formula that
+provides a ground-truth interpretation of the commanded tasks. This dataset
+serves as a foundational resource for research at the intersection of HRI and
+machine learning. By providing multimodal inputs and detailed annotations,
+NatSGLD enables exploration in areas such as multimodal instruction following,
+plan recognition, and human-advisable reinforcement learning from
+demonstrations. We release the dataset and code under the MIT License at
+https://www.snehesh.com/natsgld/ to support future HRI research.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.16634v1' target='_blank'>OptionZero: Planning with Learned Options</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Po-Wei Huang, Pei-Chiun Peng, Hung Guei, Ti-Rong Wu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-23 16:20:15</h6>
+<p class='card-text'>Planning with options -- a sequence of primitive actions -- has been shown
+effective in reinforcement learning within complex environments. Previous
+studies have focused on planning with predefined options or learned options
+through expert demonstration data. Inspired by MuZero, which learns superhuman
+heuristics without any human knowledge, we propose a novel approach, named
+OptionZero. OptionZero incorporates an option network into MuZero, providing
+autonomous discovery of options through self-play games. Furthermore, we modify
+the dynamics network to provide environment transitions when using options,
+allowing searching deeper under the same simulation constraints. Empirical
+experiments conducted in 26 Atari games demonstrate that OptionZero outperforms
+MuZero, achieving a 131.58% improvement in mean human-normalized score. Our
+behavior analysis shows that OptionZero not only learns options but also
+acquires strategic skills tailored to different game characteristics. Our
+findings show promising directions for discovering and using options in
+planning. Our code is available at
+https://rlg.iis.sinica.edu.tw/papers/optionzero.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.17517v1' target='_blank'>Attention-based UAV Trajectory Optimization for Wireless Power
+  Transfer-assisted IoT Systems</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Li Dong, Feibo Jiang, Yubo Peng</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-23 02:57:06</h6>
+<p class='card-text'>Unmanned Aerial Vehicles (UAVs) in Wireless Power Transfer (WPT)-assisted
+Internet of Things (IoT) systems face the following challenges: limited
+resources and suboptimal trajectory planning. Reinforcement learning-based
+trajectory planning schemes face issues of low search efficiency and learning
+instability when optimizing large-scale systems. To address these issues, we
+present an Attention-based UAV Trajectory Optimization (AUTO) framework based
+on the graph transformer, which consists of an Attention Trajectory
+Optimization Model (ATOM) and a Trajectory lEarNing Method based on
+Actor-critic (TENMA). In ATOM, a graph encoder is used to calculate the
+self-attention characteristics of all IoTDs, and a trajectory decoder is
+developed to optimize the number and trajectories of UAVs. TENMA then trains
+the ATOM using an improved Actor-Critic method, in which the real reward of the
+system is applied as the baseline to reduce variances in the critic network.
+This method is suitable for high-quality and large-scale multi-UAV trajectory
+planning. Finally, we develop numerous experiments, including a hardware
+experiment in the field case, to verify the feasibility and efficiency of the
+AUTO framework.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.16198v1' target='_blank'>An Autonomous Network Orchestration Framework Integrating Large Language
+  Models with Continual Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Masoud Shokrnezhad, Tarik Taleb</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-22 11:53:34</h6>
+<p class='card-text'>6G networks aim to achieve global coverage, massive connectivity, and
+ultra-stringent requirements. Space-Air-Ground Integrated Networks (SAGINs) and
+Semantic Communication (SemCom) are essential for realizing these goals, yet
+they introduce considerable complexity in resource orchestration. Drawing
+inspiration from research in robotics, a viable solution to manage this
+complexity is the application of Large Language Models (LLMs). Although the use
+of LLMs in network orchestration has recently gained attention, existing
+solutions have not sufficiently addressed LLM hallucinations or their
+adaptation to network dynamics. To address this gap, this paper proposes a
+framework called Autonomous Reinforcement Coordination (ARC) for a
+SemCom-enabled SAGIN. This framework employs an LLM-based Retrieval-Augmented
+Generator (RAG) monitors services, users, and resources and processes the
+collected data, while a Hierarchical Action Planner (HAP) orchestrates
+resources. ARC decomposes orchestration into two tiers, utilizing LLMs for
+high-level planning and Reinforcement Learning (RL) agents for low-level
+decision-making, in alignment with the Mixture of Experts (MoE) concept. The
+LLMs utilize Chain-of-Thought (CoT) reasoning for few-shot learning, empowered
+by contrastive learning, while the RL agents employ replay buffer management
+for continual learning, thereby achieving efficiency, accuracy, and
+adaptability. Simulations are provided to demonstrate the effectiveness of ARC,
+along with a comprehensive discussion on potential future research directions
+to enhance and upgrade ARC.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.15214v1' target='_blank'>The Evolving Landscape of LLM- and VLM-Integrated Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Sheila Schoepp, Masoud Jafaripour, Yingyue Cao, Tianpei Yang, Fatemeh Abdollahi, Shadan Golestan, Zahin Sufiyan, Osmar R. Zaiane, Matthew E. Taylor</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-21 05:01:30</h6>
+<p class='card-text'>Reinforcement learning (RL) has shown impressive results in sequential
+decision-making tasks. Meanwhile, Large Language Models (LLMs) and
+Vision-Language Models (VLMs) have emerged, exhibiting impressive capabilities
+in multimodal understanding and reasoning. These advances have led to a surge
+of research integrating LLMs and VLMs into RL. In this survey, we review
+representative works in which LLMs and VLMs are used to overcome key challenges
+in RL, such as lack of prior knowledge, long-horizon planning, and reward
+design. We present a taxonomy that categorizes these LLM/VLM-assisted RL
+approaches into three roles: agent, planner, and reward. We conclude by
+exploring open problems, including grounding, bias mitigation, improved
+representations, and action advice. By consolidating existing research and
+identifying future directions, this survey establishes a framework for
+integrating LLMs and VLMs into RL, advancing approaches that unify natural
+language and visual understanding with sequential decision-making.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.14995v1' target='_blank'>Reinforcement Learning for Ultrasound Image Analysis A Comprehensive
+  Review of Advances and Applications</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Maha Ezzelarab, Midhila Madhusoodanan, Shrimanti Ghosh, Geetika Vadali, Jacob Jaremko, Abhilash Hareendranathan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-20 19:37:49</h6>
+<p class='card-text'>Over the last decade, the use of machine learning (ML) approaches in
+medicinal applications has increased manifold. Most of these approaches are
+based on deep learning, which aims to learn representations from grid data
+(like medical images). However, reinforcement learning (RL) applications in
+medicine are relatively less explored. Medical applications often involve a
+sequence of subtasks that form a diagnostic pipeline, and RL is uniquely suited
+to optimize over such sequential decision-making tasks. Ultrasound (US) image
+analysis is a quintessential example of such a sequential decision-making task,
+where the raw signal captured by the US transducer undergoes a series of signal
+processing and image post-processing steps, generally leading to a diagnostic
+suggestion. The application of RL in US remains limited. Deep Reinforcement
+Learning (DRL), that combines deep learning and RL, holds great promise in
+optimizing these pipelines by enabling intelligent and sequential
+decision-making. This review paper surveys the applications of RL in US over
+the last decade. We provide a succinct overview of the theoretic framework of
+RL and its application in US image processing and review existing work in each
+aspect of the image analysis pipeline. A comprehensive search of Scopus
+filtered on relevance yielded 14 papers most relevant to this topic. These
+papers were further categorized based on their target applications image
+classification, image segmentation, image enhancement, video summarization, and
+auto navigation and path planning. We also examined the type of RL approach
+used in each publication. Finally, we discuss key areas in healthcare where DRL
+approaches in US could be used for sequential decision-making. We analyze the
+opportunities, challenges, and limitations, providing insights into the future
+potential of DRL in US image analysis.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.14819v1' target='_blank'>Learning from Reward-Free Offline Data: A Case for Planning with Latent
+  Dynamics Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Vlad Sobal, Wancong Zhang, Kynghyun Cho, Randall Balestriero, Tim G. J. Rudner, Yann LeCun</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-20 18:39:41</h6>
+<p class='card-text'>A long-standing goal in AI is to build agents that can solve a variety of
+tasks across different environments, including previously unseen ones. Two
+dominant approaches tackle this challenge: (i) reinforcement learning (RL),
+which learns policies through trial and error, and (ii) optimal control, which
+plans actions using a learned or known dynamics model. However, their relative
+strengths and weaknesses remain underexplored in the setting where agents must
+learn from offline trajectories without reward annotations. In this work, we
+systematically analyze the performance of different RL and control-based
+methods under datasets of varying quality. On the RL side, we consider
+goal-conditioned and zero-shot approaches. On the control side, we train a
+latent dynamics model using the Joint Embedding Predictive Architecture (JEPA)
+and use it for planning. We study how dataset properties-such as data
+diversity, trajectory quality, and environment variability-affect the
+performance of these approaches. Our results show that model-free RL excels
+when abundant, high-quality data is available, while model-based planning
+excels in generalization to novel environment layouts, trajectory stitching,
+and data-efficiency. Notably, planning with a latent dynamics model emerges as
+a promising approach for zero-shot generalization from suboptimal data.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.14264v1' target='_blank'>SPRIG: Stackelberg Perception-Reinforcement Learning with Internal Game
+  Dynamics</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Fernando Martinez-Lopez, Juntao Chen, Yingdong Lu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-20 05:02:29</h6>
+<p class='card-text'>Deep reinforcement learning agents often face challenges to effectively
+coordinate perception and decision-making components, particularly in
+environments with high-dimensional sensory inputs where feature relevance
+varies. This work introduces SPRIG (Stackelberg Perception-Reinforcement
+learning with Internal Game dynamics), a framework that models the internal
+perception-policy interaction within a single agent as a cooperative
+Stackelberg game. In SPRIG, the perception module acts as a leader,
+strategically processing raw sensory states, while the policy module follows,
+making decisions based on extracted features. SPRIG provides theoretical
+guarantees through a modified Bellman operator while preserving the benefits of
+modern policy optimization. Experimental results on the Atari BeamRider
+environment demonstrate SPRIG's effectiveness, achieving around 30% higher
+returns than standard PPO through its game-theoretical balance of feature
+extraction and decision-making.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.14111v1' target='_blank'>Comprehensive Review on the Control of Heat Pumps for Energy Flexibility
+  in Distribution Networks</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Gustavo L. Aschidamini, Mina Pavlovic, Bradley A. Reinholz, Malcolm S. Metcalfe, Taco Niet, Mariana Resener</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-19 21:29:07</h6>
+<p class='card-text'>Decarbonization plans promote the transition to heat pumps (HPs), creating
+new opportunities for their energy flexibility in demand response programs,
+solar photovoltaic integration and optimization of distribution networks. This
+paper reviews scheduling-based and real-time optimization methods for
+controlling HPs with a focus on energy flexibility in distribution networks.
+Scheduling-based methods fall into two categories: rule-based controllers
+(RBCs), which rely on predefined control rules without explicitly seeking
+optimal solutions, and optimization models, which are designed to determine the
+optimal scheduling of operations. Real-time optimization is achieved through
+model predictive control (MPC), which relies on a predictive model to optimize
+decisions over a time horizon, and reinforcement learning (RL), which takes a
+model-free approach by learning optimal strategies through direct interaction
+with the environment. The paper also examines studies on the impact of HPs on
+distribution networks, particularly those leveraging energy flexibility
+strategies. Key takeaways suggest the need to validate control strategies for
+extreme cold-weather regions that require backup heaters, as well as develop
+approaches designed for demand charge schemes that integrate HPs with other
+controllable loads. From a grid impact assessment perspective, studies have
+focused primarily on RBCs for providing energy flexibility through HP
+operation, without addressing more advanced methods such as real-time
+optimization using MPC or RL-based algorithms. Incorporating these advanced
+control strategies could help identify key limitations, including the impact of
+varying user participation levels and the cost-benefit trade-offs associated
+with their implementation.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.13475v2' target='_blank'>LLM should think and action as a human</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Haun Leung, ZiNan Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-19 06:58:34</h6>
+<p class='card-text'>It is popular lately to train large language models to be used as chat
+assistants, but in the conversation between the user and the chat assistant,
+there are prompts, require multi-turns between the chat assistant and the user.
+However, there are a number of issues with the multi-turns conversation: The
+response of the chat assistant is prone to errors and can't help users achieve
+their goals, and as the number of conversation turns increases, the probability
+of errors will also increase; It is difficult for chat assistant to generate
+responses with different processes based on actual needs for the same prompt;
+Chat assistant require the use of tools, but the current approach is not
+elegant and efficient, and the number of tool calls is limited. The main reason
+for these issues is that large language models don't have the thinking ability
+as a human, lack the reasoning ability and planning ability, and lack the
+ability to execute plans. To solve these issues, we propose a thinking method
+based on a built-in chain of thought: In the multi-turns conversation, for each
+user prompt, the large language model thinks based on elements such as chat
+history, thinking context, action calls, memory and knowledge, makes detailed
+reasoning and planning, and actions according to the plan. We also explored how
+the large language model enhances thinking ability through this thinking
+method: Collect training datasets according to the thinking method and fine
+tune the large language model through supervised learning; Train a consistency
+reward model and use it as a reward function to fine tune the large language
+model using reinforcement learning, and the reinforced large language model
+outputs according to this way of thinking. Our experimental results show that
+the reasoning ability and planning ability of the large language model are
+enhanced, and the issues in the multi-turns conversation are solved.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.13443v1' target='_blank'>Physics-Aware Robotic Palletization with Online Masking Inference</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Tianqi Zhang, Zheng Wu, Yuxin Chen, Yixiao Wang, Boyuan Liang, Scott Moura, Masayoshi Tomizuka, Mingyu Ding, Wei Zhan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-19 05:39:41</h6>
+<p class='card-text'>The efficient planning of stacking boxes, especially in the online setting
+where the sequence of item arrivals is unpredictable, remains a critical
+challenge in modern warehouse and logistics management. Existing solutions
+often address box size variations, but overlook their intrinsic and physical
+properties, such as density and rigidity, which are crucial for real-world
+applications. We use reinforcement learning (RL) to solve this problem by
+employing action space masking to direct the RL policy toward valid actions.
+Unlike previous methods that rely on heuristic stability assessments which are
+difficult to assess in physical scenarios, our framework utilizes online
+learning to dynamically train the action space mask, eliminating the need for
+manual heuristic design. Extensive experiments demonstrate that our proposed
+method outperforms existing state-of-the-arts. Furthermore, we deploy our
+learned task planner in a real-world robotic palletizer, validating its
+practical applicability in operational settings.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.13092v2' target='_blank'>Text2World: Benchmarking Large Language Models for Symbolic World Model
+  Generation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mengkang Hu, Tianxing Chen, Yude Zou, Yuheng Lei, Qiguang Chen, Ming Li, Yao Mu, Hongyuan Zhang, Wenqi Shao, Ping Luo</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-18 17:59:48</h6>
+<p class='card-text'>Recently, there has been growing interest in leveraging large language models
+(LLMs) to generate symbolic world models from textual descriptions. Although
+LLMs have been extensively explored in the context of world modeling, prior
+studies encountered several challenges, including evaluation randomness,
+dependence on indirect metrics, and a limited domain scope. To address these
+limitations, we introduce a novel benchmark, Text2World, based on planning
+domain definition language (PDDL), featuring hundreds of diverse domains and
+employing multi-criteria, execution-based metrics for a more robust evaluation.
+We benchmark current LLMs using Text2World and find that reasoning models
+trained with large-scale reinforcement learning outperform others. However,
+even the best-performing model still demonstrates limited capabilities in world
+modeling. Building on these insights, we examine several promising strategies
+to enhance the world modeling capabilities of LLMs, including test-time
+scaling, agent training, and more. We hope that Text2World can serve as a
+crucial resource, laying the groundwork for future research in leveraging LLMs
+as world models. The project page is available at
+https://text-to-world.github.io/.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.13006v1' target='_blank'>Integrating Reinforcement Learning, Action Model Learning, and Numeric
+  Planning for Tackling Complex Tasks</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yarin Benyamin, Argaman Mordoch, Shahaf S. Shperberg, Roni Stern</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-18 16:26:21</h6>
+<p class='card-text'>Automated Planning algorithms require a model of the domain that specifies
+the preconditions and effects of each action. Obtaining such a domain model is
+notoriously hard. Algorithms for learning domain models exist, yet it remains
+unclear whether learning a domain model and planning is an effective approach
+for numeric planning environments, i.e., where states include discrete and
+numeric state variables. In this work, we explore the benefits of learning a
+numeric domain model and compare it with alternative model-free solutions. As a
+case study, we use two tasks in Minecraft, a popular sandbox game that has been
+used as an AI challenge. First, we consider an offline learning setting, where
+a set of expert trajectories are available to learn from. This is the standard
+setting for learning domain models. We used the Numeric Safe Action Model
+Learning (NSAM) algorithm to learn a numeric domain model and solve new
+problems with the learned domain model and a numeric planner. We call this
+model-based solution NSAM_(+p), and compare it to several model-free Imitation
+Learning (IL) and Offline Reinforcement Learning (RL) algorithms. Empirical
+results show that some IL algorithms can learn faster to solve simple tasks,
+while NSAM_(+p) allows solving tasks that require long-term planning and
+enables generalizing to solve problems in larger environments. Then, we
+consider an online learning setting, where learning is done by moving an agent
+in the environment. For this setting, we introduce RAMP. In RAMP, observations
+collected during the agent's execution are used to simultaneously train an RL
+policy and learn a planning domain action model. This forms a positive feedback
+loop between the RL policy and the learned domain model. We demonstrate
+experimentally the benefits of using RAMP, showing that it finds more efficient
+plans and solves more problems than several RL baselines.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.12834v1' target='_blank'>NTP-INT: Network Traffic Prediction-Driven In-band Network Telemetry for
+  High-load Switches</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Penghui Zhang, Hua Zhang, Yuqi Dai, Cheng Zeng, Jingyu Wang, Jianxin Liao</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-18 13:00:52</h6>
+<p class='card-text'>In-band network telemetry (INT) is essential to network management due to its
+real-time visibility. However, because of the rapid increase in network devices
+and services, it has become crucial to have targeted access to detailed network
+information in a dynamic network environment. This paper proposes an
+intelligent network telemetry system called NTP-INT to obtain more fine-grained
+network information on high-load switches. Specifically, NTP-INT consists of
+three modules: network traffic prediction module, network pruning module, and
+probe path planning module. Firstly, the network traffic prediction module
+adopts a Multi-Temporal Graph Neural Network (MTGNN) to predict future network
+traffic and identify high-load switches. Then, we design the network pruning
+algorithm to generate a subnetwork covering all high-load switches to reduce
+the complexity of probe path planning. Finally, the probe path planning module
+uses an attention-mechanism-based deep reinforcement learning (DEL) model to
+plan efficient probe paths in the network slice. The experimental results
+demonstrate that NTP-INT can acquire more precise network information on
+high-load switches while decreasing the control overhead by 50\%.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.12756v2' target='_blank'>Navigating Demand Uncertainty in Container Shipping: Deep Reinforcement
+  Learning for Enabling Adaptive and Feasible Master Stowage Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jaike van Twiller, Yossiri Adulyasak, Erick Delage, Djordje Grbic, Rune Møller Jensen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-18 11:18:17</h6>
+<p class='card-text'>Reinforcement learning (RL) has shown promise in solving various
+combinatorial optimization problems. However, conventional RL faces challenges
+when dealing with real-world constraints, especially when action space
+feasibility is explicit and dependent on the corresponding state or trajectory.
+In this work, we focus on using RL in container shipping, often considered the
+cornerstone of global trade, by dealing with the critical challenge of master
+stowage planning. The main objective is to maximize cargo revenue and minimize
+operational costs while navigating demand uncertainty and various complex
+operational constraints, namely vessel capacity and stability, which must be
+dynamically updated along the vessel's voyage. To address this problem, we
+implement a deep reinforcement learning framework with feasibility projection
+to solve the master stowage planning problem (MPP) under demand uncertainty.
+The experimental results show that our architecture efficiently finds adaptive,
+feasible solutions for this multi-stage stochastic optimization problem,
+outperforming traditional mixed-integer programming and RL with feasibility
+regularization. Our AI-driven decision-support policy enables adaptive and
+feasible planning under uncertainty, optimizing operational efficiency and
+capacity utilization while contributing to sustainable and resilient global
+supply chains.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.12631v2' target='_blank'>Score-Based Diffusion Policy Compatible with Reinforcement Learning via
+  Optimal Transport</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mingyang Sun, Pengxiang Ding, Weinan Zhang, Donglin Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-18 08:22:20</h6>
+<p class='card-text'>Diffusion policies have shown promise in learning complex behaviors from
+demonstrations, particularly for tasks requiring precise control and long-term
+planning. However, they face challenges in robustness when encountering
+distribution shifts. This paper explores improving diffusion-based imitation
+learning models through online interactions with the environment. We propose
+OTPR (Optimal Transport-guided score-based diffusion Policy for Reinforcement
+learning fine-tuning), a novel method that integrates diffusion policies with
+RL using optimal transport theory. OTPR leverages the Q-function as a transport
+cost and views the policy as an optimal transport map, enabling efficient and
+stable fine-tuning. Moreover, we introduce masked optimal transport to guide
+state-action matching using expert keypoints and a compatibility-based
+resampling strategy to enhance training stability. Experiments on three
+simulation tasks demonstrate OTPR's superior performance and robustness
+compared to existing methods, especially in complex and sparse-reward
+environments. In sum, OTPR provides an effective framework for combining IL and
+RL, achieving versatile and reliable policy learning. The code will be released
+at https://github.com/Sunmmyy/OTPR.git.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.11733v1' target='_blank'>Plant in Cupboard, Orange on Table, Book on Shelf. Benchmarking
+  Practical Reasoning and Situation Modelling in a Text-Simulated Situated
+  Environment</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jonathan Jordan, Sherzod Hakimov, David Schlangen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-17 12:20:39</h6>
+<p class='card-text'>Large language models (LLMs) have risen to prominence as 'chatbots' for users
+to interact via natural language. However, their abilities to capture
+common-sense knowledge make them seem promising as language-based planners of
+situated or embodied action as well. We have implemented a simple text-based
+environment -- similar to others that have before been used for
+reinforcement-learning of agents -- that simulates, very abstractly, a
+household setting. We use this environment and the detailed error-tracking
+capabilities we implemented for targeted benchmarking of LLMs on the problem of
+practical reasoning: Going from goals and observations to actions. Our findings
+show that environmental complexity and game restrictions hamper performance,
+and concise action planning is demanding for current LLMs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
