@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-03-09</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-03-09</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.04280v1' target='_blank'>Towards Autonomous Reinforcement Learning for Real-World Robotic
+  Manipulation with Large Language Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Niccolò Turcato, Matteo Iovino, Aris Synodinos, Alberto Dalla Libera, Ruggero Carli, Pietro Falco</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-06 10:08:44</h6>
+<p class='card-text'>Recent advancements in Large Language Models (LLMs) and Visual Language
+Models (VLMs) have significantly impacted robotics, enabling high-level
+semantic motion planning applications. Reinforcement Learning (RL), a
+complementary paradigm, enables agents to autonomously optimize complex
+behaviors through interaction and reward signals. However, designing effective
+reward functions for RL remains challenging, especially in real-world tasks
+where sparse rewards are insufficient and dense rewards require elaborate
+design. In this work, we propose Autonomous Reinforcement learning for Complex
+HumanInformed Environments (ARCHIE), an unsupervised pipeline leveraging GPT-4,
+a pre-trained LLM, to generate reward functions directly from natural language
+task descriptions. The rewards are used to train RL agents in simulated
+environments, where we formalize the reward generation process to enhance
+feasibility. Additionally, GPT-4 automates the coding of task success criteria,
+creating a fully automated, one-shot procedure for translating human-readable
+text into deployable robot skills. Our approach is validated through extensive
+simulated experiments on single-arm and bi-manual manipulation tasks using an
+ABB YuMi collaborative robot, highlighting its practicality and effectiveness.
+Tasks are demonstrated on the real robot setup.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.03338v1' target='_blank'>Navigating Intelligence: A Survey of Google OR-Tools and Machine
+  Learning for Global Path Planning in Autonomous Vehicles</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Alexandre Benoit, Pedram Asef</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-05 10:12:22</h6>
+<p class='card-text'>We offer a new in-depth investigation of global path planning (GPP) for
+unmanned ground vehicles, an autonomous mining sampling robot named ROMIE. GPP
+is essential for ROMIE's optimal performance, which is translated into solving
+the traveling salesman problem, a complex graph theory challenge that is
+crucial for determining the most effective route to cover all sampling
+locations in a mining field. This problem is central to enhancing ROMIE's
+operational efficiency and competitiveness against human labor by optimizing
+cost and time. The primary aim of this research is to advance GPP by
+developing, evaluating, and improving a cost-efficient software and web
+application. We delve into an extensive comparison and analysis of Google
+operations research (OR)-Tools optimization algorithms. Our study is driven by
+the goal of applying and testing the limits of OR-Tools capabilities by
+integrating Reinforcement Learning techniques for the first time. This enables
+us to compare these methods with OR-Tools, assessing their computational
+effectiveness and real-world application efficiency. Our analysis seeks to
+provide insights into the effectiveness and practical application of each
+technique. Our findings indicate that Q-Learning stands out as the optimal
+strategy, demonstrating superior efficiency by deviating only 1.2% on average
+from the optimal solutions across our datasets.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.03208v1' target='_blank'>Embodied Escaping: End-to-End Reinforcement Learning for Robot
+  Navigation in Narrow Environment</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Han Zheng, Jiale Zhang, Mingyang Jiang, Peiyuan Liu, Danni Liu, Tong Qin, Ming Yang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-05 05:53:08</h6>
+<p class='card-text'>Autonomous navigation is a fundamental task for robot vacuum cleaners in
+indoor environments. Since their core function is to clean entire areas, robots
+inevitably encounter dead zones in cluttered and narrow scenarios. Existing
+planning methods often fail to escape due to complex environmental constraints,
+high-dimensional search spaces, and high difficulty maneuvers. To address these
+challenges, this paper proposes an embodied escaping model that leverages
+reinforcement learning-based policy with an efficient action mask for dead zone
+escaping. To alleviate the issue of the sparse reward in training, we introduce
+a hybrid training policy that improves learning efficiency. In handling
+redundant and ineffective action options, we design a novel action
+representation to reshape the discrete action space with a uniform turning
+radius. Furthermore, we develop an action mask strategy to select valid action
+quickly, balancing precision and efficiency. In real-world experiments, our
+robot is equipped with a Lidar, IMU, and two-wheel encoders. Extensive
+quantitative and qualitative experiments across varying difficulty levels
+demonstrate that our robot can consistently escape from challenging dead zones.
+Moreover, our approach significantly outperforms compared path planning and
+reinforcement learning methods in terms of success rate and collision
+avoidance.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.02913v1' target='_blank'>Towards Robust Multi-UAV Collaboration: MARL with Noise-Resilient
+  Communication and Attention Mechanisms</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zilin Zhao, Chishui Chen, Haotian Shi, Jiale Chen, Xuanlin Yue, Zhejian Yang, Yang Liu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-04 08:05:14</h6>
+<p class='card-text'>Efficient path planning for unmanned aerial vehicles (UAVs) is crucial in
+remote sensing and information collection. As task scales expand, the
+cooperative deployment of multiple UAVs significantly improves information
+collection efficiency. However, collaborative communication and decision-making
+for multiple UAVs remain major challenges in path planning, especially in noisy
+environments. To efficiently accomplish complex information collection tasks in
+3D space and address robust communication issues, we propose a multi-agent
+reinforcement learning (MARL) framework for UAV path planning based on the
+Counterfactual Multi-Agent Policy Gradients (COMA) algorithm. The framework
+incorporates attention mechanism-based UAV communication protocol and
+training-deployment system, significantly improving communication robustness
+and individual decision-making capabilities in noisy conditions. Experiments
+conducted on both synthetic and real-world datasets demonstrate that our method
+outperforms existing algorithms in terms of path planning efficiency and
+robustness, especially in noisy environments, achieving a 78\% improvement in
+entropy reduction.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.02369v1' target='_blank'>JPDS-NN: Reinforcement Learning-Based Dynamic Task Allocation for
+  Agricultural Vehicle Routing Optimization</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yixuan Fan, Haotian Xu, Mengqiao Liu, Qing Zhuo, Tao Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-04 07:50:32</h6>
+<p class='card-text'>The Entrance Dependent Vehicle Routing Problem (EDVRP) is a variant of the
+Vehicle Routing Problem (VRP) where the scale of cities influences routing
+outcomes, necessitating consideration of their entrances. This paper addresses
+EDVRP in agriculture, focusing on multi-parameter vehicle planning for
+irregularly shaped fields. To address the limitations of traditional methods,
+such as heuristic approaches, which often overlook field geometry and entrance
+constraints, we propose a Joint Probability Distribution Sampling Neural
+Network (JPDS-NN) to effectively solve the EDVRP. The network uses an
+encoder-decoder architecture with graph transformers and attention mechanisms
+to model routing as a Markov Decision Process, and is trained via reinforcement
+learning for efficient and rapid end-to-end planning. Experimental results
+indicate that JPDS-NN reduces travel distances by 48.4-65.4%, lowers fuel
+consumption by 14.0-17.6%, and computes two orders of magnitude faster than
+baseline methods, while demonstrating 15-25% superior performance in dynamic
+arrangement scenarios. Ablation studies validate the necessity of
+cross-attention and pre-training. The framework enables scalable, intelligent
+routing for large-scale farming under dynamic constraints.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.02189v1' target='_blank'>Adaptive Traffic Signal Control based on Multi-Agent Reinforcement
+  Learning. Case Study on a simulated real-world corridor</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Dickness Kakitahi Kwesiga, Angshuman Guin, Michael Hunter</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-04 01:54:44</h6>
+<p class='card-text'>The very few studies that have attempted to formulate multi-agent
+reinforcement learning (RL) algorithms for adaptive traffic signal control have
+mainly used value-based RL methods although recent literature has shown that
+policy-based methods may perform better in partially observable environments.
+Additionally, because of the simplifying assumptions on signal timing made
+almost universally across previous studies, RL methods remain largely untested
+for real-world signal timing plans. This study formulates a multi-agent
+proximal policy optimization (MA-PPO) algorithm to implement adaptive and
+coordinated traffic control along an arterial corridor. The formulated MA-PPO
+has centralized critic architecture under the centralized training and
+decentralized execution framework. All agents are formulated to allow selection
+and implementation of up to eight signal phases as commonly implemented in the
+field controllers. The formulated algorithm is tested on a simulated real-world
+corridor with seven intersections, actual/complete traffic movements and signal
+phases, traffic volumes, and network geometry including intersection spacings.
+The performance of the formulated MA-PPO adaptive control algorithm is compared
+with the field implemented coordinated and actuated signal control (ASC) plans
+modeled using Vissim-MaxTime software in the loop simulation (SILs). The speed
+of convergence for each agent largely depended on the size of the action space
+which in turn depended on the number and sequence of signal phases. Compared
+with the currently implemented ASC signal timings, MA-PPO showed a travel time
+reduction of about 14% and 29%, respectively for the two through movements
+across the entire test corridor. Through volume sensitivity experiments, the
+formulated MA-PPO showed good stability, robustness and adaptability to changes
+in traffic demand.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.02111v1' target='_blank'>NavG: Risk-Aware Navigation in Crowded Environments Based on
+  Reinforcement Learning with Guidance Points</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Qianyi Zhang, Wentao Luo, Boyi Liu, Ziyang Zhang, Yaoyuan Wang, Jingtai Liu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-03 22:53:06</h6>
+<p class='card-text'>Motion planning in navigation systems is highly susceptible to upstream
+perceptual errors, particularly in human detection and tracking. To mitigate
+this issue, the concept of guidance points--a novel directional cue within a
+reinforcement learning-based framework--is introduced. A structured method for
+identifying guidance points is developed, consisting of obstacle boundary
+extraction, potential guidance point detection, and redundancy elimination. To
+integrate guidance points into the navigation pipeline, a
+perception-to-planning mapping strategy is proposed, unifying guidance points
+with other perceptual inputs and enabling the RL agent to effectively leverage
+the complementary relationships among raw laser data, human detection and
+tracking, and guidance points. Qualitative and quantitative simulations
+demonstrate that the proposed approach achieves the highest success rate and
+near-optimal travel times, greatly improving both safety and efficiency.
+Furthermore, real-world experiments in dynamic corridors and lobbies validate
+the robot's ability to confidently navigate around obstacles and robustly avoid
+pedestrians.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.01548v1' target='_blank'>MapExRL: Human-Inspired Indoor Exploration with Predicted Environment
+  Context and Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Narek Harutyunyan, Brady Moon, Seungchan Kim, Cherie Ho, Adam Hung, Sebastian Scherer</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-03 13:54:56</h6>
+<p class='card-text'>Path planning for robotic exploration is challenging, requiring reasoning
+over unknown spaces and anticipating future observations. Efficient exploration
+requires selecting budget-constrained paths that maximize information gain.
+Despite advances in autonomous exploration, existing algorithms still fall
+short of human performance, particularly in structured environments where
+predictive cues exist but are underutilized. Guided by insights from our user
+study, we introduce MapExRL, which improves robot exploration efficiency in
+structured indoor environments by enabling longer-horizon planning through
+reinforcement learning (RL) and global map predictions. Unlike many RL-based
+exploration methods that use motion primitives as the action space, our
+approach leverages frontiers for more efficient model learning and longer
+horizon reasoning. Our framework generates global map predictions from the
+observed map, which our policy utilizes, along with the prediction uncertainty,
+estimated sensor coverage, frontier distance, and remaining distance budget, to
+assess the strategic long-term value of frontiers. By leveraging multiple
+frontier scoring methods and additional context, our policy makes more informed
+decisions at each stage of the exploration. We evaluate our framework on a
+real-world indoor map dataset, achieving up to an 18.8% improvement over the
+strongest state-of-the-art baseline, with even greater gains compared to
+conventional frontier-based algorithms.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.01490v1' target='_blank'>Improving Retrospective Language Agents via Joint Policy Gradient
+  Optimization</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Xueyang Feng, Bo Lan, Quanyu Dai, Lei Wang, Jiakai Tang, Xu Chen, Zhenhua Dong, Ji-Rong Wen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-03 12:54:54</h6>
+<p class='card-text'>In recent research advancements within the community, large language models
+(LLMs) have sparked great interest in creating autonomous agents. However,
+current prompt-based agents often heavily rely on large-scale LLMs. Meanwhile,
+although fine-tuning methods significantly enhance the capabilities of smaller
+LLMs, the fine-tuned agents often lack the potential for self-reflection and
+self-improvement. To address these challenges, we introduce a novel agent
+framework named RetroAct, which is a framework that jointly optimizes both
+task-planning and self-reflective evolution capabilities in language agents.
+Specifically, we develop a two-stage joint optimization process that integrates
+imitation learning and reinforcement learning, and design an off-policy joint
+policy gradient optimization algorithm with imitation learning regularization
+to enhance the data efficiency and training stability in agent tasks. RetroAct
+significantly improves the performance of open-source models, reduces
+dependency on closed-source LLMs, and enables fine-tuned agents to learn and
+evolve continuously. We conduct extensive experiments across various testing
+environments, demonstrating RetroAct has substantial improvements in task
+performance and decision-making processes.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.01471v1' target='_blank'>Aerial Gym Simulator: A Framework for Highly Parallelized Simulation of
+  Aerial Robots</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mihir Kulkarni, Welf Rehberg, Kostas Alexis</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-03 12:25:23</h6>
+<p class='card-text'>This paper contributes the Aerial Gym Simulator, a highly parallelized,
+modular framework for simulation and rendering of arbitrary multirotor
+platforms based on NVIDIA Isaac Gym. Aerial Gym supports the simulation of
+under-, fully- and over-actuated multirotors offering parallelized geometric
+controllers, alongside a custom GPU-accelerated rendering framework for
+ray-casting capable of capturing depth, segmentation and vertex-level
+annotations from the environment. Multiple examples for key tasks, such as
+depth-based navigation through reinforcement learning are provided. The
+comprehensive set of tools developed within the framework makes it a powerful
+resource for research on learning for control, planning, and navigation using
+state information as well as exteroceptive sensor observations. Extensive
+simulation studies are conducted and successful sim2real transfer of trained
+policies is demonstrated. The Aerial Gym Simulator is open-sourced at:
+https://github.com/ntnu-arl/aerial_gym_simulator.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.00653v1' target='_blank'>Discrete Codebook World Models for Continuous Control</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Aidan Scannell, Mohammadreza Nakhaei, Kalle Kujanpää, Yi Zhao, Kevin Sebastian Luck, Arno Solin, Joni Pajarinen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-01 22:58:44</h6>
+<p class='card-text'>In reinforcement learning (RL), world models serve as internal simulators,
+enabling agents to predict environment dynamics and future outcomes in order to
+make informed decisions. While previous approaches leveraging discrete latent
+spaces, such as DreamerV3, have demonstrated strong performance in discrete
+action settings and visual control tasks, their comparative performance in
+state-based continuous control remains underexplored. In contrast, methods with
+continuous latent spaces, such as TD-MPC2, have shown notable success in
+state-based continuous control benchmarks. In this paper, we demonstrate that
+modeling discrete latent states has benefits over continuous latent states and
+that discrete codebook encodings are more effective representations for
+continuous control, compared to alternative encodings, such as one-hot and
+label-based encodings. Based on these insights, we introduce DCWM: Discrete
+Codebook World Model, a self-supervised world model with a discrete and
+stochastic latent space, where latent states are codes from a codebook. We
+combine DCWM with decision-time planning to get our model-based RL algorithm,
+named DC-MPC: Discrete Codebook Model Predictive Control, which performs
+competitively against recent state-of-the-art algorithms, including TD-MPC2 and
+DreamerV3, on continuous control benchmarks. See our project website
+www.aidanscannell.com/dcmpc.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.01919v1' target='_blank'>Reinforcement learning with combinatorial actions for coupled restless
+  bandits</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Lily Xu, Bryan Wilder, Elias B. Khalil, Milind Tambe</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-01 21:25:21</h6>
+<p class='card-text'>Reinforcement learning (RL) has increasingly been applied to solve real-world
+planning problems, with progress in handling large state spaces and time
+horizons. However, a key bottleneck in many domains is that RL methods cannot
+accommodate large, combinatorially structured action spaces. In such settings,
+even representing the set of feasible actions at a single step may require a
+complex discrete optimization formulation. We leverage recent advances in
+embedding trained neural networks into optimization problems to propose
+SEQUOIA, an RL algorithm that directly optimizes for long-term reward over the
+feasible action space. Our approach embeds a Q-network into a mixed-integer
+program to select a combinatorial action in each timestep. Here, we focus on
+planning over restless bandits, a class of planning problems which capture many
+real-world examples of sequential decision making. We introduce coRMAB, a
+broader class of restless bandits with combinatorial actions that cannot be
+decoupled across the arms of the restless bandit, requiring direct solving over
+the joint, exponentially large action space. We empirically validate SEQUOIA on
+four novel restless bandit problems with combinatorial constraints: multiple
+interventions, path constraints, bipartite matching, and capacity constraints.
+Our approach significantly outperforms existing methods -- which cannot address
+sequential planning and combinatorial selection simultaneously -- by an average
+of 26.4% on these difficult instances.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.00535v1' target='_blank'>What Makes a Good Diffusion Planner for Decision Making?</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Haofei Lu, Dongqi Han, Yifei Shen, Dongsheng Li</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-01 15:31:14</h6>
+<p class='card-text'>Diffusion models have recently shown significant potential in solving
+decision-making problems, particularly in generating behavior plans -- also
+known as diffusion planning. While numerous studies have demonstrated the
+impressive performance of diffusion planning, the mechanisms behind the key
+components of a good diffusion planner remain unclear and the design choices
+are highly inconsistent in existing studies. In this work, we address this
+issue through systematic empirical experiments on diffusion planning in an
+offline reinforcement learning (RL) setting, providing practical insights into
+the essential components of diffusion planning. We trained and evaluated over
+6,000 diffusion models, identifying the critical components such as guided
+sampling, network architecture, action generation and planning strategy. We
+revealed that some design choices opposite to the common practice in previous
+work in diffusion planning actually lead to better performance, e.g.,
+unconditional sampling with selection can be better than guided sampling and
+Transformer outperforms U-Net as denoising network. Based on these insights, we
+suggest a simple yet strong diffusion planning baseline that achieves
+state-of-the-art results on standard offline RL benchmarks.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.21267v1' target='_blank'>ReaLJam: Real-Time Human-AI Music Jamming with Reinforcement
+  Learning-Tuned Transformers</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Alexander Scarlatos, Yusong Wu, Ian Simon, Adam Roberts, Tim Cooijmans, Natasha Jaques, Cassie Tarakajian, Cheng-Zhi Anna Huang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-28 17:42:58</h6>
+<p class='card-text'>Recent advances in generative artificial intelligence (AI) have created
+models capable of high-quality musical content generation. However, little
+consideration is given to how to use these models for real-time or cooperative
+jamming musical applications because of crucial required features: low latency,
+the ability to communicate planned actions, and the ability to adapt to user
+input in real-time. To support these needs, we introduce ReaLJam, an interface
+and protocol for live musical jamming sessions between a human and a
+Transformer-based AI agent trained with reinforcement learning. We enable
+real-time interactions using the concept of anticipation, where the agent
+continually predicts how the performance will unfold and visually conveys its
+plan to the user. We conduct a user study where experienced musicians jam in
+real-time with the agent through ReaLJam. Our results demonstrate that ReaLJam
+enables enjoyable and musically interesting sessions, and we uncover important
+takeaways for future work.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.21142v1' target='_blank'>Multimodal Dreaming: A Global Workspace Approach to World Model-Based
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Léopold Maytié, Roland Bertin Johannet, Rufin VanRullen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-28 15:24:17</h6>
+<p class='card-text'>Humans leverage rich internal models of the world to reason about the future,
+imagine counterfactuals, and adapt flexibly to new situations. In Reinforcement
+Learning (RL), world models aim to capture how the environment evolves in
+response to the agent's actions, facilitating planning and generalization.
+However, typical world models directly operate on the environment variables
+(e.g. pixels, physical attributes), which can make their training slow and
+cumbersome; instead, it may be advantageous to rely on high-level latent
+dimensions that capture relevant multimodal variables. Global Workspace (GW)
+Theory offers a cognitive framework for multimodal integration and information
+broadcasting in the brain, and recent studies have begun to introduce efficient
+deep learning implementations of GW. Here, we evaluate the capabilities of an
+RL system combining GW with a world model. We compare our GW-Dreamer with
+various versions of the standard PPO and the original Dreamer algorithms. We
+show that performing the dreaming process (i.e., mental simulation) inside the
+GW latent space allows for training with fewer environment steps. As an
+additional emergent property, the resulting model (but not its comparison
+baselines) displays strong robustness to the absence of one of its observation
+modalities (images or simulation attributes). We conclude that the combination
+of GW with World Models holds great potential for improving decision-making in
+RL agents.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.20476v2' target='_blank'>Unifying Model Predictive Path Integral Control, Reinforcement Learning,
+  and Diffusion Models for Optimal Control and Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yankai Li, Mo Chen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-27 19:26:36</h6>
+<p class='card-text'>Model Predictive Path Integral (MPPI) control, Reinforcement Learning (RL),
+and Diffusion Models have each demonstrated strong performance in trajectory
+optimization, decision-making, and motion planning. However, these approaches
+have traditionally been treated as distinct methodologies with separate
+optimization frameworks. In this work, we establish a unified perspective that
+connects MPPI, RL, and Diffusion Models through gradient-based optimization on
+the Gibbs measure. We first show that MPPI can be interpreted as performing
+gradient ascent on a smoothed energy function. We then demonstrate that Policy
+Gradient methods reduce to MPPI by applying an exponential transformation to
+the objective function. Additionally, we establish that the reverse sampling
+process in diffusion models follows the same update rule as MPPI.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.20367v1' target='_blank'>The Role of Tactile Sensing for Learning Reach and Grasp</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Boya Zhang, Iris Andrussow, Andreas Zell, Georg Martius</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-27 18:36:37</h6>
+<p class='card-text'>Stable and robust robotic grasping is essential for current and future robot
+applications. In recent works, the use of large datasets and supervised
+learning has enhanced speed and precision in antipodal grasping. However, these
+methods struggle with perception and calibration errors due to large planning
+horizons. To obtain more robust and reactive grasping motions, leveraging
+reinforcement learning combined with tactile sensing is a promising direction.
+Yet, there is no systematic evaluation of how the complexity of force-based
+tactile sensing affects the learning behavior for grasping tasks. This paper
+compares various tactile and environmental setups using two model-free
+reinforcement learning approaches for antipodal grasping. Our findings suggest
+that under imperfect visual perception, various tactile features improve
+learning outcomes, while complex tactile inputs complicate training.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.20217v1' target='_blank'>MARVEL: Multi-Agent Reinforcement Learning for constrained field-of-View
+  multi-robot Exploration in Large-scale environments</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jimmy Chiun, Shizhe Zhang, Yizhuo Wang, Yuhong Cao, Guillaume Sartoretti</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-27 15:58:42</h6>
+<p class='card-text'>In multi-robot exploration, a team of mobile robot is tasked with efficiently
+mapping an unknown environments. While most exploration planners assume
+omnidirectional sensors like LiDAR, this is impractical for small robots such
+as drones, where lightweight, directional sensors like cameras may be the only
+option due to payload constraints. These sensors have a constrained
+field-of-view (FoV), which adds complexity to the exploration problem,
+requiring not only optimal robot positioning but also sensor orientation during
+movement. In this work, we propose MARVEL, a neural framework that leverages
+graph attention networks, together with novel frontiers and orientation
+features fusion technique, to develop a collaborative, decentralized policy
+using multi-agent reinforcement learning (MARL) for robots with constrained
+FoV. To handle the large action space of viewpoints planning, we further
+introduce a novel information-driven action pruning strategy. MARVEL improves
+multi-robot coordination and decision-making in challenging large-scale indoor
+environments, while adapting to various team sizes and sensor configurations
+(i.e., FoV and sensor range) without additional training. Our extensive
+evaluation shows that MARVEL's learned policies exhibit effective coordinated
+behaviors, outperforming state-of-the-art exploration planners across multiple
+metrics. We experimentally demonstrate MARVEL's generalizability in large-scale
+environments, of up to 90m by 90m, and validate its practical applicability
+through successful deployment on a team of real drone hardware.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.20168v1' target='_blank'>Accelerating Model-Based Reinforcement Learning with State-Space World
+  Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Maria Krinner, Elie Aljalbout, Angel Romero, Davide Scaramuzza</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-27 15:05:25</h6>
+<p class='card-text'>Reinforcement learning (RL) is a powerful approach for robot learning.
+However, model-free RL (MFRL) requires a large number of environment
+interactions to learn successful control policies. This is due to the noisy RL
+training updates and the complexity of robotic systems, which typically involve
+highly non-linear dynamics and noisy sensor signals. In contrast, model-based
+RL (MBRL) not only trains a policy but simultaneously learns a world model that
+captures the environment's dynamics and rewards. The world model can either be
+used for planning, for data collection, or to provide first-order policy
+gradients for training. Leveraging a world model significantly improves sample
+efficiency compared to model-free RL. However, training a world model alongside
+the policy increases the computational complexity, leading to longer training
+times that are often intractable for complex real-world scenarios. In this
+work, we propose a new method for accelerating model-based RL using state-space
+world models. Our approach leverages state-space models (SSMs) to parallelize
+the training of the dynamics model, which is typically the main computational
+bottleneck. Additionally, we propose an architecture that provides privileged
+information to the world model during training, which is particularly relevant
+for partially observable environments. We evaluate our method in several
+real-world agile quadrotor flight tasks, involving complex dynamics, for both
+fully and partially observable environments. We demonstrate a significant
+speedup, reducing the world model training time by up to 10 times, and the
+overall MBRL training time by up to 4 times. This benefit comes without
+compromising performance, as our method achieves similar sample efficiency and
+task rewards to state-of-the-art MBRL methods.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2502.19908v2' target='_blank'>CarPlanner: Consistent Auto-regressive Trajectory Planning for
+  Large-scale Reinforcement Learning in Autonomous Driving</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Dongkun Zhang, Jiaming Liang, Ke Guo, Sha Lu, Qi Wang, Rong Xiong, Zhenwei Miao, Yue Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-02-27 09:26:22</h6>
+<p class='card-text'>Trajectory planning is vital for autonomous driving, ensuring safe and
+efficient navigation in complex environments. While recent learning-based
+methods, particularly reinforcement learning (RL), have shown promise in
+specific scenarios, RL planners struggle with training inefficiencies and
+managing large-scale, real-world driving scenarios. In this paper, we introduce
+\textbf{CarPlanner}, a \textbf{C}onsistent \textbf{a}uto-\textbf{r}egressive
+\textbf{Planner} that uses RL to generate multi-modal trajectories. The
+auto-regressive structure enables efficient large-scale RL training, while the
+incorporation of consistency ensures stable policy learning by maintaining
+coherent temporal consistency across time steps. Moreover, CarPlanner employs a
+generation-selection framework with an expert-guided reward function and an
+invariant-view module, simplifying RL training and enhancing policy
+performance. Extensive analysis demonstrates that our proposed RL framework
+effectively addresses the challenges of training efficiency and performance
+enhancement, positioning CarPlanner as a promising solution for trajectory
+planning in autonomous driving. To the best of our knowledge, we are the first
+to demonstrate that the RL-based planner can surpass both IL- and rule-based
+state-of-the-arts (SOTAs) on the challenging large-scale real-world dataset
+nuPlan. Our proposed CarPlanner surpasses RL-, IL-, and rule-based SOTA
+approaches within this demanding dataset.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
