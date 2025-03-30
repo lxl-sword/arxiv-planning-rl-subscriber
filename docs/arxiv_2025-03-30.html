@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-03-30</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-03-30</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.21683v1' target='_blank'>LLM-Gomoku: A Large Language Model-Based System for Strategic Gomoku
+  with Self-Play and Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Hui Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-27 16:52:25</h6>
+<p class='card-text'>In recent years, large language models (LLMs) have shown significant
+advancements in natural language processing (NLP), with strong capa-bilities in
+generation, comprehension, and rea-soning. These models have found applications
+in education, intelligent decision-making, and gaming. However, effectively
+utilizing LLMs for strategic planning and decision-making in the game of Gomoku
+remains a challenge. This study aims to develop a Gomoku AI system based on
+LLMs, simulating the human learning process of playing chess. The system is
+de-signed to understand and apply Gomoku strat-egies and logic to make rational
+decisions. The research methods include enabling the model to "read the board,"
+"understand the rules," "select strategies," and "evaluate positions," while
+en-hancing its abilities through self-play and rein-forcement learning. The
+results demonstrate that this approach significantly improves the se-lection of
+move positions, resolves the issue of generating illegal positions, and reduces
+pro-cess time through parallel position evaluation. After extensive self-play
+training, the model's Gomoku-playing capabilities have been notably enhanced.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.21677v1' target='_blank'>A tale of two goals: leveraging sequentiality in multi-goal scenarios</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Olivier Serris, Stéphane Doncieux, Olivier Sigaud</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-27 16:47:46</h6>
+<p class='card-text'>Several hierarchical reinforcement learning methods leverage planning to
+create a graph or sequences of intermediate goals, guiding a lower-level
+goal-conditioned (GC) policy to reach some final goals. The low-level policy is
+typically conditioned on the current goal, with the aim of reaching it as
+quickly as possible. However, this approach can fail when an intermediate goal
+can be reached in multiple ways, some of which may make it impossible to
+continue toward subsequent goals. To address this issue, we introduce two
+instances of Markov Decision Process (MDP) where the optimization objective
+favors policies that not only reach the current goal but also subsequent ones.
+In the first, the agent is conditioned on both the current and final goals,
+while in the second, it is conditioned on the next two goals in the sequence.
+We conduct a series of experiments on navigation and pole-balancing tasks in
+which sequences of intermediate goals are given. By evaluating policies trained
+with TD3+HER on both the standard GC-MDP and our proposed MDPs, we show that,
+in most cases, conditioning on the next two goals improves stability and sample
+efficiency over other approaches.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20685v2' target='_blank'>Flip Learning: Weakly Supervised Erase to Segment Nodules in Breast
+  Ultrasound</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yuhao Huang, Ao Chang, Haoran Dou, Xing Tao, Xinrui Zhou, Yan Cao, Ruobing Huang, Alejandro F Frangi, Lingyun Bao, Xin Yang, Dong Ni</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 16:20:02</h6>
+<p class='card-text'>Accurate segmentation of nodules in both 2D breast ultrasound (BUS) and 3D
+automated breast ultrasound (ABUS) is crucial for clinical diagnosis and
+treatment planning. Therefore, developing an automated system for nodule
+segmentation can enhance user independence and expedite clinical analysis.
+Unlike fully-supervised learning, weakly-supervised segmentation (WSS) can
+streamline the laborious and intricate annotation process. However, current WSS
+methods face challenges in achieving precise nodule segmentation, as many of
+them depend on inaccurate activation maps or inefficient pseudo-mask generation
+algorithms. In this study, we introduce a novel multi-agent reinforcement
+learning-based WSS framework called Flip Learning, which relies solely on 2D/3D
+boxes for accurate segmentation. Specifically, multiple agents are employed to
+erase the target from the box to facilitate classification tag flipping, with
+the erased region serving as the predicted segmentation mask. The key
+contributions of this research are as follows: (1) Adoption of a
+superpixel/supervoxel-based approach to encode the standardized environment,
+capturing boundary priors and expediting the learning process. (2) Introduction
+of three meticulously designed rewards, comprising a classification score
+reward and two intensity distribution rewards, to steer the agents' erasing
+process precisely, thereby avoiding both under- and over-segmentation. (3)
+Implementation of a progressive curriculum learning strategy to enable agents
+to interact with the environment in a progressively challenging manner, thereby
+enhancing learning efficiency. Extensively validated on the large in-house BUS
+and ABUS datasets, our Flip Learning method outperforms state-of-the-art WSS
+methods and foundation models, and achieves comparable performance as
+fully-supervised learning algorithms.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20507v1' target='_blank'>Harmonia: A Multi-Agent Reinforcement Learning Approach to Data
+  Placement and Migration in Hybrid Storage Systems</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Rakesh Nadig, Vamanan Arulchelvan, Rahul Bera, Taha Shahroodi, Gagandeep Singh, Mohammad Sadrosadati, Jisung Park, Onur Mutlu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 12:47:52</h6>
+<p class='card-text'>Hybrid storage systems (HSS) combine multiple storage devices with diverse
+characteristics to achieve high performance and capacity at low cost. The
+performance of an HSS highly depends on the effectiveness of two key policies:
+(1) the data-placement policy, which determines the best-fit storage device for
+incoming data, and (2) the data-migration policy, which rearranges stored data
+across the devices to sustain high HSS performance. Prior works focus on
+improving only data placement or only data migration in HSS, which leads to
+sub-optimal HSS performance. Unfortunately, no prior work tries to optimize
+both policies together. Our goal is to design a holistic data-management
+technique for HSS that optimizes both data-placement and data-migration
+policies to fully exploit the potential of an HSS. We propose Harmonia, a
+multi-agent reinforcement learning (RL)-based data-management technique that
+employs two light-weight autonomous RL agents, a data-placement agent and a
+data-migration agent, which adapt their policies for the current workload and
+HSS configuration, and coordinate with each other to improve overall HSS
+performance. We evaluate Harmonia on a real HSS with up to four heterogeneous
+storage devices with diverse characteristics. Our evaluation using 17
+data-intensive workloads on performance-optimized (cost-optimized) HSS with two
+storage devices shows that, on average, Harmonia (1) outperforms the
+best-performing prior approach by 49.5% (31.7%), (2) bridges the performance
+gap between the best-performing prior work and Oracle by 64.2% (64.3%). On an
+HSS with three (four) devices, Harmonia outperforms the best-performing prior
+work by 37.0% (42.0%). Harmonia's performance benefits come with low latency
+(240ns for inference) and storage overheads (206 KiB for both RL agents
+together). We plan to open-source Harmonia's implementation to aid future
+research on HSS.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20425v1' target='_blank'>Perspective-Shifted Neuro-Symbolic World Models: A Framework for
+  Socially-Aware Robot Navigation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Kevin Alcedo, Pedro U. Lima, Rachid Alami</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 10:59:08</h6>
+<p class='card-text'>Navigating in environments alongside humans requires agents to reason under
+uncertainty and account for the beliefs and intentions of those around them.
+Under a sequential decision-making framework, egocentric navigation can
+naturally be represented as a Markov Decision Process (MDP). However, social
+navigation additionally requires reasoning about the hidden beliefs of others,
+inherently leading to a Partially Observable Markov Decision Process (POMDP),
+where agents lack direct access to others' mental states. Inspired by Theory of
+Mind and Epistemic Planning, we propose (1) a neuro-symbolic model-based
+reinforcement learning architecture for social navigation, addressing the
+challenge of belief tracking in partially observable environments; and (2) a
+perspective-shift operator for belief estimation, leveraging recent work on
+Influence-based Abstractions (IBA) in structured multi-agent settings.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20139v1' target='_blank'>Look Before Leap: Look-Ahead Planning with Uncertainty in Reinforcement
+  Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yongshuai Liu, Xin Liu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 01:07:35</h6>
+<p class='card-text'>Model-based reinforcement learning (MBRL) has demonstrated superior sample
+efficiency compared to model-free reinforcement learning (MFRL). However, the
+presence of inaccurate models can introduce biases during policy learning,
+resulting in misleading trajectories. The challenge lies in obtaining accurate
+models due to limited diverse training data, particularly in regions with
+limited visits (uncertain regions). Existing approaches passively quantify
+uncertainty after sample generation, failing to actively collect uncertain
+samples that could enhance state coverage and improve model accuracy. Moreover,
+MBRL often faces difficulties in making accurate multi-step predictions,
+thereby impacting overall performance. To address these limitations, we propose
+a novel framework for uncertainty-aware policy optimization with model-based
+exploratory planning. In the model-based planning phase, we introduce an
+uncertainty-aware k-step lookahead planning approach to guide action selection
+at each step. This process involves a trade-off analysis between model
+uncertainty and value function approximation error, effectively enhancing
+policy performance. In the policy optimization phase, we leverage an
+uncertainty-driven exploratory policy to actively collect diverse training
+samples, resulting in improved model accuracy and overall performance of the RL
+agent. Our approach offers flexibility and applicability to tasks with varying
+state/action spaces and reward structures. We validate its effectiveness
+through experiments on challenging robotic manipulation tasks and Atari games,
+surpassing state-of-the-art methods with fewer interactions, thereby leading to
+significant performance improvements.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20124v1' target='_blank'>Synthesizing world models for bilevel planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zergham Ahmed, Joshua B. Tenenbaum, Christopher J. Bates, Samuel J. Gershman</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 00:10:01</h6>
+<p class='card-text'>Modern reinforcement learning (RL) systems have demonstrated remarkable
+capabilities in complex environments, such as video games. However, they still
+fall short of achieving human-like sample efficiency and adaptability when
+learning new domains. Theory-based reinforcement learning (TBRL) is an
+algorithmic framework specifically designed to address this gap. Modeled on
+cognitive theories, TBRL leverages structured, causal world models - "theories"
+- as forward simulators for use in planning, generalization and exploration.
+Although current TBRL systems provide compelling explanations of how humans
+learn to play video games, they face several technical limitations: their
+theory languages are restrictive, and their planning algorithms are not
+scalable. To address these challenges, we introduce TheoryCoder, an
+instantiation of TBRL that exploits hierarchical representations of theories
+and efficient program synthesis methods for more powerful learning and
+planning. TheoryCoder equips agents with general-purpose abstractions (e.g.,
+"move to"), which are then grounded in a particular environment by learning a
+low-level transition model (a Python program synthesized from observations by a
+large language model). A bilevel planning algorithm can exploit this
+hierarchical structure to solve large domains. We demonstrate that this
+approach can be successfully applied to diverse and challenging grid-world
+games, where approaches based on directly synthesizing a policy perform poorly.
+Ablation studies demonstrate the benefits of using hierarchical abstractions.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.19699v1' target='_blank'>Optimal Path Planning and Cost Minimization for a Drone Delivery System
+  Via Model Predictive Control</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Muhammad Al-Zafar Khan, Jamal Al-Karaki</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-25 14:27:29</h6>
+<p class='card-text'>In this study, we formulate the drone delivery problem as a control problem
+and solve it using Model Predictive Control. Two experiments are performed: The
+first is on a less challenging grid world environment with lower
+dimensionality, and the second is with a higher dimensionality and added
+complexity. The MPC method was benchmarked against three popular Multi-Agent
+Reinforcement Learning (MARL): Independent $Q$-Learning (IQL), Joint Action
+Learners (JAL), and Value-Decomposition Networks (VDN). It was shown that the
+MPC method solved the problem quicker and required fewer optimal numbers of
+drones to achieve a minimized cost and navigate the optimal path.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.18366v1' target='_blank'>Reinforcement Learning for Adaptive Planner Parameter Tuning: A
+  Perspective on Hierarchical Architecture</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Lu Wangtao, Wei Yufei, Xu Jiadong, Jia Wenhao, Li Liang, Xiong Rong, Wang Yue</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-24 06:02:41</h6>
+<p class='card-text'>Automatic parameter tuning methods for planning algorithms, which integrate
+pipeline approaches with learning-based techniques, are regarded as promising
+due to their stability and capability to handle highly constrained
+environments. While existing parameter tuning methods have demonstrated
+considerable success, further performance improvements require a more
+structured approach. In this paper, we propose a hierarchical architecture for
+reinforcement learning-based parameter tuning. The architecture introduces a
+hierarchical structure with low-frequency parameter tuning, mid-frequency
+planning, and high-frequency control, enabling concurrent enhancement of both
+upper-layer parameter tuning and lower-layer control through iterative
+training. Experimental evaluations in both simulated and real-world
+environments show that our method surpasses existing parameter tuning
+approaches. Furthermore, our approach achieves first place in the Benchmark for
+Autonomous Robot Navigation (BARN) Challenge.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.18349v1' target='_blank'>Human-Object Interaction with Vision-Language Model Guided Relative
+  Movement Dynamics</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zekai Deng, Ye Shi, Kaiyang Ji, Lan Xu, Shaoli Huang, Jingya Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-24 05:18:04</h6>
+<p class='card-text'>Human-Object Interaction (HOI) is vital for advancing simulation, animation,
+and robotics, enabling the generation of long-term, physically plausible
+motions in 3D environments. However, existing methods often fall short of
+achieving physics realism and supporting diverse types of interactions. To
+address these challenges, this paper introduces a unified Human-Object
+Interaction framework that provides unified control over interactions with
+static scenes and dynamic objects using language commands. The interactions
+between human and object parts can always be described as the continuous stable
+Relative Movement Dynamics (RMD) between human and object parts. By leveraging
+the world knowledge and scene perception capabilities of Vision-Language Models
+(VLMs), we translate language commands into RMD diagrams, which are used to
+guide goal-conditioned reinforcement learning for sequential interaction with
+objects. Our framework supports long-horizon interactions among dynamic,
+articulated, and static objects. To support the training and evaluation of our
+framework, we present a new dataset named Interplay, which includes multi-round
+task plans generated by VLMs, covering both static and dynamic HOI tasks.
+Extensive experiments demonstrate that our proposed framework can effectively
+handle a wide range of HOI tasks, showcasing its ability to maintain long-term,
+multi-round transitions. For more details, please refer to our project webpage:
+https://rmd-hoi.github.io/.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.18161v1' target='_blank'>Active Inference for Energy Control and Planning in Smart Buildings and
+  Communities</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Seyyed Danial Nazemi, Mohsen A. Jafari, Andrea Matta</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-23 18:03:01</h6>
+<p class='card-text'>Active Inference (AIF) is emerging as a powerful framework for
+decision-making under uncertainty, yet its potential in engineering
+applications remains largely unexplored. In this work, we propose a novel
+dual-layer AIF architecture that addresses both building-level and
+community-level energy management. By leveraging the free energy principle,
+each layer adapts to evolving conditions and handles partial observability
+without extensive sensor information and respecting data privacy. We validate
+the continuous AIF model against both a perfect optimization baseline and a
+reinforcement learning-based approach. We also test the community AIF framework
+under extreme pricing scenarios. The results highlight the model's robustness
+in handling abrupt changes. This study is the first to show how a distributed
+AIF works in engineering. It also highlights new opportunities for
+privacy-preserving and uncertainty-aware control strategies in engineering
+applications.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.17985v1' target='_blank'>Optimizing Navigation And Chemical Application in Precision Agriculture
+  With Deep Reinforcement Learning And Conditional Action Tree</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mahsa Khosravi, Zhanhong Jiang, Joshua R Waite, Sarah Jonesc, Hernan Torres, Arti Singh, Baskar Ganapathysubramanian, Asheesh Kumar Singh, Soumik Sarkar</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-23 08:38:13</h6>
+<p class='card-text'>This paper presents a novel reinforcement learning (RL)-based planning scheme
+for optimized robotic management of biotic stresses in precision agriculture.
+The framework employs a hierarchical decision-making structure with conditional
+action masking, where high-level actions direct the robot's exploration, while
+low-level actions optimize its navigation and efficient chemical spraying in
+affected areas. The key objectives of optimization include improving the
+coverage of infected areas with limited battery power and reducing chemical
+usage, thus preventing unnecessary spraying of healthy areas of the field. Our
+numerical experimental results demonstrate that the proposed method,
+Hierarchical Action Masking Proximal Policy Optimization (HAM-PPO),
+significantly outperforms baseline practices, such as LawnMower navigation +
+indiscriminate spraying (Carpet Spray), in terms of yield recovery and resource
+efficiency. HAM-PPO consistently achieves higher yield recovery percentages and
+lower chemical costs across a range of infection scenarios. The framework also
+exhibits robustness to observation noise and generalizability under diverse
+environmental conditions, adapting to varying infection ranges and spatial
+distribution patterns.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.17693v1' target='_blank'>Conditional Diffusion Model with OOD Mitigation as High-Dimensional
+  Offline Resource Allocation Planner in Clustered Ad Hoc Networks</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Kechen Meng, Sinuo Zhang, Rongpeng Li, Chan Wang, Ming Lei, Zhifeng Zhao</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-22 08:27:09</h6>
+<p class='card-text'>Due to network delays and scalability limitations, clustered ad hoc networks
+widely adopt Reinforcement Learning (RL) for on-demand resource allocation.
+Albeit its demonstrated agility, traditional Model-Free RL (MFRL) solutions
+struggle to tackle the huge action space, which generally explodes
+exponentially along with the number of resource allocation units, enduring low
+sampling efficiency and high interaction cost. In contrast to MFRL, Model-Based
+RL (MBRL) offers an alternative solution to boost sample efficiency and
+stabilize the training by explicitly leveraging a learned environment model.
+However, establishing an accurate dynamic model for complex and noisy
+environments necessitates a careful balance between model accuracy and
+computational complexity $\&$ stability. To address these issues, we propose a
+Conditional Diffusion Model Planner (CDMP) for high-dimensional offline
+resource allocation in clustered ad hoc networks. By leveraging the astonishing
+generative capability of Diffusion Models (DMs), our approach enables the
+accurate modeling of high-quality environmental dynamics while leveraging an
+inverse dynamics model to plan a superior policy. Beyond simply adopting DMs in
+offline RL, we further incorporate the CDMP algorithm with a theoretically
+guaranteed, uncertainty-aware penalty metric, which theoretically and
+empirically manifests itself in mitigating the Out-of-Distribution
+(OOD)-induced distribution shift issue underlying scarce training data.
+Extensive experiments also show that our model outperforms MFRL in average
+reward and Quality of Service (QoS) while demonstrating comparable performance
+to other MBRL algorithms.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.17553v1' target='_blank'>Autonomous Radiotherapy Treatment Planning Using DOLA: A
+  Privacy-Preserving, LLM-Based Optimization Agent</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Humza Nusrat, Bing Luo, Ryan Hall, Joshua Kim, Hassan Bagher-Ebadian, Anthony Doemer, Benjamin Movsas, Kundan Thind</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-21 22:01:19</h6>
+<p class='card-text'>Radiotherapy treatment planning is a complex and time-intensive process,
+often impacted by inter-planner variability and subjective decision-making. To
+address these challenges, we introduce Dose Optimization Language Agent (DOLA),
+an autonomous large language model (LLM)-based agent designed for optimizing
+radiotherapy treatment plans while rigorously protecting patient privacy. DOLA
+integrates the LLaMa3.1 LLM directly with a commercial treatment planning
+system, utilizing chain-of-thought prompting, retrieval-augmented generation
+(RAG), and reinforcement learning (RL). Operating entirely within secure local
+infrastructure, this agent eliminates external data sharing. We evaluated DOLA
+using a retrospective cohort of 18 prostate cancer patients prescribed 60 Gy in
+20 fractions, comparing model sizes (8 billion vs. 70 billion parameters) and
+optimization strategies (No-RAG, RAG, and RAG+RL) over 10 planning iterations.
+The 70B model demonstrated significantly improved performance, achieving
+approximately 16.4% higher final scores than the 8B model. The RAG approach
+outperformed the No-RAG baseline by 19.8%, and incorporating RL accelerated
+convergence, highlighting the synergy of retrieval-based memory and
+reinforcement learning. Optimal temperature hyperparameter analysis identified
+0.4 as providing the best balance between exploration and exploitation. This
+proof of concept study represents the first successful deployment of locally
+hosted LLM agents for autonomous optimization of treatment plans within a
+commercial radiotherapy planning system. By extending human-machine interaction
+through interpretable natural language reasoning, DOLA offers a scalable and
+privacy-conscious framework, with significant potential for clinical
+implementation and workflow improvement.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.17194v1' target='_blank'>Curriculum RL meets Monte Carlo Planning: Optimization of a Real World
+  Container Management Problem</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Abhijeet Pendyala, Tobias Glasmachers</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-21 14:43:11</h6>
+<p class='card-text'>In this work, we augment reinforcement learning with an inference-time
+collision model to ensure safe and efficient container management in a
+waste-sorting facility with limited processing capacity. Each container has two
+optimal emptying volumes that trade off higher throughput against overflow
+risk. Conventional reinforcement learning (RL) approaches struggle under
+delayed rewards, sparse critical events, and high-dimensional uncertainty --
+failing to consistently balance higher-volume empties with the risk of
+safety-limit violations. To address these challenges, we propose a hybrid
+method comprising: (1) a curriculum-learning pipeline that incrementally trains
+a PPO agent to handle delayed rewards and class imbalance, and (2) an offline
+pairwise collision model used at inference time to proactively avert collisions
+with minimal online cost. Experimental results show that our targeted
+inference-time collision checks significantly improve collision avoidance,
+reduce safety-limit violations, maintain high throughput, and scale effectively
+across varying container-to-PU ratios. These findings offer actionable
+guidelines for designing safe and efficient container-management systems in
+real-world facilities.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.15865v2' target='_blank'>Active management of battery degradation in wireless sensor network
+  using deep reinforcement learning for group battery replacement</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jong-Hyun Jeong, Hongki Jo, Qiang Zhou, Tahsin Afroz Hoque Nishat, Lang Wu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-20 05:36:33</h6>
+<p class='card-text'>Wireless sensor networks (WSNs) have become a promising solution for
+structural health monitoring (SHM), especially in hard-to-reach or remote
+locations. Battery-powered WSNs offer various advantages over wired systems,
+however limited battery life has always been one of the biggest obstacles in
+practical use of the WSNs, regardless of energy harvesting methods. While
+various methods have been studied for battery health management, existing
+methods exclusively aim to extend lifetime of individual batteries, lacking a
+system level view. A consequence of applying such methods is that batteries in
+a WSN tend to fail at different times, posing significant difficulty on
+planning and scheduling of battery replacement trip. This study investigate a
+deep reinforcement learning (DRL) method for active battery degradation
+management by optimizing duty cycle of WSNs at the system level. This active
+management strategy effectively reduces earlier failure of battery individuals
+which enable group replacement without sacrificing WSN performances. A
+simulated environment based on a real-world WSN setup was developed to train a
+DRL agent and learn optimal duty cycle strategies. The performance of the
+strategy was validated in a long-term setup with various network sizes,
+demonstrating its efficiency and scalability.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.15290v1' target='_blank'>Reinforcement Learning for Robust Athletic Intelligence: Lessons from
+  the 2nd 'AI Olympics with RealAIGym' Competition</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Felix Wiebe, Niccolò Turcato, Alberto Dalla Libera, Jean Seong Bjorn Choe, Bumkyu Choi, Tim Lukas Faust, Habib Maraqten, Erfan Aghadavoodi, Marco Cali, Alberto Sinigaglia, Giulio Giacomuzzo, Diego Romeres, Jong-kook Kim, Gian Antonio Susto, Shubham Vyas, Dennis Mronga, Boris Belousov, Jan Peters, Frank Kirchner, Shivesh Kumar</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-19 15:10:02</h6>
+<p class='card-text'>In the field of robotics many different approaches ranging from classical
+planning over optimal control to reinforcement learning (RL) are developed and
+borrowed from other fields to achieve reliable control in diverse tasks. In
+order to get a clear understanding of their individual strengths and weaknesses
+and their applicability in real world robotic scenarios is it important to
+benchmark and compare their performances not only in a simulation but also on
+real hardware. The '2nd AI Olympics with RealAIGym' competition was held at the
+IROS 2024 conference to contribute to this cause and evaluate different
+controllers according to their ability to solve a dynamic control problem on an
+underactuated double pendulum system with chaotic dynamics. This paper
+describes the four different RL methods submitted by the participating teams,
+presents their performance in the swing-up task on a real double pendulum,
+measured against various criteria, and discusses their transferability from
+simulation to real hardware and their robustness to external disturbances.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.17398v1' target='_blank'>Reachable Sets-based Trajectory Planning Combining Reinforcement
+  Learning and iLQR</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Wenjie Huang, Yang Li, Shijie Yuan, Jingjia Teng, Hongmao Qin, Yougang Bian</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-19 13:07:10</h6>
+<p class='card-text'>The driving risk field is applicable to more complex driving scenarios,
+providing new approaches for safety decision-making and active vehicle control
+in intricate environments. However, existing research often overlooks the
+driving risk field and fails to consider the impact of risk distribution within
+drivable areas on trajectory planning, which poses challenges for enhancing
+safety. This paper proposes a trajectory planning method for intelligent
+vehicles based on the risk reachable set to further improve the safety of
+trajectory planning. First, we construct the reachable set incorporating the
+driving risk field to more accurately assess and avoid potential risks in
+drivable areas. Then, the initial trajectory is generated based on safe
+reinforcement learning and projected onto the reachable set. Finally, we
+introduce a trajectory planning method based on a constrained iterative
+quadratic regulator to optimize the initial solution, ensuring that the planned
+trajectory achieves optimal comfort, safety, and efficiency. We conduct
+simulation tests of trajectory planning in high-speed lane-changing scenarios.
+The results indicate that the proposed method can guarantee trajectory comfort
+and driving efficiency, with the generated trajectory situated outside
+high-risk boundaries, thereby ensuring vehicle safety during operation.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.15108v1' target='_blank'>VIPER: Visual Perception and Explainable Reasoning for Sequential
+  Decision-Making</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mohamed Salim Aissi, Clemence Grislain, Mohamed Chetouani, Olivier Sigaud, Laure Soulier, Nicolas Thome</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-19 11:05:42</h6>
+<p class='card-text'>While Large Language Models (LLMs) excel at reasoning on text and
+Vision-Language Models (VLMs) are highly effective for visual perception,
+applying those models for visual instruction-based planning remains a widely
+open problem. In this paper, we introduce VIPER, a novel framework for
+multimodal instruction-based planning that integrates VLM-based perception with
+LLM-based reasoning. Our approach uses a modular pipeline where a frozen VLM
+generates textual descriptions of image observations, which are then processed
+by an LLM policy to predict actions based on the task goal. We fine-tune the
+reasoning module using behavioral cloning and reinforcement learning, improving
+our agent's decision-making capabilities. Experiments on the ALFWorld benchmark
+show that VIPER significantly outperforms state-of-the-art visual
+instruction-based planners while narrowing the gap with purely text-based
+oracles. By leveraging text as an intermediate representation, VIPER also
+enhances explainability, paving the way for a fine-grained analysis of
+perception and reasoning components.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.14809v1' target='_blank'>Learning with Expert Abstractions for Efficient Multi-Task Continuous
+  Control</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jeff Jewett, Sandhya Saisubramanian</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-19 00:44:23</h6>
+<p class='card-text'>Decision-making in complex, continuous multi-task environments is often
+hindered by the difficulty of obtaining accurate models for planning and the
+inefficiency of learning purely from trial and error. While precise environment
+dynamics may be hard to specify, human experts can often provide high-fidelity
+abstractions that capture the essential high-level structure of a task and user
+preferences in the target environment. Existing hierarchical approaches often
+target discrete settings and do not generalize across tasks. We propose a
+hierarchical reinforcement learning approach that addresses these limitations
+by dynamically planning over the expert-specified abstraction to generate
+subgoals to learn a goal-conditioned policy. To overcome the challenges of
+learning under sparse rewards, we shape the reward based on the optimal state
+value in the abstract model. This structured decision-making process enhances
+sample efficiency and facilitates zero-shot generalization. Our empirical
+evaluation on a suite of procedurally generated continuous control environments
+demonstrates that our approach outperforms existing hierarchical reinforcement
+learning methods in terms of sample efficiency, task completion rate,
+scalability to complex tasks, and generalization to novel scenarios.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
