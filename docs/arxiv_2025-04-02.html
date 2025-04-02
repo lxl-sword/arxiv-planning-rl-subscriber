@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-04-02</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-04-02</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.24376v1' target='_blank'>Exploring the Effect of Reinforcement Learning on Video Understanding:
+  Insights from SEED-Bench-R1</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yi Chen, Yuying Ge, Rui Wang, Yixiao Ge, Lu Qiu, Ying Shan, Xihui Liu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-31 17:55:23</h6>
+<p class='card-text'>Recent advancements in Chain of Thought (COT) generation have significantly
+improved the reasoning capabilities of Large Language Models (LLMs), with
+reinforcement learning (RL) emerging as an effective post-training approach.
+Multimodal Large Language Models (MLLMs) inherit this reasoning potential but
+remain underexplored in tasks requiring both perception and logical reasoning.
+To address this, we introduce SEED-Bench-R1, a benchmark designed to
+systematically evaluate post-training methods for MLLMs in video understanding.
+It includes intricate real-world videos and complex everyday planning tasks in
+the format of multiple-choice questions, requiring sophisticated perception and
+reasoning. SEED-Bench-R1 assesses generalization through a three-level
+hierarchy: in-distribution, cross-environment, and cross-environment-task
+scenarios, equipped with a large-scale training dataset with easily verifiable
+ground-truth answers. Using Qwen2-VL-Instruct-7B as a base model, we compare RL
+with supervised fine-tuning (SFT), demonstrating RL's data efficiency and
+superior performance on both in-distribution and out-of-distribution tasks,
+even outperforming SFT on general video understanding benchmarks like
+LongVideoBench. Our detailed analysis reveals that RL enhances visual
+perception but often produces less logically coherent reasoning chains. We
+identify key limitations such as inconsistent reasoning and overlooked visual
+cues, and suggest future improvements in base model reasoning, reward modeling,
+and RL robustness against noisy signals.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.24214v1' target='_blank'>Moving Edge for On-Demand Edge Computing: An Uncertainty-aware Approach</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Fangtong Zhou, Ruozhou Yu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-31 15:32:05</h6>
+<p class='card-text'>We study an edge demand response problem where, based on historical edge
+workload demands, an edge provider needs to dispatch moving computing units,
+e.g. truck-carried modular data centers, in response to emerging hotspots
+within service area. The goal of edge provider is to maximize the expected
+revenue brought by serving congested users with satisfactory performance, while
+minimizing the costs of moving units and the potential service-level agreement
+violation penalty for interrupted services. The challenge is to make robust
+predictions for future demands, as well as optimized moving unit dispatching
+decisions. We propose a learning-based, uncertain-aware moving unit scheduling
+framework, URANUS, to address this problem. Our framework novelly combines
+Bayesian deep learning and distributionally robust approximation to make
+predictions that are robust to data, model and distributional uncertainties in
+deep learning-based prediction models. Based on the robust prediction outputs,
+we further propose an efficient planning algorithm to optimize moving unit
+scheduling in an online manner. Simulation experiments show that URANUS can
+significantly improve robustness in decision making, and achieve superior
+performance compared to state-of-the-art reinforcement learning,
+uncertainty-agnostic learning-based methods, and other baselines.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.23975v1' target='_blank'>A Reactive Framework for Whole-Body Motion Planning of Mobile
+  Manipulators Combining Reinforcement Learning and SDF-Constrained Quadratic
+  Programmi</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Chenyu Zhang, Shiying Sun, Kuan Liu, Chuanbao Zhou, Xiaoguang Zhao, Min Tan, Yanlong Huang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-31 11:37:02</h6>
+<p class='card-text'>As an important branch of embodied artificial intelligence, mobile
+manipulators are increasingly applied in intelligent services, but their
+redundant degrees of freedom also limit efficient motion planning in cluttered
+environments. To address this issue, this paper proposes a hybrid learning and
+optimization framework for reactive whole-body motion planning of mobile
+manipulators. We develop the Bayesian distributional soft actor-critic
+(Bayes-DSAC) algorithm to improve the quality of value estimation and the
+convergence performance of the learning. Additionally, we introduce a quadratic
+programming method constrained by the signed distance field to enhance the
+safety of the obstacle avoidance motion. We conduct experiments and make
+comparison with standard benchmark. The experimental results verify that our
+proposed framework significantly improves the efficiency of reactive whole-body
+motion planning, reduces the planning time, and improves the success rate of
+motion planning. Additionally, the proposed reinforcement learning method
+ensures a rapid learning process in the whole-body planning task. The novel
+framework allows mobile manipulators to adapt to complex environments more
+safely and efficiently.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.23908v1' target='_blank'>MAER-Nav: Bidirectional Motion Learning Through Mirror-Augmented
+  Experience Replay for Robot Navigation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Shanze Wang, Mingao Tan, Zhibo Yang, Biao Huang, Xiaoyu Shen, Hailong Huang, Wei Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-31 09:58:28</h6>
+<p class='card-text'>Deep Reinforcement Learning (DRL) based navigation methods have demonstrated
+promising results for mobile robots, but suffer from limited action flexibility
+in confined spaces. Conventional DRL approaches predominantly learn
+forward-motion policies, causing robots to become trapped in complex
+environments where backward maneuvers are necessary for recovery. This paper
+presents MAER-Nav (Mirror-Augmented Experience Replay for Robot Navigation), a
+novel framework that enables bidirectional motion learning without requiring
+explicit failure-driven hindsight experience replay or reward function
+modifications. Our approach integrates a mirror-augmented experience replay
+mechanism with curriculum learning to generate synthetic backward navigation
+experiences from successful trajectories. Experimental results in both
+simulation and real-world environments demonstrate that MAER-Nav significantly
+outperforms state-of-the-art methods while maintaining strong forward
+navigation capabilities. The framework effectively bridges the gap between the
+comprehensive action space utilization of traditional planning methods and the
+environmental adaptability of learning-based approaches, enabling robust
+navigation in scenarios where conventional DRL methods consistently fail.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.23766v1' target='_blank'>Accelerating High-Efficiency Organic Photovoltaic Discovery via
+  Pretrained Graph Neural Networks and Generative Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jiangjie Qiu, Hou Hei Lam, Xiuyuan Hu, Wentao Li, Siwei Fu, Fankun Zeng, Hao Zhang, Xiaonan Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-31 06:31:15</h6>
+<p class='card-text'>Organic photovoltaic (OPV) materials offer a promising avenue toward
+cost-effective solar energy utilization. However, optimizing donor-acceptor
+(D-A) combinations to achieve high power conversion efficiency (PCE) remains a
+significant challenge. In this work, we propose a framework that integrates
+large-scale pretraining of graph neural networks (GNNs) with a GPT-2
+(Generative Pretrained Transformer 2)-based reinforcement learning (RL)
+strategy to design OPV molecules with potentially high PCE. This approach
+produces candidate molecules with predicted efficiencies approaching 21\%,
+although further experimental validation is required. Moreover, we conducted a
+preliminary fragment-level analysis to identify structural motifs recognized by
+the RL model that may contribute to enhanced PCE, thus providing design
+guidelines for the broader research community. To facilitate continued
+discovery, we are building the largest open-source OPV dataset to date,
+expected to include nearly 3,000 donor-acceptor pairs. Finally, we discuss
+plans to collaborate with experimental teams on synthesizing and characterizing
+AI-designed molecules, which will provide new data to refine and improve our
+predictive and generative models.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.23650v1' target='_blank'>A Survey of Reinforcement Learning-Based Motion Planning for Autonomous
+  Driving: Lessons Learned from a Driving Task Perspective</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zhuoren Li, Guizhe Jin, Ran Yu, Zhiwen Chen, Nan Li, Wei Han, Lu Xiong, Bo Leng, Jia Hu, Ilya Kolmanovsky, Dimitar Filev</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-31 01:31:14</h6>
+<p class='card-text'>Reinforcement learning (RL), with its ability to explore and optimize
+policies in complex, dynamic decision-making tasks, has emerged as a promising
+approach to addressing motion planning (MoP) challenges in autonomous driving
+(AD). Despite rapid advancements in RL and AD, a systematic description and
+interpretation of the RL design process tailored to diverse driving tasks
+remains underdeveloped. This survey provides a comprehensive review of RL-based
+MoP for AD, focusing on lessons from task-specific perspectives. We first
+outline the fundamentals of RL methodologies, and then survey their
+applications in MoP, analyzing scenario-specific features and task requirements
+to shed light on their influence on RL design choices. Building on this
+analysis, we summarize key design experiences, extract insights from various
+driving task applications, and provide guidance for future implementations.
+Additionally, we examine the frontier challenges in RL-based MoP, review recent
+efforts to addresse these challenges, and propose strategies for overcoming
+unresolved issues.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.23486v1' target='_blank'>A Systematic Decade Review of Trip Route Planning with Travel Time
+  Estimation based on User Preferences and Behavior</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Nikil Jayasuriya, Deshan Sumanathilaka</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-30 15:41:44</h6>
+<p class='card-text'>This paper systematically explores the advancements in adaptive trip route
+planning and travel time estimation (TTE) through Artificial Intelligence (AI).
+With the increasing complexity of urban transportation systems, traditional
+navigation methods often struggle to accommodate dynamic user preferences,
+real-time traffic conditions, and scalability requirements. This study explores
+the contributions of established AI techniques, including Machine Learning
+(ML), Reinforcement Learning (RL), and Graph Neural Networks (GNNs), alongside
+emerging methodologies like Meta-Learning, Explainable AI (XAI), Generative AI,
+and Federated Learning. In addition to highlighting these innovations, the
+paper identifies critical challenges such as ethical concerns, computational
+scalability, and effective data integration, which must be addressed to advance
+the field. The paper concludes with recommendations for leveraging AI to build
+efficient, transparent, and sustainable navigation systems.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.22942v1' target='_blank'>Adaptive Interactive Navigation of Quadruped Robots using Large Language
+  Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Kangjie Zhou, Yao Mu, Haoyang Song, Yi Zeng, Pengying Wu, Han Gao, Chang Liu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-29 02:17:52</h6>
+<p class='card-text'>Robotic navigation in complex environments remains a critical research
+challenge. Traditional navigation methods focus on optimal trajectory
+generation within free space, struggling in environments lacking viable paths
+to the goal, such as disaster zones or cluttered warehouses. To address this
+gap, we propose an adaptive interactive navigation approach that proactively
+interacts with environments to create feasible paths to reach originally
+unavailable goals. Specifically, we present a primitive tree for task planning
+with large language models (LLMs), facilitating effective reasoning to
+determine interaction objects and sequences. To ensure robust subtask
+execution, we adopt reinforcement learning to pre-train a comprehensive skill
+library containing versatile locomotion and interaction behaviors for motion
+planning. Furthermore, we introduce an adaptive replanning method featuring two
+LLM-based modules: an advisor serving as a flexible replanning trigger and an
+arborist for autonomous plan adjustment. Integrated with the tree structure,
+the replanning mechanism allows for convenient node addition and pruning,
+enabling rapid plan modification in unknown environments. Comprehensive
+simulations and experiments have demonstrated our method's effectiveness and
+adaptivity in diverse scenarios. The supplementary video is available at page:
+https://youtu.be/W5ttPnSap2g.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.22925v1' target='_blank'>Predictive Traffic Rule Compliance using Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yanliang Huang, Sebastian Mair, Zhuoqi Zeng, Amr Alanwar, Matthias Althoff</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-29 01:04:08</h6>
+<p class='card-text'>Autonomous vehicle path planning has reached a stage where safety and
+regulatory compliance are crucial. This paper presents a new approach that
+integrates a motion planner with a deep reinforcement learning model to predict
+potential traffic rule violations. In this setup, the predictions of the critic
+directly affect the cost function of the motion planner, guiding the choices of
+the trajectory. We incorporate key interstate rules from the German Road
+Traffic Regulation into a rule book and use a graph-based state representation
+to handle complex traffic information. Our main innovation is replacing the
+standard actor network in an actor-critic setup with a motion planning module,
+which ensures both predictable trajectory generation and prevention of
+long-term rule violations. Experiments on an open German highway dataset show
+that the model can predict and prevent traffic rule violations beyond the
+planning horizon, significantly increasing safety in challenging traffic
+conditions.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.22496v1' target='_blank'>Scenario Dreamer: Vectorized Latent Diffusion for Generating Driving
+  Simulation Environments</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Luke Rowe, Roger Girgis, Anthony Gosselin, Liam Paull, Christopher Pal, Felix Heide</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-28 15:03:41</h6>
+<p class='card-text'>We introduce Scenario Dreamer, a fully data-driven generative simulator for
+autonomous vehicle planning that generates both the initial traffic scene -
+comprising a lane graph and agent bounding boxes - and closed-loop agent
+behaviours. Existing methods for generating driving simulation environments
+encode the initial traffic scene as a rasterized image and, as such, require
+parameter-heavy networks that perform unnecessary computation due to many empty
+pixels in the rasterized scene. Moreover, we find that existing methods that
+employ rule-based agent behaviours lack diversity and realism. Scenario Dreamer
+instead employs a novel vectorized latent diffusion model for initial scene
+generation that directly operates on the vectorized scene elements and an
+autoregressive Transformer for data-driven agent behaviour simulation. Scenario
+Dreamer additionally supports scene extrapolation via diffusion inpainting,
+enabling the generation of unbounded simulation environments. Extensive
+experiments show that Scenario Dreamer outperforms existing generative
+simulators in realism and efficiency: the vectorized scene-generation base
+model achieves superior generation quality with around 2x fewer parameters, 6x
+lower generation latency, and 10x fewer GPU training hours compared to the
+strongest baseline. We confirm its practical utility by showing that
+reinforcement learning planning agents are more challenged in Scenario Dreamer
+environments than traditional non-generative simulation environments,
+especially on long and adversarial driving environments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.22162v1' target='_blank'>Cooperative Hybrid Multi-Agent Pathfinding Based on Shared Exploration
+  Maps</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ning Liu, Sen Shen, Xiangrui Kong, Hongtao Zhang, Thomas Bräunl</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-28 05:57:23</h6>
+<p class='card-text'>Multi-Agent Pathfinding is used in areas including multi-robot formations,
+warehouse logistics, and intelligent vehicles. However, many environments are
+incomplete or frequently change, making it difficult for standard centralized
+planning or pure reinforcement learning to maintain both global solution
+quality and local flexibility. This paper introduces a hybrid framework that
+integrates D* Lite global search with multi-agent reinforcement learning, using
+a switching mechanism and a freeze-prevention strategy to handle dynamic
+conditions and crowded settings. We evaluate the framework in the discrete
+POGEMA environment and compare it with baseline methods. Experimental outcomes
+indicate that the proposed framework substantially improves success rate,
+collision rate, and path efficiency. The model is further tested on the EyeSim
+platform, where it maintains feasible Pathfinding under frequent changes and
+large-scale robot deployments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.21989v1' target='_blank'>Bresa: Bio-inspired Reflexive Safe Reinforcement Learning for
+  Contact-Rich Robotic Tasks</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Heng Zhang, Gokhan Solak, Arash Ajoudani</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-27 21:11:32</h6>
+<p class='card-text'>Ensuring safety in reinforcement learning (RL)-based robotic systems is a
+critical challenge, especially in contact-rich tasks within unstructured
+environments. While the state-of-the-art safe RL approaches mitigate risks
+through safe exploration or high-level recovery mechanisms, they often overlook
+low-level execution safety, where reflexive responses to potential hazards are
+crucial. Similarly, variable impedance control (VIC) enhances safety by
+adjusting the robot's mechanical response, yet lacks a systematic way to adapt
+parameters, such as stiffness and damping throughout the task. In this paper,
+we propose Bresa, a Bio-inspired Reflexive Hierarchical Safe RL method inspired
+by biological reflexes. Our method decouples task learning from safety
+learning, incorporating a safety critic network that evaluates action risks and
+operates at a higher frequency than the task solver. Unlike existing
+recovery-based methods, our safety critic functions at a low-level control
+layer, allowing real-time intervention when unsafe conditions arise. The
+task-solving RL policy, running at a lower frequency, focuses on high-level
+planning (decision-making), while the safety critic ensures instantaneous
+safety corrections. We validate Bresa on multiple tasks including a
+contact-rich robotic task, demonstrating its reflexive ability to enhance
+safety, and adaptability in unforeseen dynamic environments. Our results show
+that Bresa outperforms the baseline, providing a robust and reflexive safety
+mechanism that bridges the gap between high-level planning and low-level
+execution. Real-world experiments and supplementary material are available at
+project website https://jack-sherman01.github.io/Bresa.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.21969v1' target='_blank'>Data-Agnostic Robotic Long-Horizon Manipulation with
+  Vision-Language-Guided Closed-Loop Feedback</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yuan Meng, Xiangtong Yao, Haihui Ye, Yirui Zhou, Shengqiang Zhang, Zhenshan Bing, Alois Knoll</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-27 20:32:58</h6>
+<p class='card-text'>Recent advances in language-conditioned robotic manipulation have leveraged
+imitation and reinforcement learning to enable robots to execute tasks from
+human commands. However, these methods often suffer from limited
+generalization, adaptability, and the lack of large-scale specialized datasets,
+unlike data-rich domains such as computer vision, making long-horizon task
+execution challenging. To address these gaps, we introduce DAHLIA, a
+data-agnostic framework for language-conditioned long-horizon robotic
+manipulation, leveraging large language models (LLMs) for real-time task
+planning and execution. DAHLIA employs a dual-tunnel architecture, where an
+LLM-powered planner collaborates with co-planners to decompose tasks and
+generate executable plans, while a reporter LLM provides closed-loop feedback,
+enabling adaptive re-planning and ensuring task recovery from potential
+failures. Moreover, DAHLIA integrates chain-of-thought (CoT) in task reasoning
+and temporal abstraction for efficient action execution, enhancing traceability
+and robustness. Our framework demonstrates state-of-the-art performance across
+diverse long-horizon tasks, achieving strong generalization in both simulated
+and real-world scenarios. Videos and code are available at
+https://ghiara.github.io/DAHLIA/.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.21683v1' target='_blank'>LLM-Gomoku: A Large Language Model-Based System for Strategic Gomoku
+  with Self-Play and Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Hui Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-27 16:52:25</h6>
+<p class='card-text'>In recent years, large language models (LLMs) have shown significant
+advancements in natural language processing (NLP), with strong capa-bilities in
+generation, comprehension, and rea-soning. These models have found applications
+in education, intelligent decision-making, and gaming. However, effectively
+utilizing LLMs for strategic planning and decision-making in the game of Gomoku
+remains a challenge. This study aims to develop a Gomoku AI system based on
+LLMs, simulating the human learning process of playing chess. The system is
+de-signed to understand and apply Gomoku strat-egies and logic to make rational
+decisions. The research methods include enabling the model to "read the board,"
+"understand the rules," "select strategies," and "evaluate positions," while
+en-hancing its abilities through self-play and rein-forcement learning. The
+results demonstrate that this approach significantly improves the se-lection of
+move positions, resolves the issue of generating illegal positions, and reduces
+pro-cess time through parallel position evaluation. After extensive self-play
+training, the model's Gomoku-playing capabilities have been notably enhanced.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.21677v1' target='_blank'>A tale of two goals: leveraging sequentiality in multi-goal scenarios</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Olivier Serris, Stéphane Doncieux, Olivier Sigaud</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-27 16:47:46</h6>
+<p class='card-text'>Several hierarchical reinforcement learning methods leverage planning to
+create a graph or sequences of intermediate goals, guiding a lower-level
+goal-conditioned (GC) policy to reach some final goals. The low-level policy is
+typically conditioned on the current goal, with the aim of reaching it as
+quickly as possible. However, this approach can fail when an intermediate goal
+can be reached in multiple ways, some of which may make it impossible to
+continue toward subsequent goals. To address this issue, we introduce two
+instances of Markov Decision Process (MDP) where the optimization objective
+favors policies that not only reach the current goal but also subsequent ones.
+In the first, the agent is conditioned on both the current and final goals,
+while in the second, it is conditioned on the next two goals in the sequence.
+We conduct a series of experiments on navigation and pole-balancing tasks in
+which sequences of intermediate goals are given. By evaluating policies trained
+with TD3+HER on both the standard GC-MDP and our proposed MDPs, we show that,
+in most cases, conditioning on the next two goals improves stability and sample
+efficiency over other approaches.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20685v2' target='_blank'>Flip Learning: Weakly Supervised Erase to Segment Nodules in Breast
+  Ultrasound</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yuhao Huang, Ao Chang, Haoran Dou, Xing Tao, Xinrui Zhou, Yan Cao, Ruobing Huang, Alejandro F Frangi, Lingyun Bao, Xin Yang, Dong Ni</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 16:20:02</h6>
+<p class='card-text'>Accurate segmentation of nodules in both 2D breast ultrasound (BUS) and 3D
+automated breast ultrasound (ABUS) is crucial for clinical diagnosis and
+treatment planning. Therefore, developing an automated system for nodule
+segmentation can enhance user independence and expedite clinical analysis.
+Unlike fully-supervised learning, weakly-supervised segmentation (WSS) can
+streamline the laborious and intricate annotation process. However, current WSS
+methods face challenges in achieving precise nodule segmentation, as many of
+them depend on inaccurate activation maps or inefficient pseudo-mask generation
+algorithms. In this study, we introduce a novel multi-agent reinforcement
+learning-based WSS framework called Flip Learning, which relies solely on 2D/3D
+boxes for accurate segmentation. Specifically, multiple agents are employed to
+erase the target from the box to facilitate classification tag flipping, with
+the erased region serving as the predicted segmentation mask. The key
+contributions of this research are as follows: (1) Adoption of a
+superpixel/supervoxel-based approach to encode the standardized environment,
+capturing boundary priors and expediting the learning process. (2) Introduction
+of three meticulously designed rewards, comprising a classification score
+reward and two intensity distribution rewards, to steer the agents' erasing
+process precisely, thereby avoiding both under- and over-segmentation. (3)
+Implementation of a progressive curriculum learning strategy to enable agents
+to interact with the environment in a progressively challenging manner, thereby
+enhancing learning efficiency. Extensively validated on the large in-house BUS
+and ABUS datasets, our Flip Learning method outperforms state-of-the-art WSS
+methods and foundation models, and achieves comparable performance as
+fully-supervised learning algorithms.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20507v1' target='_blank'>Harmonia: A Multi-Agent Reinforcement Learning Approach to Data
+  Placement and Migration in Hybrid Storage Systems</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Rakesh Nadig, Vamanan Arulchelvan, Rahul Bera, Taha Shahroodi, Gagandeep Singh, Mohammad Sadrosadati, Jisung Park, Onur Mutlu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 12:47:52</h6>
+<p class='card-text'>Hybrid storage systems (HSS) combine multiple storage devices with diverse
+characteristics to achieve high performance and capacity at low cost. The
+performance of an HSS highly depends on the effectiveness of two key policies:
+(1) the data-placement policy, which determines the best-fit storage device for
+incoming data, and (2) the data-migration policy, which rearranges stored data
+across the devices to sustain high HSS performance. Prior works focus on
+improving only data placement or only data migration in HSS, which leads to
+sub-optimal HSS performance. Unfortunately, no prior work tries to optimize
+both policies together. Our goal is to design a holistic data-management
+technique for HSS that optimizes both data-placement and data-migration
+policies to fully exploit the potential of an HSS. We propose Harmonia, a
+multi-agent reinforcement learning (RL)-based data-management technique that
+employs two light-weight autonomous RL agents, a data-placement agent and a
+data-migration agent, which adapt their policies for the current workload and
+HSS configuration, and coordinate with each other to improve overall HSS
+performance. We evaluate Harmonia on a real HSS with up to four heterogeneous
+storage devices with diverse characteristics. Our evaluation using 17
+data-intensive workloads on performance-optimized (cost-optimized) HSS with two
+storage devices shows that, on average, Harmonia (1) outperforms the
+best-performing prior approach by 49.5% (31.7%), (2) bridges the performance
+gap between the best-performing prior work and Oracle by 64.2% (64.3%). On an
+HSS with three (four) devices, Harmonia outperforms the best-performing prior
+work by 37.0% (42.0%). Harmonia's performance benefits come with low latency
+(240ns for inference) and storage overheads (206 KiB for both RL agents
+together). We plan to open-source Harmonia's implementation to aid future
+research on HSS.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20425v1' target='_blank'>Perspective-Shifted Neuro-Symbolic World Models: A Framework for
+  Socially-Aware Robot Navigation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Kevin Alcedo, Pedro U. Lima, Rachid Alami</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 10:59:08</h6>
+<p class='card-text'>Navigating in environments alongside humans requires agents to reason under
+uncertainty and account for the beliefs and intentions of those around them.
+Under a sequential decision-making framework, egocentric navigation can
+naturally be represented as a Markov Decision Process (MDP). However, social
+navigation additionally requires reasoning about the hidden beliefs of others,
+inherently leading to a Partially Observable Markov Decision Process (POMDP),
+where agents lack direct access to others' mental states. Inspired by Theory of
+Mind and Epistemic Planning, we propose (1) a neuro-symbolic model-based
+reinforcement learning architecture for social navigation, addressing the
+challenge of belief tracking in partially observable environments; and (2) a
+perspective-shift operator for belief estimation, leveraging recent work on
+Influence-based Abstractions (IBA) in structured multi-agent settings.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20139v1' target='_blank'>Look Before Leap: Look-Ahead Planning with Uncertainty in Reinforcement
+  Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yongshuai Liu, Xin Liu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 01:07:35</h6>
+<p class='card-text'>Model-based reinforcement learning (MBRL) has demonstrated superior sample
+efficiency compared to model-free reinforcement learning (MFRL). However, the
+presence of inaccurate models can introduce biases during policy learning,
+resulting in misleading trajectories. The challenge lies in obtaining accurate
+models due to limited diverse training data, particularly in regions with
+limited visits (uncertain regions). Existing approaches passively quantify
+uncertainty after sample generation, failing to actively collect uncertain
+samples that could enhance state coverage and improve model accuracy. Moreover,
+MBRL often faces difficulties in making accurate multi-step predictions,
+thereby impacting overall performance. To address these limitations, we propose
+a novel framework for uncertainty-aware policy optimization with model-based
+exploratory planning. In the model-based planning phase, we introduce an
+uncertainty-aware k-step lookahead planning approach to guide action selection
+at each step. This process involves a trade-off analysis between model
+uncertainty and value function approximation error, effectively enhancing
+policy performance. In the policy optimization phase, we leverage an
+uncertainty-driven exploratory policy to actively collect diverse training
+samples, resulting in improved model accuracy and overall performance of the RL
+agent. Our approach offers flexibility and applicability to tasks with varying
+state/action spaces and reward structures. We validate its effectiveness
+through experiments on challenging robotic manipulation tasks and Atari games,
+surpassing state-of-the-art methods with fewer interactions, thereby leading to
+significant performance improvements.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2503.20124v1' target='_blank'>Synthesizing world models for bilevel planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zergham Ahmed, Joshua B. Tenenbaum, Christopher J. Bates, Samuel J. Gershman</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-03-26 00:10:01</h6>
+<p class='card-text'>Modern reinforcement learning (RL) systems have demonstrated remarkable
+capabilities in complex environments, such as video games. However, they still
+fall short of achieving human-like sample efficiency and adaptability when
+learning new domains. Theory-based reinforcement learning (TBRL) is an
+algorithmic framework specifically designed to address this gap. Modeled on
+cognitive theories, TBRL leverages structured, causal world models - "theories"
+- as forward simulators for use in planning, generalization and exploration.
+Although current TBRL systems provide compelling explanations of how humans
+learn to play video games, they face several technical limitations: their
+theory languages are restrictive, and their planning algorithms are not
+scalable. To address these challenges, we introduce TheoryCoder, an
+instantiation of TBRL that exploits hierarchical representations of theories
+and efficient program synthesis methods for more powerful learning and
+planning. TheoryCoder equips agents with general-purpose abstractions (e.g.,
+"move to"), which are then grounded in a particular environment by learning a
+low-level transition model (a Python program synthesized from observations by a
+large language model). A bilevel planning algorithm can exploit this
+hierarchical structure to solve large domains. We demonstrate that this
+approach can be successfully applied to diverse and challenging grid-world
+games, where approaches based on directly synthesizing a policy perform poorly.
+Ablation studies demonstrate the benefits of using hierarchical abstractions.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
