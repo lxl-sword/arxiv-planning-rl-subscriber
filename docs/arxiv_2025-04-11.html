@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-04-11</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-04-11</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.07896v1' target='_blank'>Fast Adaptation with Behavioral Foundation Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Harshit Sikchi, Andrea Tirinzoni, Ahmed Touati, Yingchen Xu, Anssi Kanervisto, Scott Niekum, Amy Zhang, Alessandro Lazaric, Matteo Pirotta</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-10 16:14:17</h6>
+<p class='card-text'>Unsupervised zero-shot reinforcement learning (RL) has emerged as a powerful
+paradigm for pretraining behavioral foundation models (BFMs), enabling agents
+to solve a wide range of downstream tasks specified via reward functions in a
+zero-shot fashion, i.e., without additional test-time learning or planning.
+This is achieved by learning self-supervised task embeddings alongside
+corresponding near-optimal behaviors and incorporating an inference procedure
+to directly retrieve the latent task embedding and associated policy for any
+given reward function. Despite promising results, zero-shot policies are often
+suboptimal due to errors induced by the unsupervised training process, the
+embedding, and the inference procedure. In this paper, we focus on devising
+fast adaptation strategies to improve the zero-shot performance of BFMs in a
+few steps of online interaction with the environment while avoiding any
+performance drop during the adaptation process. Notably, we demonstrate that
+existing BFMs learn a set of skills containing more performant policies than
+those identified by their inference procedure, making them well-suited for fast
+adaptation. Motivated by this observation, we propose both actor-critic and
+actor-only fast adaptation strategies that search in the low-dimensional
+task-embedding space of the pre-trained BFM to rapidly improve the performance
+of its zero-shot policies on any downstream task. Notably, our approach
+mitigates the initial "unlearning" phase commonly observed when fine-tuning
+pre-trained RL models. We evaluate our fast adaptation strategies on top of
+four state-of-the-art zero-shot RL methods in multiple navigation and
+locomotion domains. Our results show that they achieve 10-40% improvement over
+their zero-shot performance in a few tens of episodes, outperforming existing
+baselines.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.07383v1' target='_blank'>PROPEL: Supervised and Reinforcement Learning for Large-Scale Supply
+  Chain Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Vahid Eghbal Akhlaghi, Reza Zandehshahvar, Pascal Van Hentenryck</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-10 02:04:29</h6>
+<p class='card-text'>This paper considers how to fuse Machine Learning (ML) and optimization to
+solve large-scale Supply Chain Planning (SCP) optimization problems. These
+problems can be formulated as MIP models which feature both integer
+(non-binary) and continuous variables, as well as flow balance and capacity
+constraints. This raises fundamental challenges for existing integrations of ML
+and optimization that have focused on binary MIPs and graph problems. To
+address these, the paper proposes PROPEL, a new framework that combines
+optimization with both supervised and Deep Reinforcement Learning (DRL) to
+reduce the size of search space significantly. PROPEL uses supervised learning,
+not to predict the values of all integer variables, but to identify the
+variables that are fixed to zero in the optimal solution, leveraging the
+structure of SCP applications. PROPEL includes a DRL component that selects
+which fixed-at-zero variables must be relaxed to improve solution quality when
+the supervised learning step does not produce a solution with the desired
+optimality tolerance. PROPEL has been applied to industrial supply chain
+planning optimizations with millions of variables. The computational results
+show dramatic improvements in solution times and quality, including a 60%
+reduction in primal integral and an 88% primal gap reduction, and improvement
+factors of up to 13.57 and 15.92, respectively.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.07283v1' target='_blank'>Bridging Deep Reinforcement Learning and Motion Planning for Model-Free
+  Navigation in Cluttered Environments</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Licheng Luo, Mingyu Cai</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-09 21:19:51</h6>
+<p class='card-text'>Deep Reinforcement Learning (DRL) has emerged as a powerful model-free
+paradigm for learning optimal policies. However, in real-world navigation
+tasks, DRL methods often suffer from insufficient exploration, particularly in
+cluttered environments with sparse rewards or complex dynamics under system
+disturbances. To address this challenge, we bridge general graph-based motion
+planning with DRL, enabling agents to explore cluttered spaces more effectively
+and achieve desired navigation performance. Specifically, we design a dense
+reward function grounded in a graph structure that spans the entire state
+space. This graph provides rich guidance, steering the agent toward optimal
+strategies. We validate our approach in challenging environments, demonstrating
+substantial improvements in exploration efficiency and task success rates. The
+project website is available at:
+https://plen1lune.github.io/overcome_exploration/</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.07257v1' target='_blank'>Better Decisions through the Right Causal World Model</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Elisabeth Dillies, Quentin Delfosse, Jannis Blüml, Raban Emunds, Florian Peter Busch, Kristian Kersting</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-09 20:29:13</h6>
+<p class='card-text'>Reinforcement learning (RL) agents have shown remarkable performances in
+various environments, where they can discover effective policies directly from
+sensory inputs. However, these agents often exploit spurious correlations in
+the training data, resulting in brittle behaviours that fail to generalize to
+new or slightly modified environments. To address this, we introduce the Causal
+Object-centric Model Extraction Tool (COMET), a novel algorithm designed to
+learn the exact interpretable causal world models (CWMs). COMET first extracts
+object-centric state descriptions from observations and identifies the
+environment's internal states related to the depicted objects' properties.
+Using symbolic regression, it models object-centric transitions and derives
+causal relationships governing object dynamics. COMET further incorporates
+large language models (LLMs) for semantic inference, annotating causal
+variables to enhance interpretability.
+  By leveraging these capabilities, COMET constructs CWMs that align with the
+true causal structure of the environment, enabling agents to focus on
+task-relevant features. The extracted CWMs mitigate the danger of shortcuts,
+permitting the development of RL systems capable of better planning and
+decision-making across dynamic scenarios. Our results, validated in Atari
+environments such as Pong and Freeway, demonstrate the accuracy and robustness
+of COMET, highlighting its potential to bridge the gap between object-centric
+reasoning and causal inference in reinforcement learning.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.07095v1' target='_blank'>Neural Motion Simulator: Pushing the Limit of World Models in
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Chenjie Hao, Weyl Lu, Yifan Xu, Yubei Chen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-09 17:59:32</h6>
+<p class='card-text'>An embodied system must not only model the patterns of the external world but
+also understand its own motion dynamics. A motion dynamic model is essential
+for efficient skill acquisition and effective planning. In this work, we
+introduce the neural motion simulator (MoSim), a world model that predicts the
+future physical state of an embodied system based on current observations and
+actions. MoSim achieves state-of-the-art performance in physical state
+prediction and provides competitive performance across a range of downstream
+tasks. This works shows that when a world model is accurate enough and performs
+precise long-horizon predictions, it can facilitate efficient skill acquisition
+in imagined worlds and even enable zero-shot reinforcement learning.
+Furthermore, MoSim can transform any model-free reinforcement learning (RL)
+algorithm into a model-based approach, effectively decoupling physical
+environment modeling from RL algorithm development. This separation allows for
+independent advancements in RL algorithms and world modeling, significantly
+improving sample efficiency and enhancing generalization capabilities. Our
+findings highlight that world models for motion dynamics is a promising
+direction for developing more versatile and capable embodied systems.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.07091v1' target='_blank'>AssistanceZero: Scalably Solving Assistance Games</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Cassidy Laidlaw, Eli Bronstein, Timothy Guo, Dylan Feng, Lukas Berglund, Justin Svegliato, Stuart Russell, Anca Dragan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-09 17:59:03</h6>
+<p class='card-text'>Assistance games are a promising alternative to reinforcement learning from
+human feedback (RLHF) for training AI assistants. Assistance games resolve key
+drawbacks of RLHF, such as incentives for deceptive behavior, by explicitly
+modeling the interaction between assistant and user as a two-player game where
+the assistant cannot observe their shared goal. Despite their potential,
+assistance games have only been explored in simple settings. Scaling them to
+more complex environments is difficult because it requires both solving
+intractable decision-making problems under uncertainty and accurately modeling
+human users' behavior. We present the first scalable approach to solving
+assistance games and apply it to a new, challenging Minecraft-based assistance
+game with over $10^{400}$ possible goals. Our approach, AssistanceZero, extends
+AlphaZero with a neural network that predicts human actions and rewards,
+enabling it to plan under uncertainty. We show that AssistanceZero outperforms
+model-free RL algorithms and imitation learning in the Minecraft-based
+assistance game. In a human study, our AssistanceZero-trained assistant
+significantly reduces the number of actions participants take to complete
+building tasks in Minecraft. Our results suggest that assistance games are a
+tractable framework for training effective AI assistants in complex
+environments. Our code and models are available at
+https://github.com/cassidylaidlaw/minecraft-building-assistance-game.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.06662v1' target='_blank'>RAMBO: RL-augmented Model-based Optimal Control for Whole-body
+  Loco-manipulation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jin Cheng, Dongho Kang, Gabriele Fadini, Guanya Shi, Stelian Coros</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-09 07:53:09</h6>
+<p class='card-text'>Loco-manipulation -- coordinated locomotion and physical interaction with
+objects -- remains a major challenge for legged robots due to the need for both
+accurate force interaction and robustness to unmodeled dynamics. While
+model-based controllers provide interpretable dynamics-level planning and
+optimization, they are limited by model inaccuracies and computational cost. In
+contrast, learning-based methods offer robustness while struggling with precise
+modulation of interaction forces. We introduce RAMBO -- RL-Augmented
+Model-Based Optimal Control -- a hybrid framework that integrates model-based
+reaction force optimization using a simplified dynamics model and a feedback
+policy trained with reinforcement learning. The model-based module generates
+feedforward torques by solving a quadratic program, while the policy provides
+feedback residuals to enhance robustness in control execution. We validate our
+framework on a quadruped robot across a diverse set of real-world
+loco-manipulation tasks -- such as pushing a shopping cart, balancing a plate,
+and holding soft objects -- in both quadrupedal and bipedal walking. Our
+experiments demonstrate that RAMBO enables precise manipulation while achieving
+robust and dynamic locomotion, surpassing the performance of policies trained
+with end-to-end scheme. In addition, our method enables flexible trade-off
+between end-effector tracking accuracy with compliance.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.06126v1' target='_blank'>Accelerating Vehicle Routing via AI-Initialized Genetic Algorithms</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ido Greenberg, Piotr Sielski, Hugo Linsenmaier, Rajesh Gandham, Shie Mannor, Alex Fender, Gal Chechik, Eli Meirom</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-08 15:21:01</h6>
+<p class='card-text'>Vehicle Routing Problems (VRP) are an extension of the Traveling Salesperson
+Problem and are a fundamental NP-hard challenge in combinatorial optimization.
+Solving VRP in real-time at large scale has become critical in numerous
+applications, from growing markets like last-mile delivery to emerging
+use-cases like interactive logistics planning. Such applications involve
+solving similar problem instances repeatedly, yet current state-of-the-art
+solvers treat each instance on its own without leveraging previous examples. We
+introduce a novel optimization framework that uses a reinforcement learning
+agent - trained on prior instances - to quickly generate initial solutions,
+which are then further optimized by genetic algorithms. Our framework,
+Evolutionary Algorithm with Reinforcement Learning Initialization (EARLI),
+consistently outperforms current state-of-the-art solvers across various time
+scales. For example, EARLI handles vehicle routing with 500 locations within
+1s, 10x faster than current solvers for the same solution quality, enabling
+applications like real-time and interactive routing. EARLI can generalize to
+new data, as demonstrated on real e-commerce delivery data of a previously
+unseen city. Our hybrid framework presents a new way to combine reinforcement
+learning and genetic algorithms, paving the road for closer interdisciplinary
+collaboration between AI and optimization communities towards real-time
+optimization in diverse domains.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.06048v1' target='_blank'>Trust-Region Twisted Policy Improvement</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Joery A. de Vries, Jinke He, Yaniv Oren, Matthijs T. J. Spaan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-08 13:47:07</h6>
+<p class='card-text'>Monte-Carlo tree search (MCTS) has driven many recent breakthroughs in deep
+reinforcement learning (RL). However, scaling MCTS to parallel compute has
+proven challenging in practice which has motivated alternative planners like
+sequential Monte-Carlo (SMC). Many of these SMC methods adopt particle filters
+for smoothing through a reformulation of RL as a policy inference problem. Yet,
+persisting design choices of these particle filters often conflict with the aim
+of online planning in RL, which is to obtain a policy improvement at the start
+of planning. Drawing inspiration from MCTS, we tailor SMC planners specifically
+for RL by improving data generation within the planner through constrained
+action sampling and explicit terminal state handling, as well as improving
+policy and value target estimation. This leads to our Trust-Region Twisted SMC
+(TRT-SMC), which shows improved runtime and sample-efficiency over baseline
+MCTS and SMC methods in both discrete and continuous domains.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.05633v1' target='_blank'>To Start Up a Start-Up$-$Embedding Strategic Demand Development in
+  Operational On-Demand Fulfillment via Reinforcement Learning with Information
+  Shaping</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Xinwei Chen, Marlin W. Ulmer, Barrett W. Thomas</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-08 03:25:37</h6>
+<p class='card-text'>The last few years have witnessed rapid growth in the on-demand delivery
+market, with many start-ups entering the field. However, not all of these
+start-ups have succeeded due to various reasons, among others, not being able
+to establish a large enough customer base. In this paper, we address this
+problem that many on-demand transportation start-ups face: how to establish
+themselves in a new market. When starting, such companies often have limited
+fleet resources to serve demand across a city. Depending on the use of the
+fleet, varying service quality is observed in different areas of the city, and
+in turn, the service quality impacts the respective growth of demand in each
+area. Thus, operational fulfillment decisions drive the longer-term demand
+development. To integrate strategic demand development into real-time
+fulfillment operations, we propose a two-step approach. First, we derive
+analytical insights into optimal allocation decisions for a stylized problem.
+Second, we use these insights to shape the training data of a reinforcement
+learning strategy for operational real-time fulfillment. Our experiments
+demonstrate that combining operational efficiency with long-term strategic
+planning is highly advantageous. Further, we show that the careful shaping of
+training data is essential for the successful development of demand.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.04691v1' target='_blank'>Large-Scale Mixed-Traffic and Intersection Control using Multi-agent
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Songyang Liu, Muyang Fan, Weizi Li, Jing Du, Shuai Li</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-07 02:52:39</h6>
+<p class='card-text'>Traffic congestion remains a significant challenge in modern urban networks.
+Autonomous driving technologies have emerged as a potential solution. Among
+traffic control methods, reinforcement learning has shown superior performance
+over traffic signals in various scenarios. However, prior research has largely
+focused on small-scale networks or isolated intersections, leaving large-scale
+mixed traffic control largely unexplored. This study presents the first attempt
+to use decentralized multi-agent reinforcement learning for large-scale mixed
+traffic control in which some intersections are managed by traffic signals and
+others by robot vehicles. Evaluating a real-world network in Colorado Springs,
+CO, USA with 14 intersections, we measure traffic efficiency via average
+waiting time of vehicles at intersections and the number of vehicles reaching
+their destinations within a time window (i.e., throughput). At 80% RV
+penetration rate, our method reduces waiting time from 6.17 s to 5.09 s and
+increases throughput from 454 vehicles per 500 seconds to 493 vehicles per 500
+seconds, outperforming the baseline of fully signalized intersections. These
+findings suggest that integrating reinforcement learning-based control
+large-scale traffic can improve overall efficiency and may inform future urban
+planning strategies.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.04675v2' target='_blank'>HypRL: Reinforcement Learning of Control Policies for Hyperproperties</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Tzu-Han Hsu, Arshia Rafieioskouei, Borzoo Bonakdarpour</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-07 01:58:36</h6>
+<p class='card-text'>We study the problem of learning control policies for complex tasks whose
+requirements are given by a hyperproperty. The use of hyperproperties is
+motivated by their significant power to formally specify requirements of
+multi-agent systems as well as those that need expressiveness in terms of
+multiple execution traces (e.g., privacy and fairness). Given a Markov decision
+process M with unknown transitions (representing the environment) and a
+HyperLTL formula $\varphi$, our approach first employs Skolemization to handle
+quantifier alternations in $\varphi$. We introduce quantitative robustness
+functions for HyperLTL to define rewards of finite traces of M with respect to
+$\varphi$. Finally, we utilize a suitable reinforcement learning algorithm to
+learn (1) a policy per trace quantifier in $\varphi$, and (2) the probability
+distribution of transitions of M that together maximize the expected reward
+and, hence, probability of satisfaction of $\varphi$ in M. We present a set of
+case studies on (1) safety-preserving multi-agent path planning, (2) fairness
+in resource allocation, and (3) the post-correspondence problem (PCP).</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.04469v1' target='_blank'>AI2STOW: End-to-End Deep Reinforcement Learning to Construct Master
+  Stowage Plans under Demand Uncertainty</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jaike Van Twiller, Djordje Grbic, Rune Møller Jensen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-06 12:45:25</h6>
+<p class='card-text'>The worldwide economy and environmental sustainability depend on eff icient
+and reliable supply chains, in which container shipping plays a crucial role as
+an environmentally friendly mode of transport. Liner shipping companies seek to
+improve operational efficiency by solving the stowage planning problem. Due to
+many complex combinatorial aspects, stowage planning is challenging and often
+decomposed into two NP-hard subproblems: master and slot planning. This article
+proposes AI2STOW, an end-to-end deep reinforcement learning model with
+feasibility projection and an action mask to create master plans under demand
+uncertainty with global objectives and constraints, including paired block
+stowage patterms. Our experimental results demonstrate that AI2STOW outperforms
+baseline methods from reinforcement learning and stochastic programming in
+objective performance and computational efficiency, based on simulated
+instances reflecting the scale of realistic vessels and operational planning
+horizons.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.04421v1' target='_blank'>Deliberate Planning of 3D Bin Packing on Packing Configuration Trees</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Hang Zhao, Juzhan Xu, Kexiong Yu, Ruizhen Hu, Chenyang Zhu, Kai Xu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-06 09:07:10</h6>
+<p class='card-text'>Online 3D Bin Packing Problem (3D-BPP) has widespread applications in
+industrial automation. Existing methods usually solve the problem with limited
+resolution of spatial discretization, and/or cannot deal with complex practical
+constraints well. We propose to enhance the practical applicability of online
+3D-BPP via learning on a novel hierarchical representation, packing
+configuration tree (PCT). PCT is a full-fledged description of the state and
+action space of bin packing which can support packing policy learning based on
+deep reinforcement learning (DRL). The size of the packing action space is
+proportional to the number of leaf nodes, making the DRL model easy to train
+and well-performing even with continuous solution space. We further discover
+the potential of PCT as tree-based planners in deliberately solving packing
+problems of industrial significance, including large-scale packing and
+different variations of BPP setting. A recursive packing method is proposed to
+decompose large-scale packing into smaller sub-trees while a spatial ensemble
+mechanism integrates local solutions into global. For different BPP variations
+with additional decision variables, such as lookahead, buffering, and offline
+packing, we propose a unified planning framework enabling out-of-the-box
+problem solving. Extensive evaluations demonstrate that our method outperforms
+existing online BPP baselines and is versatile in incorporating various
+practical constraints. The planning process excels across large-scale problems
+and diverse problem variations. We develop a real-world packing robot for
+industrial warehousing, with careful designs accounting for constrained
+placement and transportation stability. Our packing robot operates reliably and
+efficiently on unprotected pallets at 10 seconds per box. It achieves averagely
+19 boxes per pallet with 57.4% space utilization for relatively large-size
+boxes.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.04366v1' target='_blank'>Solving Sokoban using Hierarchical Reinforcement Learning with Landmarks</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Sergey Pastukhov</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-06 05:30:21</h6>
+<p class='card-text'>We introduce a novel hierarchical reinforcement learning (HRL) framework that
+performs top-down recursive planning via learned subgoals, successfully applied
+to the complex combinatorial puzzle game Sokoban. Our approach constructs a
+six-level policy hierarchy, where each higher-level policy generates subgoals
+for the level below. All subgoals and policies are learned end-to-end from
+scratch, without any domain knowledge. Our results show that the agent can
+generate long action sequences from a single high-level call. While prior work
+has explored 2-3 level hierarchies and subgoal-based planning heuristics, we
+demonstrate that deep recursive goal decomposition can emerge purely from
+learning, and that such hierarchies can scale effectively to hard puzzle
+domains.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.03622v1' target='_blank'>Align to Structure: Aligning Large Language Models with Structural
+  Information</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zae Myung Kim, Anand Ramachandran, Farideh Tavazoee, Joo-Kyung Kim, Oleg Rokhlenko, Dongyeop Kang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-04 17:40:04</h6>
+<p class='card-text'>Generating long, coherent text remains a challenge for large language models
+(LLMs), as they lack hierarchical planning and structured organization in
+discourse generation. We introduce Structural Alignment, a novel method that
+aligns LLMs with human-like discourse structures to enhance long-form text
+generation. By integrating linguistically grounded discourse frameworks into
+reinforcement learning, our approach guides models to produce coherent and
+well-organized outputs. We employ a dense reward scheme within a Proximal
+Policy Optimization framework, assigning fine-grained, token-level rewards
+based on the discourse distinctiveness relative to human writing. Two
+complementary reward models are evaluated: the first improves readability by
+scoring surface-level textual features to provide explicit structuring, while
+the second reinforces deeper coherence and rhetorical sophistication by
+analyzing global discourse patterns through hierarchical discourse motifs,
+outperforming both standard and RLHF-enhanced models in tasks such as essay
+generation and long-document summarization. All training data and code will be
+publicly shared at https://github.com/minnesotanlp/struct_align.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.03160v2' target='_blank'>DeepResearcher: Scaling Deep Research via Reinforcement Learning in
+  Real-world Environments</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yuxiang Zheng, Dayuan Fu, Xiangkun Hu, Xiaojie Cai, Lyumanshan Ye, Pengrui Lu, Pengfei Liu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-04 04:41:28</h6>
+<p class='card-text'>Large Language Models (LLMs) equipped with web search capabilities have
+demonstrated impressive potential for deep research tasks. However, current
+approaches predominantly rely on either manually engineered prompts (prompt
+engineering-based) with brittle performance or reinforcement learning within
+controlled Retrieval-Augmented Generation (RAG) environments (RAG-based) that
+fail to capture the complexities of real-world interaction. In this paper, we
+introduce DeepResearcher, the first comprehensive framework for end-to-end
+training of LLM-based deep research agents through scaling reinforcement
+learning (RL) in real-world environments with authentic web search
+interactions. Unlike RAG-based approaches that assume all necessary information
+exists within a fixed corpus, our method trains agents to navigate the noisy,
+unstructured, and dynamic nature of the open web. We implement a specialized
+multi-agent architecture where browsing agents extract relevant information
+from various webpage structures and overcoming significant technical
+challenges. Extensive experiments on open-domain research tasks demonstrate
+that DeepResearcher achieves substantial improvements of up to 28.9 points over
+prompt engineering-based baselines and up to 7.2 points over RAG-based RL
+agents. Our qualitative analysis reveals emergent cognitive behaviors from
+end-to-end RL training, including the ability to formulate plans,
+cross-validate information from multiple sources, engage in self-reflection to
+redirect research, and maintain honesty when unable to find definitive answers.
+Our results highlight that end-to-end training in real-world web environments
+is not merely an implementation detail but a fundamental requirement for
+developing robust research capabilities aligned with real-world applications.
+We release DeepResearcher at https://github.com/GAIR-NLP/DeepResearcher.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.02688v1' target='_blank'>Handover and SINR-Aware Path Optimization in 5G-UAV mmWave Communication
+  using DRL</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Achilles Kiwanuka Machumilane, Alberto Gotta, Pietro Cassarà</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-03 15:28:04</h6>
+<p class='card-text'>Path planning and optimization for unmanned aerial vehicles (UAVs)-assisted
+next-generation wireless networks is critical for mobility management and
+ensuring UAV safety and ubiquitous connectivity, especially in dense urban
+environments with street canyons and tall buildings. Traditional statistical
+and model-based techniques have been successfully used for path optimization in
+communication networks. However, when dynamic channel propagation
+characteristics such as line-of-sight (LOS), interference, handover, and
+signal-to-interference and noise ratio (SINR) are included in path
+optimization, statistical and model-based path planning solutions become
+obsolete since they cannot adapt to the dynamic and time-varying wireless
+channels, especially in the mmWave bands. In this paper, we propose a novel
+model-free actor-critic deep reinforcement learning (AC-DRL) framework for path
+optimization in UAV-assisted 5G mmWave wireless networks, which combines four
+important aspects of UAV communication: \textit{flight time, handover,
+connectivity and SINR}. We train an AC-RL agent that enables a UAV connected to
+a gNB to determine the optimal path to a desired destination in the shortest
+possible time with minimal gNB handover, while maintaining connectivity and the
+highest possible SINR. We train our model with data from a powerful ray tracing
+tool called Wireless InSite, which uses 3D images of the propagation
+environment and provides data that closely resembles the real propagation
+environment. The simulation results show that our system has superior
+performance in tracking high SINR compared to other selected RL algorithms.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.02161v1' target='_blank'>Preference-Driven Active 3D Scene Representation for Robotic Inspection
+  in Nuclear Decommissioning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zhen Meng, Kan Chen, Xiangmin Xu, Erwin Jose Lopez Pulgarin, Emma Li, Philip G. Zhao, David Flynn</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-02 22:20:48</h6>
+<p class='card-text'>Active 3D scene representation is pivotal in modern robotics applications,
+including remote inspection, manipulation, and telepresence. Traditional
+methods primarily optimize geometric fidelity or rendering accuracy, but often
+overlook operator-specific objectives, such as safety-critical coverage or
+task-driven viewpoints. This limitation leads to suboptimal viewpoint
+selection, particularly in constrained environments such as nuclear
+decommissioning. To bridge this gap, we introduce a novel framework that
+integrates expert operator preferences into the active 3D scene representation
+pipeline. Specifically, we employ Reinforcement Learning from Human Feedback
+(RLHF) to guide robotic path planning, reshaping the reward function based on
+expert input. To capture operator-specific priorities, we conduct interactive
+choice experiments that evaluate user preferences in 3D scene representation.
+We validate our framework using a UR3e robotic arm for reactor tile inspection
+in a nuclear decommissioning scenario. Compared to baseline methods, our
+approach enhances scene representation while optimizing trajectory efficiency.
+The RLHF-based policy consistently outperforms random selection, prioritizing
+task-critical details. By unifying explicit 3D geometric modeling with implicit
+human-in-the-loop optimization, this work establishes a foundation for
+adaptive, safety-critical robotic perception systems, paving the way for
+enhanced automation in nuclear decommissioning, remote maintenance, and other
+high-risk environments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.01871v1' target='_blank'>Interpreting Emergent Planning in Model-Free Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Thomas Bush, Stephen Chung, Usman Anwar, Adrià Garriga-Alonso, David Krueger</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-02 16:24:23</h6>
+<p class='card-text'>We present the first mechanistic evidence that model-free reinforcement
+learning agents can learn to plan. This is achieved by applying a methodology
+based on concept-based interpretability to a model-free agent in Sokoban -- a
+commonly used benchmark for studying planning. Specifically, we demonstrate
+that DRC, a generic model-free agent introduced by Guez et al. (2019), uses
+learned concept representations to internally formulate plans that both predict
+the long-term effects of actions on the environment and influence action
+selection. Our methodology involves: (1) probing for planning-relevant
+concepts, (2) investigating plan formation within the agent's representations,
+and (3) verifying that discovered plans (in the agent's representations) have a
+causal effect on the agent's behavior through interventions. We also show that
+the emergence of these plans coincides with the emergence of a planning-like
+property: the ability to benefit from additional test-time compute. Finally, we
+perform a qualitative analysis of the planning algorithm learned by the agent
+and discover a strong resemblance to parallelized bidirectional search. Our
+findings advance understanding of the internal mechanisms underlying planning
+behavior in agents, which is important given the recent trend of emergent
+planning and reasoning capabilities in LLMs through RL</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
