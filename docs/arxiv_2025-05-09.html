@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-05-09</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-05-09</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.04989v1' target='_blank'>CPP-DIP: Multi-objective Coverage Path Planning for MAVs in Dispersed
+  and Irregular Plantations</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Weijie Kuang, Hann Woei Ho, Ye Zhou</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-08 06:52:22</h6>
+<p class='card-text'>Coverage Path Planning (CPP) is vital in precision agriculture to improve
+efficiency and resource utilization. In irregular and dispersed plantations,
+traditional grid-based CPP often causes redundant coverage over non-vegetated
+areas, leading to waste and pollution. To overcome these limitations, we
+propose CPP-DIP, a multi-objective CPP framework designed for Micro Air
+Vehicles (MAVs). The framework transforms the CPP task into a Traveling
+Salesman Problem (TSP) and optimizes flight paths by minimizing travel
+distance, turning angles, and intersection counts. Unlike conventional
+approaches, our method does not rely on GPS-based environmental modeling.
+Instead, it uses aerial imagery and a Histogram of Oriented Gradients
+(HOG)-based approach to detect trees and extract image coordinates. A
+density-aware waypoint strategy is applied: Kernel Density Estimation (KDE) is
+used to reduce redundant waypoints in dense regions, while a greedy algorithm
+ensures complete coverage in sparse areas. To verify the generality of the
+framework, we solve the resulting TSP using three different methods: Greedy
+Heuristic Insertion (GHI), Ant Colony Optimization (ACO), and Monte Carlo
+Reinforcement Learning (MCRL). Then an object-based optimization is applied to
+further refine the resulting path. Additionally, CPP-DIP integrates ForaNav,
+our insect-inspired navigation method, for accurate tree localization and
+tracking. The experimental results show that MCRL offers a balanced solution,
+reducing the travel distance by 16.9 % compared to ACO while maintaining a
+similar performance to GHI. It also improves path smoothness by reducing
+turning angles by 28.3 % and 59.9 % relative to ACO and GHI, respectively, and
+effectively eliminates intersections. These results confirm the robustness and
+effectiveness of CPP-DIP in different TSP solvers.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.04921v1' target='_blank'>Perception, Reason, Think, and Plan: A Survey on Large Multimodal
+  Reasoning Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yunxin Li, Zhenyu Liu, Zitao Li, Xuanyu Zhang, Zhenran Xu, Xinyu Chen, Haoyuan Shi, Shenyuan Jiang, Xintong Wang, Jifang Wang, Shouzheng Huang, Xinping Zhao, Borui Jiang, Lanqing Hong, Longyue Wang, Zhuotao Tian, Baoxing Huai, Wenhan Luo, Weihua Luo, Zheng Zhang, Baotian Hu, Min Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-08 03:35:23</h6>
+<p class='card-text'>Reasoning lies at the heart of intelligence, shaping the ability to make
+decisions, draw conclusions, and generalize across domains. In artificial
+intelligence, as systems increasingly operate in open, uncertain, and
+multimodal environments, reasoning becomes essential for enabling robust and
+adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a
+promising paradigm, integrating modalities such as text, images, audio, and
+video to support complex reasoning capabilities and aiming to achieve
+comprehensive perception, precise understanding, and deep reasoning. As
+research advances, multimodal reasoning has rapidly evolved from modular,
+perception-driven pipelines to unified, language-centric frameworks that offer
+more coherent cross-modal understanding. While instruction tuning and
+reinforcement learning have improved model reasoning, significant challenges
+remain in omni-modal generalization, reasoning depth, and agentic behavior. To
+address these issues, we present a comprehensive and structured survey of
+multimodal reasoning research, organized around a four-stage developmental
+roadmap that reflects the field's shifting design philosophies and emerging
+capabilities. First, we review early efforts based on task-specific modules,
+where reasoning was implicitly embedded across stages of representation,
+alignment, and fusion. Next, we examine recent approaches that unify reasoning
+into multimodal LLMs, with advances such as Multimodal Chain-of-Thought (MCoT)
+and multimodal reinforcement learning enabling richer and more structured
+reasoning chains. Finally, drawing on empirical insights from challenging
+benchmarks and experimental cases of OpenAI O3 and O4-mini, we discuss the
+conceptual direction of native large multimodal reasoning models (N-LMRMs),
+which aim to support scalable, agentic, and adaptive reasoning and planning in
+complex, real-world environments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.04843v1' target='_blank'>Large Language Models are Autonomous Cyber Defenders</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Sebastián R. Castro, Roberto Campbell, Nancy Lau, Octavio Villalobos, Jiaqi Duan, Alvaro A. Cardenas</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-07 22:42:37</h6>
+<p class='card-text'>Fast and effective incident response is essential to prevent adversarial
+cyberattacks. Autonomous Cyber Defense (ACD) aims to automate incident response
+through Artificial Intelligence (AI) agents that plan and execute actions. Most
+ACD approaches focus on single-agent scenarios and leverage Reinforcement
+Learning (RL). However, ACD RL-trained agents depend on costly training, and
+their reasoning is not always explainable or transferable. Large Language
+Models (LLMs) can address these concerns by providing explainable actions in
+general security contexts. Researchers have explored LLM agents for ACD but
+have not evaluated them on multi-agent scenarios or interacting with other ACD
+agents. In this paper, we show the first study on how LLMs perform in
+multi-agent ACD environments by proposing a new integration to the CybORG CAGE
+4 environment. We examine how ACD teams of LLM and RL agents can interact by
+proposing a novel communication protocol. Our results highlight the strengths
+and weaknesses of LLMs and RL and help us identify promising research
+directions to create, train, and deploy future teams of ACD agents.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.01966v1' target='_blank'>A Goal-Oriented Reinforcement Learning-Based Path Planning Algorithm for
+  Modular Self-Reconfigurable Satellites</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Bofei Liu, Dong Ye, Zunhao Yao, Zhaowei Sun</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-04 02:35:18</h6>
+<p class='card-text'>Modular self-reconfigurable satellites refer to satellite clusters composed
+of individual modular units capable of altering their configurations. The
+configuration changes enable the execution of diverse tasks and mission
+objectives. Existing path planning algorithms for reconfiguration often suffer
+from high computational complexity, poor generalization capability, and limited
+support for diverse target configurations. To address these challenges, this
+paper proposes a goal-oriented reinforcement learning-based path planning
+algorithm. This algorithm is the first to address the challenge that previous
+reinforcement learning methods failed to overcome, namely handling multiple
+target configurations. Moreover, techniques such as Hindsight Experience Replay
+and Invalid Action Masking are incorporated to overcome the significant
+obstacles posed by sparse rewards and invalid actions. Based on these designs,
+our model achieves a 95% and 73% success rate in reaching arbitrary target
+configurations in a modular satellite cluster composed of four and six units,
+respectively.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.01712v1' target='_blank'>World Model-Based Learning for Long-Term Age of Information Minimization
+  in Vehicular Networks</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Lingyi Wang, Rashed Shelim, Walid Saad, Naren Ramakrishnan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-03 06:23:18</h6>
+<p class='card-text'>Traditional reinforcement learning (RL)-based learning approaches for
+wireless networks rely on expensive trial-and-error mechanisms and real-time
+feedback based on extensive environment interactions, which leads to low data
+efficiency and short-sighted policies. These limitations become particularly
+problematic in complex, dynamic networks with high uncertainty and long-term
+planning requirements. To address these limitations, in this paper, a novel
+world model-based learning framework is proposed to minimize
+packet-completeness-aware age of information (CAoI) in a vehicular network.
+Particularly, a challenging representative scenario is considered pertaining to
+a millimeter-wave (mmWave) vehicle-to-everything (V2X) communication network,
+which is characterized by high mobility, frequent signal blockages, and
+extremely short coherence time. Then, a world model framework is proposed to
+jointly learn a dynamic model of the mmWave V2X environment and use it to
+imagine trajectories for learning how to perform link scheduling. In
+particular, the long-term policy is learned in differentiable imagined
+trajectories instead of environment interactions. Moreover, owing to its
+imagination abilities, the world model can jointly predict time-varying
+wireless data and optimize link scheduling in real-world wireless and V2X
+networks. Thus, during intervals without actual observations, the world model
+remains capable of making efficient decisions. Extensive experiments are
+performed on a realistic simulator based on Sionna that integrates
+physics-based end-to-end channel modeling, ray-tracing, and scene geometries
+with material properties. Simulation results show that the proposed world model
+achieves a significant improvement in data efficiency, and achieves 26%
+improvement and 16% improvement in CAoI, respectively, compared to the
+model-based RL (MBRL) method and the model-free RL (MFRL) method.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.01619v1' target='_blank'>Skill-based Safe Reinforcement Learning with Risk Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Hanping Zhang, Yuhong Guo</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-02 22:48:27</h6>
+<p class='card-text'>Safe Reinforcement Learning (Safe RL) aims to ensure safety when an RL agent
+conducts learning by interacting with real-world environments where improper
+actions can induce high costs or lead to severe consequences. In this paper, we
+propose a novel Safe Skill Planning (SSkP) approach to enhance effective safe
+RL by exploiting auxiliary offline demonstration data. SSkP involves a
+two-stage process. First, we employ PU learning to learn a skill risk predictor
+from the offline demonstration data. Then, based on the learned skill risk
+predictor, we develop a novel risk planning process to enhance online safe RL
+and learn a risk-averse safe policy efficiently through interactions with the
+online RL environment, while simultaneously adapting the skill risk predictor
+to the environment. We conduct experiments in several benchmark robotic
+simulation environments. The experimental results demonstrate that the proposed
+approach consistently outperforms previous state-of-the-art safe RL methods.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.03815v1' target='_blank'>Towards Cognitive Collaborative Robots: Semantic-Level Integration and
+  Explainable Control for Human-Centric Cooperation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jaehong Oh</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-02 17:08:23</h6>
+<p class='card-text'>This is a preprint of a review article that has not yet undergone peer
+review. The content is intended for early dissemination and academic
+discussion. The final version may differ upon formal publication. As the Fourth
+Industrial Revolution reshapes industrial paradigms, human-robot collaboration
+(HRC) has transitioned from a desirable capability to an operational necessity.
+In response, collaborative robots (Cobots) are evolving beyond repetitive tasks
+toward adaptive, semantically informed interaction with humans and
+environments. This paper surveys five foundational pillars enabling this
+transformation: semantic-level perception, cognitive action planning,
+explainable learning and control, safety-aware motion design, and multimodal
+human intention recognition. We examine the role of semantic mapping in
+transforming spatial data into meaningful context, and explore cognitive
+planning frameworks that leverage this context for goal-driven decision-making.
+Additionally, we analyze explainable reinforcement learning methods, including
+policy distillation and attention mechanisms, which enhance interpretability
+and trust. Safety is addressed through force-adaptive control and risk-aware
+trajectory planning, while seamless human interaction is supported via gaze and
+gesture-based intent recognition. Despite these advancements, challenges such
+as perception-action disjunction, real-time explainability limitations, and
+incomplete human trust persist. To address these, we propose a unified
+Cognitive Synergy Architecture, integrating all modules into a cohesive
+framework for truly human-centric cobot collaboration.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.00831v3' target='_blank'>SmallPlan: Leverage Small Language Models for Sequential Path Planning
+  with Simulation-Powered, LLM-Guided Distillation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Quang P. M. Pham, Khoi T. N. Nguyen, Nhi H. Doan, Cuong A. Pham, Kentaro Inui, Dezhen Song</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-01 19:44:36</h6>
+<p class='card-text'>Efficient path planning in robotics, particularly within large-scale, dynamic
+environments, remains a significant hurdle. While Large Language Models (LLMs)
+offer strong reasoning capabilities, their high computational cost and limited
+adaptability in dynamic scenarios hinder real-time deployment on edge devices.
+We present SmallPlan -- a novel framework leveraging LLMs as teacher models to
+train lightweight Small Language Models (SLMs) for high-level path planning
+tasks. In SmallPlan, the SLMs provide optimal action sequences to navigate
+across scene graphs that compactly represent full-scaled 3D scenes. The SLMs
+are trained in a simulation-powered, interleaved manner with LLM-guided
+supervised fine-tuning (SFT) and reinforcement learning (RL). This strategy not
+only enables SLMs to successfully complete navigation tasks but also makes them
+aware of important factors like travel distance and number of trials. Through
+experiments, we demonstrate that the fine-tuned SLMs perform competitively with
+larger models like GPT-4o on sequential path planning, without suffering from
+hallucination and overfitting. SmallPlan is resource-efficient, making it
+well-suited for edge-device deployment and advancing practical autonomous
+robotics.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.00703v1' target='_blank'>T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level
+  and Token-level CoT</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Dongzhi Jiang, Ziyu Guo, Renrui Zhang, Zhuofan Zong, Hao Li, Le Zhuo, Shilin Yan, Pheng-Ann Heng, Hongsheng Li</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-01 17:59:46</h6>
+<p class='card-text'>Recent advancements in large language models have demonstrated how
+chain-of-thought (CoT) and reinforcement learning (RL) can improve performance.
+However, applying such reasoning strategies to the visual generation domain
+remains largely unexplored. In this paper, we present T2I-R1, a novel
+reasoning-enhanced text-to-image generation model, powered by RL with a
+bi-level CoT reasoning process. Specifically, we identify two levels of CoT
+that can be utilized to enhance different stages of generation: (1) the
+semantic-level CoT for high-level planning of the prompt and (2) the
+token-level CoT for low-level pixel processing during patch-by-patch
+generation. To better coordinate these two levels of CoT, we introduce
+BiCoT-GRPO with an ensemble of generation rewards, which seamlessly optimizes
+both generation CoTs within the same training step. By applying our reasoning
+strategies to the baseline model, Janus-Pro, we achieve superior performance
+with 13% improvement on T2I-CompBench and 19% improvement on the WISE
+benchmark, even surpassing the state-of-the-art model FLUX.1. Code is available
+at: https://github.com/CaraJ7/T2I-R1</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.21318v1' target='_blank'>Phi-4-reasoning Technical Report</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Marah Abdin, Sahaj Agarwal, Ahmed Awadallah, Vidhisha Balachandran, Harkirat Behl, Lingjiao Chen, Gustavo de Rosa, Suriya Gunasekar, Mojan Javaheripi, Neel Joshi, Piero Kauffmann, Yash Lara, Caio César Teodoro Mendes, Arindam Mitra, Besmira Nushi, Dimitris Papailiopoulos, Olli Saarikivi, Shital Shah, Vaishnavi Shrivastava, Vibhav Vineet, Yue Wu, Safoora Yousefi, Guoqing Zheng</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-30 05:05:09</h6>
+<p class='card-text'>We introduce Phi-4-reasoning, a 14-billion parameter reasoning model that
+achieves strong performance on complex reasoning tasks. Trained via supervised
+fine-tuning of Phi-4 on carefully curated set of "teachable" prompts-selected
+for the right level of complexity and diversity-and reasoning demonstrations
+generated using o3-mini, Phi-4-reasoning generates detailed reasoning chains
+that effectively leverage inference-time compute. We further develop
+Phi-4-reasoning-plus, a variant enhanced through a short phase of outcome-based
+reinforcement learning that offers higher performance by generating longer
+reasoning traces. Across a wide range of reasoning tasks, both models
+outperform significantly larger open-weight models such as
+DeepSeek-R1-Distill-Llama-70B model and approach the performance levels of full
+DeepSeek-R1 model. Our comprehensive evaluations span benchmarks in math and
+scientific reasoning, coding, algorithmic problem solving, planning, and
+spatial understanding. Interestingly, we observe a non-trivial transfer of
+improvements to general-purpose benchmarks as well. In this report, we provide
+insights into our training data, our training methodologies, and our
+evaluations. We show that the benefit of careful data curation for supervised
+fine-tuning (SFT) extends to reasoning language models, and can be further
+amplified by reinforcement learning (RL). Finally, our evaluation points to
+opportunities for improving how we assess the performance and robustness of
+reasoning models.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.21111v1' target='_blank'>How to Coordinate UAVs and UGVs for Efficient Mission Planning?
+  Optimizing Energy-Constrained Cooperative Routing with a DRL Framework</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Md Safwan Mondal, Subramanian Ramasamy, Luca Russo, James D. Humann, James M. Dotterweich, Pranav Bhounsule</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-29 18:43:59</h6>
+<p class='card-text'>Efficient mission planning for cooperative systems involving Unmanned Aerial
+Vehicles (UAVs) and Unmanned Ground Vehicles (UGVs) requires addressing energy
+constraints, scalability, and coordination challenges between agents. UAVs
+excel in rapidly covering large areas but are constrained by limited battery
+life, while UGVs, with their extended operational range and capability to serve
+as mobile recharging stations, are hindered by slower speeds. This
+heterogeneity makes coordination between UAVs and UGVs critical for achieving
+optimal mission outcomes. In this work, we propose a scalable deep
+reinforcement learning (DRL) framework to address the energy-constrained
+cooperative routing problem for multi-agent UAV-UGV teams, aiming to visit a
+set of task points in minimal time with UAVs relying on UGVs for recharging
+during the mission. The framework incorporates sortie-wise agent switching to
+efficiently manage multiple agents, by allocating task points and coordinating
+actions. Using an encoder-decoder transformer architecture, it optimizes routes
+and recharging rendezvous for the UAV-UGV team in the task scenario. Extensive
+computational experiments demonstrate the framework's superior performance over
+heuristic methods and a DRL baseline, delivering significant improvements in
+solution quality and runtime efficiency across diverse scenarios.
+Generalization studies validate its robustness, while dynamic scenario
+highlights its adaptability to real-time changes with a case study. This work
+advances UAV-UGV cooperative routing by providing a scalable, efficient, and
+robust solution for multi-agent mission planning.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.20969v1' target='_blank'>XPG-RL: Reinforcement Learning with Explainable Priority Guidance for
+  Efficiency-Boosted Mechanical Search</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yiting Zhang, Shichen Li, Elena Shrestha</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-29 17:37:45</h6>
+<p class='card-text'>Mechanical search (MS) in cluttered environments remains a significant
+challenge for autonomous manipulators, requiring long-horizon planning and
+robust state estimation under occlusions and partial observability. In this
+work, we introduce XPG-RL, a reinforcement learning framework that enables
+agents to efficiently perform MS tasks through explainable, priority-guided
+decision-making based on raw sensory inputs. XPG-RL integrates a task-driven
+action prioritization mechanism with a learned context-aware switching strategy
+that dynamically selects from a discrete set of action primitives such as
+target grasping, occlusion removal, and viewpoint adjustment. Within this
+strategy, a policy is optimized to output adaptive threshold values that govern
+the discrete selection among action primitives. The perception module fuses
+RGB-D inputs with semantic and geometric features to produce a structured scene
+representation for downstream decision-making. Extensive experiments in both
+simulation and real-world settings demonstrate that XPG-RL consistently
+outperforms baseline methods in task success rates and motion efficiency,
+achieving up to 4.5$\times$ higher efficiency in long-horizon tasks. These
+results underscore the benefits of integrating domain knowledge with learnable
+decision-making policies for robust and efficient robotic manipulation.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.20782v1' target='_blank'>Integrating Human Feedback into a Reinforcement Learning-Based Framework
+  for Adaptive User Interfaces</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Daniel Gaspar-Figueiredo, Marta Fernández-Diego, Silvia Abrahão, Emilio Insfran</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-29 14:00:22</h6>
+<p class='card-text'>Adaptive User Interfaces (AUI) play a crucial role in modern software
+applications by dynamically adjusting interface elements to accommodate users'
+diverse and evolving needs. However, existing adaptation strategies often lack
+real-time responsiveness. Reinforcement Learning (RL) has emerged as a
+promising approach for addressing complex, sequential adaptation challenges,
+enabling adaptive systems to learn optimal policies based on previous
+adaptation experiences. Although RL has been applied to AUIs,integrating RL
+agents effectively within user interactions remains a challenge.
+  In this paper, we enhance a RL-based Adaptive User Interface adaption
+framework by incorporating personalized human feedback directly into the
+leaning process. Unlike prior approaches that rely on a single pre-trained RL
+model, our approach trains a unique RL agent for each user, allowing
+individuals to actively shape their personal RL agent's policy, potentially
+leading to more personalized and responsive UI adaptations. To evaluate this
+approach, we conducted an empirical study to assess the impact of integrating
+human feedback into the RL-based Adaptive User Interface adaption framework and
+its effect on User Experience (UX). The study involved 33 participants
+interacting with AUIs incorporating human feedback and non-adaptive user
+interfaces in two domains: an e-learning platform and a trip-planning
+application. The results suggest that incorporating human feedback into
+RL-driven adaptations significantly enhances UX, offering promising directions
+for advancing adaptive capabilities and user-centered design in AUIs.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.20660v1' target='_blank'>Quantum-Enhanced Hybrid Reinforcement Learning Framework for Dynamic
+  Path Planning in Autonomous Systems</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Sahil Tomar, Shamshe Alam, Sandeep Kumar, Amit Mathur</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-29 11:36:08</h6>
+<p class='card-text'>In this paper, a novel quantum classical hybrid framework is proposed that
+synergizes quantum with Classical Reinforcement Learning. By leveraging the
+inherent parallelism of quantum computing, the proposed approach generates
+robust Q tables and specialized turn cost estimations, which are then
+integrated with a classical Reinforcement Learning pipeline. The Classical
+Quantum fusion results in rapid convergence of training, reducing the training
+time significantly and improved adaptability in scenarios featuring static,
+dynamic, and moving obstacles. Simulator based evaluations demonstrate
+significant enhancements in path efficiency, trajectory smoothness, and mission
+success rates, underscoring the potential of framework for real time,
+autonomous navigation in complex and unpredictable environments. Furthermore,
+the proposed framework was tested beyond simulations on practical scenarios,
+including real world map data such as the IIT Delhi campus, reinforcing its
+potential for real time, autonomous navigation in complex and unpredictable
+environments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.20464v1' target='_blank'>A Summary on GUI Agents with Foundation Models Enhanced by Reinforcement
+  Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jiahao Li, Kaer Huang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-29 06:55:15</h6>
+<p class='card-text'>Graphical User Interface (GUI) agents, driven by Multi-modal Large Language
+Models (MLLMs), have emerged as a promising paradigm for enabling intelligent
+interaction with digital systems. This paper provides a structured summary of
+recent advances in GUI agents, focusing on architectures enhanced by
+Reinforcement Learning (RL). We first formalize GUI agent tasks as Markov
+Decision Processes and discuss typical execution environments and evaluation
+metrics. We then review the modular architecture of (M)LLM-based GUI agents,
+covering Perception, Planning, and Acting modules, and trace their evolution
+through representative works. Furthermore, we categorize GUI agent training
+methodologies into Prompt-based, Supervised Fine-Tuning (SFT)-based, and
+RL-based approaches, highlighting the progression from simple prompt
+engineering to dynamic policy learning via RL. Our summary illustrates how
+recent innovations in multimodal perception, decision reasoning, and adaptive
+action generation have significantly improved the generalization and robustness
+of GUI agents in complex real-world environments. We conclude by identifying
+key challenges and future directions for building more capable and reliable GUI
+agents.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.19838v1' target='_blank'>LLM-Powered GUI Agents in Phone Automation: Surveying Progress and
+  Prospects</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Guangyi Liu, Pengxiang Zhao, Liang Liu, Yaxuan Guo, Han Xiao, Weifeng Lin, Yuxiang Chai, Yue Han, Shuai Ren, Hao Wang, Xiaoyu Liang, Wenhao Wang, Tianze Wu, Linghao Li, Hao Wang, Guanjing Xiong, Yong Liu, Hongsheng Li</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-28 14:39:25</h6>
+<p class='card-text'>With the rapid rise of large language models (LLMs), phone automation has
+undergone transformative changes. This paper systematically reviews LLM-driven
+phone GUI agents, highlighting their evolution from script-based automation to
+intelligent, adaptive systems. We first contextualize key challenges, (i)
+limited generality, (ii) high maintenance overhead, and (iii) weak intent
+comprehension, and show how LLMs address these issues through advanced language
+understanding, multimodal perception, and robust decision-making. We then
+propose a taxonomy covering fundamental agent frameworks (single-agent,
+multi-agent, plan-then-act), modeling approaches (prompt engineering,
+training-based), and essential datasets and benchmarks. Furthermore, we detail
+task-specific architectures, supervised fine-tuning, and reinforcement learning
+strategies that bridge user intent and GUI operations. Finally, we discuss open
+challenges such as dataset diversity, on-device deployment efficiency,
+user-centric adaptation, and security concerns, offering forward-looking
+insights into this rapidly evolving field. By providing a structured overview
+and identifying pressing research gaps, this paper serves as a definitive
+reference for researchers and practitioners seeking to harness LLMs in
+designing scalable, user-friendly phone GUI agents.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.19654v1' target='_blank'>Transformation & Translation Occupancy Grid Mapping: 2-Dimensional Deep
+  Learning Refined SLAM</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Leon Davies, Baihua Li, Mohamad Saada, Simon Sølvsten, Qinggang Meng</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-28 10:13:47</h6>
+<p class='card-text'>SLAM (Simultaneous Localisation and Mapping) is a crucial component for
+robotic systems, providing a map of an environment, the current location and
+previous trajectory of a robot. While 3D LiDAR SLAM has received notable
+improvements in recent years, 2D SLAM lags behind. Gradual drifts in odometry
+and pose estimation inaccuracies hinder modern 2D LiDAR-odometry algorithms in
+large complex environments. Dynamic robotic motion coupled with inherent
+estimation based SLAM processes introduce noise and errors, degrading map
+quality. Occupancy Grid Mapping (OGM) produces results that are often noisy and
+unclear. This is due to the fact that evidence based mapping represents maps
+according to uncertain observations. This is why OGMs are so popular in
+exploration or navigation tasks. However, this also limits OGMs' effectiveness
+for specific mapping based tasks such as floor plan creation in complex scenes.
+To address this, we propose our novel Transformation and Translation Occupancy
+Grid Mapping (TT-OGM). We adapt and enable accurate and robust pose estimation
+techniques from 3D SLAM to the world of 2D and mitigate errors to improve map
+quality using Generative Adversarial Networks (GANs). We introduce a novel data
+generation method via deep reinforcement learning (DRL) to build datasets large
+enough for training a GAN for SLAM error correction. We demonstrate our SLAM in
+real-time on data collected at Loughborough University. We also prove its
+generalisability on a variety of large complex environments on a collection of
+large scale well-known 2D occupancy maps. Our novel approach enables the
+creation of high quality OGMs in complex scenes, far surpassing the
+capabilities of current SLAM algorithms in terms of quality, accuracy and
+reliability.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.17838v1' target='_blank'>CaRL: Learning Scalable Planning Policies with Simple Rewards</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Bernhard Jaeger, Daniel Dauner, Jens Beißwenger, Simon Gerstenecker, Kashyap Chitta, Andreas Geiger</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-24 17:56:01</h6>
+<p class='card-text'>We investigate reinforcement learning (RL) for privileged planning in
+autonomous driving. State-of-the-art approaches for this task are rule-based,
+but these methods do not scale to the long tail. RL, on the other hand, is
+scalable and does not suffer from compounding errors like imitation learning.
+Contemporary RL approaches for driving use complex shaped rewards that sum
+multiple individual rewards, \eg~progress, position, or orientation rewards. We
+show that PPO fails to optimize a popular version of these rewards when the
+mini-batch size is increased, which limits the scalability of these approaches.
+Instead, we propose a new reward design based primarily on optimizing a single
+intuitive reward term: route completion. Infractions are penalized by
+terminating the episode or multiplicatively reducing route completion. We find
+that PPO scales well with higher mini-batch sizes when trained with our simple
+reward, even improving performance. Training with large mini-batch sizes
+enables efficient scaling via distributed data parallelism. We scale PPO to
+300M samples in CARLA and 500M samples in nuPlan with a single 8-GPU node. The
+resulting model achieves 64 DS on the CARLA longest6 v2 benchmark,
+outperforming other RL methods with more complex rewards by a large margin.
+Requiring only minimal adaptations from its use in CARLA, the same method is
+the best learning-based approach on nuPlan. It scores 91.3 in non-reactive and
+90.6 in reactive traffic on the Val14 benchmark while being an order of
+magnitude faster than prior work.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.16916v1' target='_blank'>Zero-shot Sim-to-Real Transfer for Reinforcement Learning-based Visual
+  Servoing of Soft Continuum Arms</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Hsin-Jung Yang, Mahsa Khosravi, Benjamin Walt, Girish Krishnan, Soumik Sarkar</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-23 17:41:55</h6>
+<p class='card-text'>Soft continuum arms (SCAs) soft and deformable nature presents challenges in
+modeling and control due to their infinite degrees of freedom and non-linear
+behavior. This work introduces a reinforcement learning (RL)-based framework
+for visual servoing tasks on SCAs with zero-shot sim-to-real transfer
+capabilities, demonstrated on a single section pneumatic manipulator capable of
+bending and twisting. The framework decouples kinematics from mechanical
+properties using an RL kinematic controller for motion planning and a local
+controller for actuation refinement, leveraging minimal sensing with visual
+feedback. Trained entirely in simulation, the RL controller achieved a 99.8%
+success rate. When deployed on hardware, it achieved a 67% success rate in
+zero-shot sim-to-real transfer, demonstrating robustness and adaptability. This
+approach offers a scalable solution for SCAs in 3D visual servoing, with
+potential for further refinement and expanded applications.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.16855v1' target='_blank'>Monte Carlo Planning with Large Language Model for Text-Based Game
+  Agents</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zijing Shi, Meng Fang, Ling Chen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-23 16:23:15</h6>
+<p class='card-text'>Text-based games provide valuable environments for language-based autonomous
+agents. However, planning-then-learning paradigms, such as those combining
+Monte Carlo Tree Search (MCTS) and reinforcement learning (RL), are notably
+time-consuming due to extensive iterations. Additionally, these algorithms
+perform uncertainty-driven exploration but lack language understanding and
+reasoning abilities. In this paper, we introduce the Monte Carlo planning with
+Dynamic Memory-guided Large language model (MC-DML) algorithm. MC-DML leverages
+the language understanding and reasoning capabilities of Large Language Models
+(LLMs) alongside the exploratory advantages of tree search algorithms.
+Specifically, we enhance LLMs with in-trial and cross-trial memory mechanisms,
+enabling them to learn from past experiences and dynamically adjust action
+evaluations during planning. We conduct experiments on a series of text-based
+games from the Jericho benchmark. Our results demonstrate that the MC-DML
+algorithm significantly enhances performance across various games at the
+initial planning phase, outperforming strong contemporary methods that require
+multiple iterations. This demonstrates the effectiveness of our algorithm,
+paving the way for more efficient language-grounded planning in complex
+environments.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
