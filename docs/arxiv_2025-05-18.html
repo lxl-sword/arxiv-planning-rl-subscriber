@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-05-18</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-05-18</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.10262v1' target='_blank'>Electric Bus Charging Schedules Relying on Real Data-Driven Targets
+  Based on Hierarchical Deep Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jiaju Qi, Lei Lei, Thorsteinn Jonsson, Lajos Hanzo</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-15 13:13:41</h6>
+<p class='card-text'>The charging scheduling problem of Electric Buses (EBs) is investigated based
+on Deep Reinforcement Learning (DRL). A Markov Decision Process (MDP) is
+conceived, where the time horizon includes multiple charging and operating
+periods in a day, while each period is further divided into multiple time
+steps. To overcome the challenge of long-range multi-phase planning with sparse
+reward, we conceive Hierarchical DRL (HDRL) for decoupling the original MDP
+into a high-level Semi-MDP (SMDP) and multiple low-level MDPs. The Hierarchical
+Double Deep Q-Network (HDDQN)-Hindsight Experience Replay (HER) algorithm is
+proposed for simultaneously solving the decision problems arising at different
+temporal resolutions. As a result, the high-level agent learns an effective
+policy for prescribing the charging targets for every charging period, while
+the low-level agent learns an optimal policy for setting the charging power of
+every time step within a single charging period, with the aim of minimizing the
+charging costs while meeting the charging target. It is proved that the flat
+policy constructed by superimposing the optimal high-level policy and the
+optimal low-level policy performs as well as the optimal policy of the original
+MDP. Since jointly learning both levels of policies is challenging due to the
+non-stationarity of the high-level agent and the sampling inefficiency of the
+low-level agent, we divide the joint learning process into two phases and
+exploit our new HER algorithm to manipulate the experience replay buffers for
+both levels of agents. Numerical experiments are performed with the aid of
+real-world data to evaluate the performance of the proposed algorithm.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.09899v1' target='_blank'>Promise of Data-Driven Modeling and Decision Support for Precision
+  Oncology and Theranostics</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Binesh Sadanandan, Vahid Behzadan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-15 02:02:03</h6>
+<p class='card-text'>Cancer remains a leading cause of death worldwide, necessitating personalized
+treatment approaches to improve outcomes. Theranostics, combining
+molecular-level imaging with targeted therapy, offers potential for precision
+oncology but requires optimized, patient-specific care plans. This paper
+investigates state-of-the-art data-driven decision support applications with a
+reinforcement learning focus in precision oncology. We review current
+applications, training environments, state-space representation, performance
+evaluation criteria, and measurement of risk and reward, highlighting key
+challenges. We propose a framework integrating data-driven modeling with
+reinforcement learning-based decision support to optimize radiopharmaceutical
+therapy dosing, addressing identified challenges and setting directions for
+future research. The framework leverages Neural Ordinary Differential Equations
+and Physics-Informed Neural Networks to enhance Physiologically Based
+Pharmacokinetic models while applying reinforcement learning algorithms to
+iteratively refine treatment policies based on patient-specific data.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.08995v1' target='_blank'>Enhancing Aerial Combat Tactics through Hierarchical Multi-Agent
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ardian Selmonaj, Oleg Szehr, Giacomo Del Rio, Alessandro Antonucci, Adrian Schneider, Michael Rüegsegger</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-13 22:13:48</h6>
+<p class='card-text'>This work presents a Hierarchical Multi-Agent Reinforcement Learning
+framework for analyzing simulated air combat scenarios involving heterogeneous
+agents. The objective is to identify effective Courses of Action that lead to
+mission success within preset simulations, thereby enabling the exploration of
+real-world defense scenarios at low cost and in a safe-to-fail setting.
+Applying deep Reinforcement Learning in this context poses specific challenges,
+such as complex flight dynamics, the exponential size of the state and action
+spaces in multi-agent systems, and the capability to integrate real-time
+control of individual units with look-ahead planning. To address these
+challenges, the decision-making process is split into two levels of
+abstraction: low-level policies control individual units, while a high-level
+commander policy issues macro commands aligned with the overall mission
+targets. This hierarchical structure facilitates the training process by
+exploiting policy symmetries of individual agents and by separating control
+from command tasks. The low-level policies are trained for individual combat
+control in a curriculum of increasing complexity. The high-level commander is
+then trained on mission targets given pre-trained control policies. The
+empirical validation confirms the advantages of the proposed framework.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.08459v1' target='_blank'>Strategy-Augmented Planning for Large Language Models via Opponent
+  Exploitation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Shuai Xu, Sijia Cui, Yanna Wang, Bo Xu, Qi Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-13 11:41:10</h6>
+<p class='card-text'>Efficiently modeling and exploiting opponents is a long-standing challenge in
+adversarial domains. Large Language Models (LLMs) trained on extensive textual
+data have recently demonstrated outstanding performance in general tasks,
+introducing new research directions for opponent modeling. Some studies
+primarily focus on directly using LLMs to generate decisions based on the
+elaborate prompt context that incorporates opponent descriptions, while these
+approaches are limited to scenarios where LLMs possess adequate domain
+expertise. To address that, we introduce a two-stage Strategy-Augmented
+Planning (SAP) framework that significantly enhances the opponent exploitation
+capabilities of LLM-based agents by utilizing a critical component, the
+Strategy Evaluation Network (SEN). Specifically, in the offline stage, we
+construct an explicit strategy space and subsequently collect strategy-outcome
+pair data for training the SEN network. During the online phase, SAP
+dynamically recognizes the opponent's strategies and greedily exploits them by
+searching best response strategy on the well-trained SEN, finally translating
+strategy to a course of actions by carefully designed prompts. Experimental
+results show that SAP exhibits robust generalization capabilities, allowing it
+to perform effectively not only against previously encountered opponent
+strategies but also against novel, unseen strategies. In the MicroRTS
+environment, SAP achieves a 85.35\% performance improvement over baseline
+methods and matches the competitiveness of reinforcement learning approaches
+against state-of-the-art (SOTA) rule-based AI.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.08382v1' target='_blank'>Continuous World Coverage Path Planning for Fixed-Wing UAVs using Deep
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mirco Theile, Andres R. Zapata Rodriguez, Marco Caccamo, Alberto L. Sangiovanni-Vincentelli</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-13 09:29:16</h6>
+<p class='card-text'>Unmanned Aerial Vehicle (UAV) Coverage Path Planning (CPP) is critical for
+applications such as precision agriculture and search and rescue. While
+traditional methods rely on discrete grid-based representations, real-world UAV
+operations require power-efficient continuous motion planning. We formulate the
+UAV CPP problem in a continuous environment, minimizing power consumption while
+ensuring complete coverage. Our approach models the environment with
+variable-size axis-aligned rectangles and UAV motion with curvature-constrained
+B\'ezier curves. We train a reinforcement learning agent using an
+action-mapping-based Soft Actor-Critic (AM-SAC) algorithm employing a
+self-adaptive curriculum. Experiments on both procedurally generated and
+hand-crafted scenarios demonstrate the effectiveness of our method in learning
+energy-efficient coverage strategies.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.08238v1' target='_blank'>Motion Control of High-Dimensional Musculoskeletal Systems with
+  Hierarchical Model-Based Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yunyue Wei, Shanning Zhuang, Vincent Zhuang, Yanan Sui</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-13 05:31:32</h6>
+<p class='card-text'>Controlling high-dimensional nonlinear systems, such as those found in
+biological and robotic applications, is challenging due to large state and
+action spaces. While deep reinforcement learning has achieved a number of
+successes in these domains, it is computationally intensive and time consuming,
+and therefore not suitable for solving large collections of tasks that require
+significant manual tuning. In this work, we introduce Model Predictive Control
+with Morphology-aware Proportional Control (MPC^2), a hierarchical model-based
+learning algorithm for zero-shot and near-real-time control of high-dimensional
+complex dynamical systems. MPC^2 uses a sampling-based model predictive
+controller for target posture planning, and enables robust control for
+high-dimensional tasks by incorporating a morphology-aware proportional
+controller for actuator coordination. The algorithm enables motion control of a
+high-dimensional human musculoskeletal model in a variety of motion tasks, such
+as standing, walking on different terrains, and imitating sports activities.
+The reward function of MPC^2 can be tuned via black-box optimization,
+drastically reducing the need for human-intensive reward engineering.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.06923v1' target='_blank'>YOPOv2-Tracker: An End-to-End Agile Tracking and Navigation Framework
+  from Perception to Action</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Junjie Lu, Yulin Hui, Xuewei Zhang, Wencan Feng, Hongming Shen, Zhiyu Li, Bailing Tian</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-11 09:53:34</h6>
+<p class='card-text'>Traditional target tracking pipelines including detection, mapping,
+navigation, and control are comprehensive but introduce high latency, limitting
+the agility of quadrotors. On the contrary, we follow the design principle of
+"less is more", striving to simplify the process while maintaining
+effectiveness. In this work, we propose an end-to-end agile tracking and
+navigation framework for quadrotors that directly maps the sensory observations
+to control commands. Importantly, leveraging the multimodal nature of
+navigation and detection tasks, our network maintains interpretability by
+explicitly integrating the independent modules of the traditional pipeline,
+rather than a crude action regression. In detail, we adopt a set of motion
+primitives as anchors to cover the searching space regarding the feasible
+region and potential target. Then we reformulate the trajectory optimization as
+regression of primitive offsets and associated costs considering the safety,
+smoothness, and other metrics. For tracking task, the trajectories are expected
+to approach the target and additional objectness scores are predicted.
+Subsequently, the predictions, after compensation for the estimated lumped
+disturbance, are transformed into thrust and attitude as control commands for
+swift response. During training, we seamlessly integrate traditional motion
+planning with deep learning by directly back-propagating the gradients of
+trajectory costs to the network, eliminating the need for expert demonstration
+in imitation learning and providing more direct guidance than reinforcement
+learning. Finally, we deploy the algorithm on a compact quadrotor and conduct
+real-world validations in both forest and building environments to demonstrate
+the efficiency of the proposed method.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.06518v1' target='_blank'>A Point-Based Algorithm for Distributional Reinforcement Learning in
+  Partially Observable Domains</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Larry Preuett III</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-10 05:19:32</h6>
+<p class='card-text'>In many real-world planning tasks, agents must tackle uncertainty about the
+environment's state and variability in the outcomes of any chosen policy. We
+address both forms of uncertainty as a first step toward safer algorithms in
+partially observable settings. Specifically, we extend Distributional
+Reinforcement Learning (DistRL)-which models the entire return distribution for
+fully observable domains-to Partially Observable Markov Decision Processes
+(POMDPs), allowing an agent to learn the distribution of returns for each
+conditional plan. Concretely, we introduce new distributional Bellman operators
+for partial observability and prove their convergence under the supremum
+p-Wasserstein metric. We also propose a finite representation of these return
+distributions via psi-vectors, generalizing the classical alpha-vectors in
+POMDP solvers. Building on this, we develop Distributional Point-Based Value
+Iteration (DPBVI), which integrates psi-vectors into a standard point-based
+backup procedure-bridging DistRL and POMDP planning. By tracking return
+distributions, DPBVI naturally enables risk-sensitive control in domains where
+rare, high-impact events must be carefully managed. We provide source code to
+foster further research in robust decision-making under partial observability.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.04989v1' target='_blank'>CPP-DIP: Multi-objective Coverage Path Planning for MAVs in Dispersed
+  and Irregular Plantations</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Weijie Kuang, Hann Woei Ho, Ye Zhou</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-08 06:52:22</h6>
+<p class='card-text'>Coverage Path Planning (CPP) is vital in precision agriculture to improve
+efficiency and resource utilization. In irregular and dispersed plantations,
+traditional grid-based CPP often causes redundant coverage over non-vegetated
+areas, leading to waste and pollution. To overcome these limitations, we
+propose CPP-DIP, a multi-objective CPP framework designed for Micro Air
+Vehicles (MAVs). The framework transforms the CPP task into a Traveling
+Salesman Problem (TSP) and optimizes flight paths by minimizing travel
+distance, turning angles, and intersection counts. Unlike conventional
+approaches, our method does not rely on GPS-based environmental modeling.
+Instead, it uses aerial imagery and a Histogram of Oriented Gradients
+(HOG)-based approach to detect trees and extract image coordinates. A
+density-aware waypoint strategy is applied: Kernel Density Estimation (KDE) is
+used to reduce redundant waypoints in dense regions, while a greedy algorithm
+ensures complete coverage in sparse areas. To verify the generality of the
+framework, we solve the resulting TSP using three different methods: Greedy
+Heuristic Insertion (GHI), Ant Colony Optimization (ACO), and Monte Carlo
+Reinforcement Learning (MCRL). Then an object-based optimization is applied to
+further refine the resulting path. Additionally, CPP-DIP integrates ForaNav,
+our insect-inspired navigation method, for accurate tree localization and
+tracking. The experimental results show that MCRL offers a balanced solution,
+reducing the travel distance by 16.9 % compared to ACO while maintaining a
+similar performance to GHI. It also improves path smoothness by reducing
+turning angles by 28.3 % and 59.9 % relative to ACO and GHI, respectively, and
+effectively eliminates intersections. These results confirm the robustness and
+effectiveness of CPP-DIP in different TSP solvers.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.04921v1' target='_blank'>Perception, Reason, Think, and Plan: A Survey on Large Multimodal
+  Reasoning Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yunxin Li, Zhenyu Liu, Zitao Li, Xuanyu Zhang, Zhenran Xu, Xinyu Chen, Haoyuan Shi, Shenyuan Jiang, Xintong Wang, Jifang Wang, Shouzheng Huang, Xinping Zhao, Borui Jiang, Lanqing Hong, Longyue Wang, Zhuotao Tian, Baoxing Huai, Wenhan Luo, Weihua Luo, Zheng Zhang, Baotian Hu, Min Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-08 03:35:23</h6>
+<p class='card-text'>Reasoning lies at the heart of intelligence, shaping the ability to make
+decisions, draw conclusions, and generalize across domains. In artificial
+intelligence, as systems increasingly operate in open, uncertain, and
+multimodal environments, reasoning becomes essential for enabling robust and
+adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a
+promising paradigm, integrating modalities such as text, images, audio, and
+video to support complex reasoning capabilities and aiming to achieve
+comprehensive perception, precise understanding, and deep reasoning. As
+research advances, multimodal reasoning has rapidly evolved from modular,
+perception-driven pipelines to unified, language-centric frameworks that offer
+more coherent cross-modal understanding. While instruction tuning and
+reinforcement learning have improved model reasoning, significant challenges
+remain in omni-modal generalization, reasoning depth, and agentic behavior. To
+address these issues, we present a comprehensive and structured survey of
+multimodal reasoning research, organized around a four-stage developmental
+roadmap that reflects the field's shifting design philosophies and emerging
+capabilities. First, we review early efforts based on task-specific modules,
+where reasoning was implicitly embedded across stages of representation,
+alignment, and fusion. Next, we examine recent approaches that unify reasoning
+into multimodal LLMs, with advances such as Multimodal Chain-of-Thought (MCoT)
+and multimodal reinforcement learning enabling richer and more structured
+reasoning chains. Finally, drawing on empirical insights from challenging
+benchmarks and experimental cases of OpenAI O3 and O4-mini, we discuss the
+conceptual direction of native large multimodal reasoning models (N-LMRMs),
+which aim to support scalable, agentic, and adaptive reasoning and planning in
+complex, real-world environments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.04843v1' target='_blank'>Large Language Models are Autonomous Cyber Defenders</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Sebastián R. Castro, Roberto Campbell, Nancy Lau, Octavio Villalobos, Jiaqi Duan, Alvaro A. Cardenas</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-07 22:42:37</h6>
+<p class='card-text'>Fast and effective incident response is essential to prevent adversarial
+cyberattacks. Autonomous Cyber Defense (ACD) aims to automate incident response
+through Artificial Intelligence (AI) agents that plan and execute actions. Most
+ACD approaches focus on single-agent scenarios and leverage Reinforcement
+Learning (RL). However, ACD RL-trained agents depend on costly training, and
+their reasoning is not always explainable or transferable. Large Language
+Models (LLMs) can address these concerns by providing explainable actions in
+general security contexts. Researchers have explored LLM agents for ACD but
+have not evaluated them on multi-agent scenarios or interacting with other ACD
+agents. In this paper, we show the first study on how LLMs perform in
+multi-agent ACD environments by proposing a new integration to the CybORG CAGE
+4 environment. We examine how ACD teams of LLM and RL agents can interact by
+proposing a novel communication protocol. Our results highlight the strengths
+and weaknesses of LLMs and RL and help us identify promising research
+directions to create, train, and deploy future teams of ACD agents.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.01966v1' target='_blank'>A Goal-Oriented Reinforcement Learning-Based Path Planning Algorithm for
+  Modular Self-Reconfigurable Satellites</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Bofei Liu, Dong Ye, Zunhao Yao, Zhaowei Sun</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-04 02:35:18</h6>
+<p class='card-text'>Modular self-reconfigurable satellites refer to satellite clusters composed
+of individual modular units capable of altering their configurations. The
+configuration changes enable the execution of diverse tasks and mission
+objectives. Existing path planning algorithms for reconfiguration often suffer
+from high computational complexity, poor generalization capability, and limited
+support for diverse target configurations. To address these challenges, this
+paper proposes a goal-oriented reinforcement learning-based path planning
+algorithm. This algorithm is the first to address the challenge that previous
+reinforcement learning methods failed to overcome, namely handling multiple
+target configurations. Moreover, techniques such as Hindsight Experience Replay
+and Invalid Action Masking are incorporated to overcome the significant
+obstacles posed by sparse rewards and invalid actions. Based on these designs,
+our model achieves a 95% and 73% success rate in reaching arbitrary target
+configurations in a modular satellite cluster composed of four and six units,
+respectively.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.01712v1' target='_blank'>World Model-Based Learning for Long-Term Age of Information Minimization
+  in Vehicular Networks</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Lingyi Wang, Rashed Shelim, Walid Saad, Naren Ramakrishnan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-03 06:23:18</h6>
+<p class='card-text'>Traditional reinforcement learning (RL)-based learning approaches for
+wireless networks rely on expensive trial-and-error mechanisms and real-time
+feedback based on extensive environment interactions, which leads to low data
+efficiency and short-sighted policies. These limitations become particularly
+problematic in complex, dynamic networks with high uncertainty and long-term
+planning requirements. To address these limitations, in this paper, a novel
+world model-based learning framework is proposed to minimize
+packet-completeness-aware age of information (CAoI) in a vehicular network.
+Particularly, a challenging representative scenario is considered pertaining to
+a millimeter-wave (mmWave) vehicle-to-everything (V2X) communication network,
+which is characterized by high mobility, frequent signal blockages, and
+extremely short coherence time. Then, a world model framework is proposed to
+jointly learn a dynamic model of the mmWave V2X environment and use it to
+imagine trajectories for learning how to perform link scheduling. In
+particular, the long-term policy is learned in differentiable imagined
+trajectories instead of environment interactions. Moreover, owing to its
+imagination abilities, the world model can jointly predict time-varying
+wireless data and optimize link scheduling in real-world wireless and V2X
+networks. Thus, during intervals without actual observations, the world model
+remains capable of making efficient decisions. Extensive experiments are
+performed on a realistic simulator based on Sionna that integrates
+physics-based end-to-end channel modeling, ray-tracing, and scene geometries
+with material properties. Simulation results show that the proposed world model
+achieves a significant improvement in data efficiency, and achieves 26%
+improvement and 16% improvement in CAoI, respectively, compared to the
+model-based RL (MBRL) method and the model-free RL (MFRL) method.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.01619v1' target='_blank'>Skill-based Safe Reinforcement Learning with Risk Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Hanping Zhang, Yuhong Guo</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-02 22:48:27</h6>
+<p class='card-text'>Safe Reinforcement Learning (Safe RL) aims to ensure safety when an RL agent
+conducts learning by interacting with real-world environments where improper
+actions can induce high costs or lead to severe consequences. In this paper, we
+propose a novel Safe Skill Planning (SSkP) approach to enhance effective safe
+RL by exploiting auxiliary offline demonstration data. SSkP involves a
+two-stage process. First, we employ PU learning to learn a skill risk predictor
+from the offline demonstration data. Then, based on the learned skill risk
+predictor, we develop a novel risk planning process to enhance online safe RL
+and learn a risk-averse safe policy efficiently through interactions with the
+online RL environment, while simultaneously adapting the skill risk predictor
+to the environment. We conduct experiments in several benchmark robotic
+simulation environments. The experimental results demonstrate that the proposed
+approach consistently outperforms previous state-of-the-art safe RL methods.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.03815v1' target='_blank'>Towards Cognitive Collaborative Robots: Semantic-Level Integration and
+  Explainable Control for Human-Centric Cooperation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jaehong Oh</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-02 17:08:23</h6>
+<p class='card-text'>This is a preprint of a review article that has not yet undergone peer
+review. The content is intended for early dissemination and academic
+discussion. The final version may differ upon formal publication. As the Fourth
+Industrial Revolution reshapes industrial paradigms, human-robot collaboration
+(HRC) has transitioned from a desirable capability to an operational necessity.
+In response, collaborative robots (Cobots) are evolving beyond repetitive tasks
+toward adaptive, semantically informed interaction with humans and
+environments. This paper surveys five foundational pillars enabling this
+transformation: semantic-level perception, cognitive action planning,
+explainable learning and control, safety-aware motion design, and multimodal
+human intention recognition. We examine the role of semantic mapping in
+transforming spatial data into meaningful context, and explore cognitive
+planning frameworks that leverage this context for goal-driven decision-making.
+Additionally, we analyze explainable reinforcement learning methods, including
+policy distillation and attention mechanisms, which enhance interpretability
+and trust. Safety is addressed through force-adaptive control and risk-aware
+trajectory planning, while seamless human interaction is supported via gaze and
+gesture-based intent recognition. Despite these advancements, challenges such
+as perception-action disjunction, real-time explainability limitations, and
+incomplete human trust persist. To address these, we propose a unified
+Cognitive Synergy Architecture, integrating all modules into a cohesive
+framework for truly human-centric cobot collaboration.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.00831v4' target='_blank'>SmallPlan: Leverage Small Language Models for Sequential Path Planning
+  with Simulation-Powered, LLM-Guided Distillation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Quang P. M. Pham, Khoi T. N. Nguyen, Nhi H. Doan, Cuong A. Pham, Kentaro Inui, Dezhen Song</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-01 19:44:36</h6>
+<p class='card-text'>Efficient path planning in robotics, particularly within large-scale, dynamic
+environments, remains a significant hurdle. While Large Language Models (LLMs)
+offer strong reasoning capabilities, their high computational cost and limited
+adaptability in dynamic scenarios hinder real-time deployment on edge devices.
+We present SmallPlan -- a novel framework leveraging LLMs as teacher models to
+train lightweight Small Language Models (SLMs) for high-level path planning
+tasks. In SmallPlan, the SLMs provide optimal action sequences to navigate
+across scene graphs that compactly represent full-scaled 3D scenes. The SLMs
+are trained in a simulation-powered, interleaved manner with LLM-guided
+supervised fine-tuning (SFT) and reinforcement learning (RL). This strategy not
+only enables SLMs to successfully complete navigation tasks but also makes them
+aware of important factors like travel distance and number of trials. Through
+experiments, we demonstrate that the fine-tuned SLMs perform competitively with
+larger models like GPT-4o on sequential path planning, without suffering from
+hallucination and overfitting. SmallPlan is resource-efficient, making it
+well-suited for edge-device deployment and advancing practical autonomous
+robotics. Our source code is available here:
+https://github.com/quangpham2006/SmallPlan</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.00703v1' target='_blank'>T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level
+  and Token-level CoT</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Dongzhi Jiang, Ziyu Guo, Renrui Zhang, Zhuofan Zong, Hao Li, Le Zhuo, Shilin Yan, Pheng-Ann Heng, Hongsheng Li</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-01 17:59:46</h6>
+<p class='card-text'>Recent advancements in large language models have demonstrated how
+chain-of-thought (CoT) and reinforcement learning (RL) can improve performance.
+However, applying such reasoning strategies to the visual generation domain
+remains largely unexplored. In this paper, we present T2I-R1, a novel
+reasoning-enhanced text-to-image generation model, powered by RL with a
+bi-level CoT reasoning process. Specifically, we identify two levels of CoT
+that can be utilized to enhance different stages of generation: (1) the
+semantic-level CoT for high-level planning of the prompt and (2) the
+token-level CoT for low-level pixel processing during patch-by-patch
+generation. To better coordinate these two levels of CoT, we introduce
+BiCoT-GRPO with an ensemble of generation rewards, which seamlessly optimizes
+both generation CoTs within the same training step. By applying our reasoning
+strategies to the baseline model, Janus-Pro, we achieve superior performance
+with 13% improvement on T2I-CompBench and 19% improvement on the WISE
+benchmark, even surpassing the state-of-the-art model FLUX.1. Code is available
+at: https://github.com/CaraJ7/T2I-R1</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.21318v1' target='_blank'>Phi-4-reasoning Technical Report</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Marah Abdin, Sahaj Agarwal, Ahmed Awadallah, Vidhisha Balachandran, Harkirat Behl, Lingjiao Chen, Gustavo de Rosa, Suriya Gunasekar, Mojan Javaheripi, Neel Joshi, Piero Kauffmann, Yash Lara, Caio César Teodoro Mendes, Arindam Mitra, Besmira Nushi, Dimitris Papailiopoulos, Olli Saarikivi, Shital Shah, Vaishnavi Shrivastava, Vibhav Vineet, Yue Wu, Safoora Yousefi, Guoqing Zheng</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-30 05:05:09</h6>
+<p class='card-text'>We introduce Phi-4-reasoning, a 14-billion parameter reasoning model that
+achieves strong performance on complex reasoning tasks. Trained via supervised
+fine-tuning of Phi-4 on carefully curated set of "teachable" prompts-selected
+for the right level of complexity and diversity-and reasoning demonstrations
+generated using o3-mini, Phi-4-reasoning generates detailed reasoning chains
+that effectively leverage inference-time compute. We further develop
+Phi-4-reasoning-plus, a variant enhanced through a short phase of outcome-based
+reinforcement learning that offers higher performance by generating longer
+reasoning traces. Across a wide range of reasoning tasks, both models
+outperform significantly larger open-weight models such as
+DeepSeek-R1-Distill-Llama-70B model and approach the performance levels of full
+DeepSeek-R1 model. Our comprehensive evaluations span benchmarks in math and
+scientific reasoning, coding, algorithmic problem solving, planning, and
+spatial understanding. Interestingly, we observe a non-trivial transfer of
+improvements to general-purpose benchmarks as well. In this report, we provide
+insights into our training data, our training methodologies, and our
+evaluations. We show that the benefit of careful data curation for supervised
+fine-tuning (SFT) extends to reasoning language models, and can be further
+amplified by reinforcement learning (RL). Finally, our evaluation points to
+opportunities for improving how we assess the performance and robustness of
+reasoning models.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.21111v1' target='_blank'>How to Coordinate UAVs and UGVs for Efficient Mission Planning?
+  Optimizing Energy-Constrained Cooperative Routing with a DRL Framework</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Md Safwan Mondal, Subramanian Ramasamy, Luca Russo, James D. Humann, James M. Dotterweich, Pranav Bhounsule</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-29 18:43:59</h6>
+<p class='card-text'>Efficient mission planning for cooperative systems involving Unmanned Aerial
+Vehicles (UAVs) and Unmanned Ground Vehicles (UGVs) requires addressing energy
+constraints, scalability, and coordination challenges between agents. UAVs
+excel in rapidly covering large areas but are constrained by limited battery
+life, while UGVs, with their extended operational range and capability to serve
+as mobile recharging stations, are hindered by slower speeds. This
+heterogeneity makes coordination between UAVs and UGVs critical for achieving
+optimal mission outcomes. In this work, we propose a scalable deep
+reinforcement learning (DRL) framework to address the energy-constrained
+cooperative routing problem for multi-agent UAV-UGV teams, aiming to visit a
+set of task points in minimal time with UAVs relying on UGVs for recharging
+during the mission. The framework incorporates sortie-wise agent switching to
+efficiently manage multiple agents, by allocating task points and coordinating
+actions. Using an encoder-decoder transformer architecture, it optimizes routes
+and recharging rendezvous for the UAV-UGV team in the task scenario. Extensive
+computational experiments demonstrate the framework's superior performance over
+heuristic methods and a DRL baseline, delivering significant improvements in
+solution quality and runtime efficiency across diverse scenarios.
+Generalization studies validate its robustness, while dynamic scenario
+highlights its adaptability to real-time changes with a case study. This work
+advances UAV-UGV cooperative routing by providing a scalable, efficient, and
+robust solution for multi-agent mission planning.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2504.20969v1' target='_blank'>XPG-RL: Reinforcement Learning with Explainable Priority Guidance for
+  Efficiency-Boosted Mechanical Search</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yiting Zhang, Shichen Li, Elena Shrestha</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-04-29 17:37:45</h6>
+<p class='card-text'>Mechanical search (MS) in cluttered environments remains a significant
+challenge for autonomous manipulators, requiring long-horizon planning and
+robust state estimation under occlusions and partial observability. In this
+work, we introduce XPG-RL, a reinforcement learning framework that enables
+agents to efficiently perform MS tasks through explainable, priority-guided
+decision-making based on raw sensory inputs. XPG-RL integrates a task-driven
+action prioritization mechanism with a learned context-aware switching strategy
+that dynamically selects from a discrete set of action primitives such as
+target grasping, occlusion removal, and viewpoint adjustment. Within this
+strategy, a policy is optimized to output adaptive threshold values that govern
+the discrete selection among action primitives. The perception module fuses
+RGB-D inputs with semantic and geometric features to produce a structured scene
+representation for downstream decision-making. Extensive experiments in both
+simulation and real-world settings demonstrate that XPG-RL consistently
+outperforms baseline methods in task success rates and motion efficiency,
+achieving up to 4.5$\times$ higher efficiency in long-horizon tasks. These
+results underscore the benefits of integrating domain knowledge with learnable
+decision-making policies for robust and efficient robotic manipulation.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
