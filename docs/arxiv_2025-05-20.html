@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-05-20</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-05-20</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.13372v1' target='_blank'>Exploiting Symbolic Heuristics for the Synthesis of Domain-Specific
+  Temporal Planning Guidance using Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Irene Brugnara, Alessandro Valentini, Andrea Micheli</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-19 17:19:13</h6>
+<p class='card-text'>Recent work investigated the use of Reinforcement Learning (RL) for the
+synthesis of heuristic guidance to improve the performance of temporal planners
+when a domain is fixed and a set of training problems (not plans) is given. The
+idea is to extract a heuristic from the value function of a particular
+(possibly infinite-state) MDP constructed over the training problems.
+  In this paper, we propose an evolution of this learning and planning
+framework that focuses on exploiting the information provided by symbolic
+heuristics during both the RL and planning phases. First, we formalize
+different reward schemata for the synthesis and use symbolic heuristics to
+mitigate the problems caused by the truncation of episodes needed to deal with
+the potentially infinite MDP. Second, we propose learning a residual of an
+existing symbolic heuristic, which is a "correction" of the heuristic value,
+instead of eagerly learning the whole heuristic from scratch. Finally, we use
+the learned heuristic in combination with a symbolic heuristic using a
+multiple-queue planning approach to balance systematic search with imperfect
+learned information. We experimentally compare all the approaches, highlighting
+their strengths and weaknesses and significantly advancing the state of the art
+for this planning and learning schema.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.12872v1' target='_blank'>From Grunts to Grammar: Emergent Language from Cooperative Foraging</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Maytus Piriyajitakonkij, Rujikorn Charakorn, Weicheng Tao, Wei Pan, Mingfei Sun, Cheston Tan, Mengmi Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-19 08:57:30</h6>
+<p class='card-text'>Early cavemen relied on gestures, vocalizations, and simple signals to
+coordinate, plan, avoid predators, and share resources. Today, humans
+collaborate using complex languages to achieve remarkable results. What drives
+this evolution in communication? How does language emerge, adapt, and become
+vital for teamwork? Understanding the origins of language remains a challenge.
+A leading hypothesis in linguistics and anthropology posits that language
+evolved to meet the ecological and social demands of early human cooperation.
+Language did not arise in isolation, but through shared survival goals.
+Inspired by this view, we investigate the emergence of language in multi-agent
+Foraging Games. These environments are designed to reflect the cognitive and
+ecological constraints believed to have influenced the evolution of
+communication. Agents operate in a shared grid world with only partial
+knowledge about other agents and the environment, and must coordinate to
+complete games like picking up high-value targets or executing temporally
+ordered actions. Using end-to-end deep reinforcement learning, agents learn
+both actions and communication strategies from scratch. We find that agents
+develop communication protocols with hallmark features of natural language:
+arbitrariness, interchangeability, displacement, cultural transmission, and
+compositionality. We quantify each property and analyze how different factors,
+such as population size and temporal dependencies, shape specific aspects of
+the emergent language. Our framework serves as a platform for studying how
+language can evolve from partial observability, temporal reasoning, and
+cooperative goals in embodied multi-agent settings. We will release all data,
+code, and models publicly.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.12752v1' target='_blank'>MOON: Multi-Objective Optimization-Driven Object-Goal Navigation Using a
+  Variable-Horizon Set-Orienteering Planner</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Daigo Nakajima, Kanji Tanaka, Daiki Iwata, Kouki Terashima</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-19 06:20:37</h6>
+<p class='card-text'>Object-goal navigation (ON) enables autonomous robots to locate and reach
+user-specified objects in previously unknown environments, offering promising
+applications in domains such as assistive care and disaster response. Existing
+ON methods -- including training-free approaches, reinforcement learning, and
+zero-shot planners -- generally depend on active exploration to identify
+landmark objects (e.g., kitchens or desks), followed by navigation toward
+semantically related targets (e.g., a specific mug). However, these methods
+often lack strategic planning and do not adequately address trade-offs among
+multiple objectives. To overcome these challenges, we propose a novel framework
+that formulates ON as a multi-objective optimization problem (MOO), balancing
+frontier-based knowledge exploration with knowledge exploitation over
+previously observed landmarks; we call this framework MOON (MOO-driven ON). We
+implement a prototype MOON system that integrates three key components: (1)
+building on QOM [IROS05], a classical ON system that compactly and
+discriminatively encodes landmarks based on their semantic relevance to the
+target; (2) integrating StructNav [RSS23], a recently proposed training-free
+planner, to enhance the navigation pipeline; and (3) introducing a
+variable-horizon set orienteering problem formulation to enable global
+optimization over both exploration and exploitation strategies. This work
+represents an important first step toward developing globally optimized,
+next-generation object-goal navigation systems.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.12648v1' target='_blank'>SafeMove-RL: A Certifiable Reinforcement Learning Framework for Dynamic
+  Motion Constraints in Trajectory Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Tengfei Liu, Haoyang Zhong, Jiazheng Hu, Tan Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-19 03:00:44</h6>
+<p class='card-text'>This study presents a dynamic safety margin-based reinforcement learning
+framework for local motion planning in dynamic and uncertain environments. The
+proposed planner integrates real-time trajectory optimization with adaptive gap
+analysis, enabling effective feasibility assessment under partial observability
+constraints. To address safety-critical computations in unknown scenarios, an
+enhanced online learning mechanism is introduced, which dynamically corrects
+spatial trajectories by forming dynamic safety margins while maintaining
+control invariance. Extensive evaluations, including ablation studies and
+comparisons with state-of-the-art algorithms, demonstrate superior success
+rates and computational efficiency. The framework's effectiveness is further
+validated on both simulated and physical robotic platforms.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.12204v1' target='_blank'>Of Mice and Machines: A Comparison of Learning Between Real World Mice
+  and RL Agents</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Shuo Han, German Espinosa, Junda Huang, Daniel A. Dombeck, Malcolm A. MacIver, Bradly C. Stadie</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-18 02:40:16</h6>
+<p class='card-text'>Recent advances in reinforcement learning (RL) have demonstrated impressive
+capabilities in complex decision-making tasks. This progress raises a natural
+question: how do these artificial systems compare to biological agents, which
+have been shaped by millions of years of evolution? To help answer this
+question, we undertake a comparative study of biological mice and RL agents in
+a predator-avoidance maze environment. Through this analysis, we identify a
+striking disparity: RL agents consistently demonstrate a lack of
+self-preservation instinct, readily risking ``death'' for marginal efficiency
+gains. These risk-taking strategies are in contrast to biological agents, which
+exhibit sophisticated risk-assessment and avoidance behaviors. Towards bridging
+this gap between the biological and artificial, we propose two novel mechanisms
+that encourage more naturalistic risk-avoidance behaviors in RL agents. Our
+approach leads to the emergence of naturalistic behaviors, including strategic
+environment assessment, cautious path planning, and predator avoidance patterns
+that closely mirror those observed in biological systems.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.11893v1' target='_blank'>RLAP: A Reinforcement Learning Enhanced Adaptive Planning Framework for
+  Multi-step NLP Task Solving</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zepeng Ding, Dixuan Wang, Ziqin Luo, Guochao Jiang, Deqing Yang, Jiaqing Liang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-17 08:06:14</h6>
+<p class='card-text'>Multi-step planning has been widely employed to enhance the performance of
+large language models (LLMs) on downstream natural language processing (NLP)
+tasks, which decomposes the original task into multiple subtasks and guide LLMs
+to solve them sequentially without additional training. When addressing task
+instances, existing methods either preset the order of steps or attempt
+multiple paths at each step. However, these methods overlook instances'
+linguistic features and rely on the intrinsic planning capabilities of LLMs to
+evaluate intermediate feedback and then select subtasks, resulting in
+suboptimal outcomes. To better solve multi-step NLP tasks with LLMs, in this
+paper we propose a Reinforcement Learning enhanced Adaptive Planning framework
+(RLAP). In our framework, we model an NLP task as a Markov decision process
+(MDP) and employ an LLM directly into the environment. In particular, a
+lightweight Actor model is trained to estimate Q-values for natural language
+sequences consisting of states and actions through reinforcement learning.
+Therefore, during sequential planning, the linguistic features of each sequence
+in the MDP can be taken into account, and the Actor model interacts with the
+LLM to determine the optimal order of subtasks for each task instance. We apply
+RLAP on three different types of NLP tasks and conduct extensive experiments on
+multiple datasets to verify RLAP's effectiveness and robustness.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.11661v1' target='_blank'>Learning from Less: Guiding Deep Reinforcement Learning with
+  Differentiable Symbolic Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zihan Ye, Oleg Arenz, Kristian Kersting</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-16 19:52:36</h6>
+<p class='card-text'>When tackling complex problems, humans naturally break them down into
+smaller, manageable subtasks and adjust their initial plans based on
+observations. For instance, if you want to make coffee at a friend's place, you
+might initially plan to grab coffee beans, go to the coffee machine, and pour
+them into the machine. Upon noticing that the machine is full, you would skip
+the initial steps and proceed directly to brewing. In stark contrast, state of
+the art reinforcement learners, such as Proximal Policy Optimization (PPO),
+lack such prior knowledge and therefore require significantly more training
+steps to exhibit comparable adaptive behavior. Thus, a central research
+question arises: \textit{How can we enable reinforcement learning (RL) agents
+to have similar ``human priors'', allowing the agent to learn with fewer
+training interactions?} To address this challenge, we propose differentiable
+symbolic planner (Dylan), a novel framework that integrates symbolic planning
+into Reinforcement Learning. Dylan serves as a reward model that dynamically
+shapes rewards by leveraging human priors, guiding agents through intermediate
+subtasks, thus enabling more efficient exploration. Beyond reward shaping,
+Dylan can work as a high level planner that composes primitive policies to
+generate new behaviors while avoiding common symbolic planner pitfalls such as
+infinite execution loops. Our experimental evaluations demonstrate that Dylan
+significantly improves RL agents' performance and facilitates generalization to
+unseen tasks.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.11409v1' target='_blank'>Visual Planning: Let's Think Only with Images</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yi Xu, Chengzu Li, Han Zhou, Xingchen Wan, Caiqi Zhang, Anna Korhonen, Ivan Vulić</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-16 16:17:22</h6>
+<p class='card-text'>Recent advancements in Large Language Models (LLMs) and their multimodal
+extensions (MLLMs) have substantially enhanced machine reasoning across diverse
+tasks. However, these models predominantly rely on pure text as the medium for
+both expressing and structuring reasoning, even when visual information is
+present. In this work, we argue that language may not always be the most
+natural or effective modality for reasoning, particularly in tasks involving
+spatial and geometrical information. Motivated by this, we propose a new
+paradigm, Visual Planning, which enables planning through purely visual
+representations, independent of text. In this paradigm, planning is executed
+via sequences of images that encode step-by-step inference in the visual
+domain, akin to how humans sketch or visualize future actions. We introduce a
+novel reinforcement learning framework, Visual Planning via Reinforcement
+Learning (VPRL), empowered by GRPO for post-training large vision models,
+leading to substantial improvements in planning in a selection of
+representative visual navigation tasks, FrozenLake, Maze, and MiniBehavior. Our
+visual planning paradigm outperforms all other planning variants that conduct
+reasoning in the text-only space. Our results establish Visual Planning as a
+viable and promising alternative to language-based reasoning, opening new
+avenues for tasks that benefit from intuitive, image-based inference.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.11311v1' target='_blank'>Explaining Strategic Decisions in Multi-Agent Reinforcement Learning for
+  Aerial Combat Tactics</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ardian Selmonaj, Alessandro Antonucci, Adrian Schneider, Michael Rüegsegger, Matthias Sommer</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-16 14:36:30</h6>
+<p class='card-text'>Artificial intelligence (AI) is reshaping strategic planning, with
+Multi-Agent Reinforcement Learning (MARL) enabling coordination among
+autonomous agents in complex scenarios. However, its practical deployment in
+sensitive military contexts is constrained by the lack of explainability, which
+is an essential factor for trust, safety, and alignment with human strategies.
+This work reviews and assesses current advances in explainability methods for
+MARL with a focus on simulated air combat scenarios. We proceed by adapting
+various explainability techniques to different aerial combat scenarios to gain
+explanatory insights about the model behavior. By linking AI-generated tactics
+with human-understandable reasoning, we emphasize the need for transparency to
+ensure reliable deployment and meaningful human-machine interaction. By
+illuminating the crucial importance of explainability in advancing MARL for
+operational defense, our work supports not only strategic planning but also the
+training of military personnel with insightful and comprehensible analyses.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.10881v1' target='_blank'>Prior-Guided Diffusion Planning for Offline Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Donghyeon Ki, JunHyeok Oh, Seong-Woong Shim, Byung-Jun Lee</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-16 05:39:02</h6>
+<p class='card-text'>Diffusion models have recently gained prominence in offline reinforcement
+learning due to their ability to effectively learn high-performing,
+generalizable policies from static datasets. Diffusion-based planners
+facilitate long-horizon decision-making by generating high-quality trajectories
+through iterative denoising, guided by return-maximizing objectives. However,
+existing guided sampling strategies such as Classifier Guidance,
+Classifier-Free Guidance, and Monte Carlo Sample Selection either produce
+suboptimal multi-modal actions, struggle with distributional drift, or incur
+prohibitive inference-time costs. To address these challenges, we propose Prior
+Guidance (PG), a novel guided sampling framework that replaces the standard
+Gaussian prior of a behavior-cloned diffusion model with a learnable
+distribution, optimized via a behavior-regularized objective. PG directly
+generates high-value trajectories without costly reward optimization of the
+diffusion model itself, and eliminates the need to sample multiple candidates
+at inference for sample selection. We present an efficient training strategy
+that applies behavior regularization in latent space, and empirically
+demonstrate that PG outperforms state-of-the-art diffusion policies and
+planners across diverse long-horizon offline RL benchmarks.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.10749v1' target='_blank'>Code-Driven Planning in Grid Worlds with Large Language Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ashwath Vaithinathan Aravindan, Zhisheng Tang, Mayank Kejriwal</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-15 23:23:31</h6>
+<p class='card-text'>We propose an iterative programmatic planning (IPP) framework for solving
+grid-based tasks by synthesizing interpretable agent policies expressed in code
+using large language models (LLMs). Instead of relying on traditional search or
+reinforcement learning, our approach uses code generation as policy synthesis,
+where the LLM outputs executable programs that map environment states to action
+sequences. Our proposed architecture incorporates several prompting strategies,
+including direct code generation, pseudocode-conditioned refinement, and
+curriculum-based prompting, but also includes an iterative refinement mechanism
+that updates code based on task performance feedback. We evaluate our approach
+using six leading LLMs and two challenging grid-based benchmarks (GRASP and
+MiniGrid). Our IPP framework demonstrates improvements over direct code
+generation ranging from 10\% to as much as 10x across five of the six models
+and establishes a new state-of-the-art result for GRASP. IPP is found to
+significantly outperform direct elicitation of a solution from GPT-o3-mini (by
+63\% on MiniGrid to 116\% on GRASP), demonstrating the viability of the overall
+approach. Computational costs of all code generation approaches are similar.
+While code generation has a higher initial prompting cost compared to direct
+solution elicitation (\$0.08 per task vs. \$0.002 per instance for
+GPT-o3-mini), the code can be reused for any number of instances, making the
+amortized cost significantly lower (by 400x on GPT-o3-mini across the complete
+GRASP benchmark).</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.10262v1' target='_blank'>Electric Bus Charging Schedules Relying on Real Data-Driven Targets
+  Based on Hierarchical Deep Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jiaju Qi, Lei Lei, Thorsteinn Jonsson, Lajos Hanzo</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-15 13:13:41</h6>
+<p class='card-text'>The charging scheduling problem of Electric Buses (EBs) is investigated based
+on Deep Reinforcement Learning (DRL). A Markov Decision Process (MDP) is
+conceived, where the time horizon includes multiple charging and operating
+periods in a day, while each period is further divided into multiple time
+steps. To overcome the challenge of long-range multi-phase planning with sparse
+reward, we conceive Hierarchical DRL (HDRL) for decoupling the original MDP
+into a high-level Semi-MDP (SMDP) and multiple low-level MDPs. The Hierarchical
+Double Deep Q-Network (HDDQN)-Hindsight Experience Replay (HER) algorithm is
+proposed for simultaneously solving the decision problems arising at different
+temporal resolutions. As a result, the high-level agent learns an effective
+policy for prescribing the charging targets for every charging period, while
+the low-level agent learns an optimal policy for setting the charging power of
+every time step within a single charging period, with the aim of minimizing the
+charging costs while meeting the charging target. It is proved that the flat
+policy constructed by superimposing the optimal high-level policy and the
+optimal low-level policy performs as well as the optimal policy of the original
+MDP. Since jointly learning both levels of policies is challenging due to the
+non-stationarity of the high-level agent and the sampling inefficiency of the
+low-level agent, we divide the joint learning process into two phases and
+exploit our new HER algorithm to manipulate the experience replay buffers for
+both levels of agents. Numerical experiments are performed with the aid of
+real-world data to evaluate the performance of the proposed algorithm.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.09899v1' target='_blank'>Promise of Data-Driven Modeling and Decision Support for Precision
+  Oncology and Theranostics</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Binesh Sadanandan, Vahid Behzadan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-15 02:02:03</h6>
+<p class='card-text'>Cancer remains a leading cause of death worldwide, necessitating personalized
+treatment approaches to improve outcomes. Theranostics, combining
+molecular-level imaging with targeted therapy, offers potential for precision
+oncology but requires optimized, patient-specific care plans. This paper
+investigates state-of-the-art data-driven decision support applications with a
+reinforcement learning focus in precision oncology. We review current
+applications, training environments, state-space representation, performance
+evaluation criteria, and measurement of risk and reward, highlighting key
+challenges. We propose a framework integrating data-driven modeling with
+reinforcement learning-based decision support to optimize radiopharmaceutical
+therapy dosing, addressing identified challenges and setting directions for
+future research. The framework leverages Neural Ordinary Differential Equations
+and Physics-Informed Neural Networks to enhance Physiologically Based
+Pharmacokinetic models while applying reinforcement learning algorithms to
+iteratively refine treatment policies based on patient-specific data.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.08995v1' target='_blank'>Enhancing Aerial Combat Tactics through Hierarchical Multi-Agent
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ardian Selmonaj, Oleg Szehr, Giacomo Del Rio, Alessandro Antonucci, Adrian Schneider, Michael Rüegsegger</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-13 22:13:48</h6>
+<p class='card-text'>This work presents a Hierarchical Multi-Agent Reinforcement Learning
+framework for analyzing simulated air combat scenarios involving heterogeneous
+agents. The objective is to identify effective Courses of Action that lead to
+mission success within preset simulations, thereby enabling the exploration of
+real-world defense scenarios at low cost and in a safe-to-fail setting.
+Applying deep Reinforcement Learning in this context poses specific challenges,
+such as complex flight dynamics, the exponential size of the state and action
+spaces in multi-agent systems, and the capability to integrate real-time
+control of individual units with look-ahead planning. To address these
+challenges, the decision-making process is split into two levels of
+abstraction: low-level policies control individual units, while a high-level
+commander policy issues macro commands aligned with the overall mission
+targets. This hierarchical structure facilitates the training process by
+exploiting policy symmetries of individual agents and by separating control
+from command tasks. The low-level policies are trained for individual combat
+control in a curriculum of increasing complexity. The high-level commander is
+then trained on mission targets given pre-trained control policies. The
+empirical validation confirms the advantages of the proposed framework.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.08459v1' target='_blank'>Strategy-Augmented Planning for Large Language Models via Opponent
+  Exploitation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Shuai Xu, Sijia Cui, Yanna Wang, Bo Xu, Qi Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-13 11:41:10</h6>
+<p class='card-text'>Efficiently modeling and exploiting opponents is a long-standing challenge in
+adversarial domains. Large Language Models (LLMs) trained on extensive textual
+data have recently demonstrated outstanding performance in general tasks,
+introducing new research directions for opponent modeling. Some studies
+primarily focus on directly using LLMs to generate decisions based on the
+elaborate prompt context that incorporates opponent descriptions, while these
+approaches are limited to scenarios where LLMs possess adequate domain
+expertise. To address that, we introduce a two-stage Strategy-Augmented
+Planning (SAP) framework that significantly enhances the opponent exploitation
+capabilities of LLM-based agents by utilizing a critical component, the
+Strategy Evaluation Network (SEN). Specifically, in the offline stage, we
+construct an explicit strategy space and subsequently collect strategy-outcome
+pair data for training the SEN network. During the online phase, SAP
+dynamically recognizes the opponent's strategies and greedily exploits them by
+searching best response strategy on the well-trained SEN, finally translating
+strategy to a course of actions by carefully designed prompts. Experimental
+results show that SAP exhibits robust generalization capabilities, allowing it
+to perform effectively not only against previously encountered opponent
+strategies but also against novel, unseen strategies. In the MicroRTS
+environment, SAP achieves a 85.35\% performance improvement over baseline
+methods and matches the competitiveness of reinforcement learning approaches
+against state-of-the-art (SOTA) rule-based AI.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.08382v1' target='_blank'>Continuous World Coverage Path Planning for Fixed-Wing UAVs using Deep
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mirco Theile, Andres R. Zapata Rodriguez, Marco Caccamo, Alberto L. Sangiovanni-Vincentelli</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-13 09:29:16</h6>
+<p class='card-text'>Unmanned Aerial Vehicle (UAV) Coverage Path Planning (CPP) is critical for
+applications such as precision agriculture and search and rescue. While
+traditional methods rely on discrete grid-based representations, real-world UAV
+operations require power-efficient continuous motion planning. We formulate the
+UAV CPP problem in a continuous environment, minimizing power consumption while
+ensuring complete coverage. Our approach models the environment with
+variable-size axis-aligned rectangles and UAV motion with curvature-constrained
+B\'ezier curves. We train a reinforcement learning agent using an
+action-mapping-based Soft Actor-Critic (AM-SAC) algorithm employing a
+self-adaptive curriculum. Experiments on both procedurally generated and
+hand-crafted scenarios demonstrate the effectiveness of our method in learning
+energy-efficient coverage strategies.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.08238v1' target='_blank'>Motion Control of High-Dimensional Musculoskeletal Systems with
+  Hierarchical Model-Based Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yunyue Wei, Shanning Zhuang, Vincent Zhuang, Yanan Sui</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-13 05:31:32</h6>
+<p class='card-text'>Controlling high-dimensional nonlinear systems, such as those found in
+biological and robotic applications, is challenging due to large state and
+action spaces. While deep reinforcement learning has achieved a number of
+successes in these domains, it is computationally intensive and time consuming,
+and therefore not suitable for solving large collections of tasks that require
+significant manual tuning. In this work, we introduce Model Predictive Control
+with Morphology-aware Proportional Control (MPC^2), a hierarchical model-based
+learning algorithm for zero-shot and near-real-time control of high-dimensional
+complex dynamical systems. MPC^2 uses a sampling-based model predictive
+controller for target posture planning, and enables robust control for
+high-dimensional tasks by incorporating a morphology-aware proportional
+controller for actuator coordination. The algorithm enables motion control of a
+high-dimensional human musculoskeletal model in a variety of motion tasks, such
+as standing, walking on different terrains, and imitating sports activities.
+The reward function of MPC^2 can be tuned via black-box optimization,
+drastically reducing the need for human-intensive reward engineering.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.06923v1' target='_blank'>YOPOv2-Tracker: An End-to-End Agile Tracking and Navigation Framework
+  from Perception to Action</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Junjie Lu, Yulin Hui, Xuewei Zhang, Wencan Feng, Hongming Shen, Zhiyu Li, Bailing Tian</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-11 09:53:34</h6>
+<p class='card-text'>Traditional target tracking pipelines including detection, mapping,
+navigation, and control are comprehensive but introduce high latency, limitting
+the agility of quadrotors. On the contrary, we follow the design principle of
+"less is more", striving to simplify the process while maintaining
+effectiveness. In this work, we propose an end-to-end agile tracking and
+navigation framework for quadrotors that directly maps the sensory observations
+to control commands. Importantly, leveraging the multimodal nature of
+navigation and detection tasks, our network maintains interpretability by
+explicitly integrating the independent modules of the traditional pipeline,
+rather than a crude action regression. In detail, we adopt a set of motion
+primitives as anchors to cover the searching space regarding the feasible
+region and potential target. Then we reformulate the trajectory optimization as
+regression of primitive offsets and associated costs considering the safety,
+smoothness, and other metrics. For tracking task, the trajectories are expected
+to approach the target and additional objectness scores are predicted.
+Subsequently, the predictions, after compensation for the estimated lumped
+disturbance, are transformed into thrust and attitude as control commands for
+swift response. During training, we seamlessly integrate traditional motion
+planning with deep learning by directly back-propagating the gradients of
+trajectory costs to the network, eliminating the need for expert demonstration
+in imitation learning and providing more direct guidance than reinforcement
+learning. Finally, we deploy the algorithm on a compact quadrotor and conduct
+real-world validations in both forest and building environments to demonstrate
+the efficiency of the proposed method.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.06518v1' target='_blank'>A Point-Based Algorithm for Distributional Reinforcement Learning in
+  Partially Observable Domains</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Larry Preuett III</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-10 05:19:32</h6>
+<p class='card-text'>In many real-world planning tasks, agents must tackle uncertainty about the
+environment's state and variability in the outcomes of any chosen policy. We
+address both forms of uncertainty as a first step toward safer algorithms in
+partially observable settings. Specifically, we extend Distributional
+Reinforcement Learning (DistRL)-which models the entire return distribution for
+fully observable domains-to Partially Observable Markov Decision Processes
+(POMDPs), allowing an agent to learn the distribution of returns for each
+conditional plan. Concretely, we introduce new distributional Bellman operators
+for partial observability and prove their convergence under the supremum
+p-Wasserstein metric. We also propose a finite representation of these return
+distributions via psi-vectors, generalizing the classical alpha-vectors in
+POMDP solvers. Building on this, we develop Distributional Point-Based Value
+Iteration (DPBVI), which integrates psi-vectors into a standard point-based
+backup procedure-bridging DistRL and POMDP planning. By tracking return
+distributions, DPBVI naturally enables risk-sensitive control in domains where
+rare, high-impact events must be carefully managed. We provide source code to
+foster further research in robust decision-making under partial observability.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.04989v1' target='_blank'>CPP-DIP: Multi-objective Coverage Path Planning for MAVs in Dispersed
+  and Irregular Plantations</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Weijie Kuang, Hann Woei Ho, Ye Zhou</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-08 06:52:22</h6>
+<p class='card-text'>Coverage Path Planning (CPP) is vital in precision agriculture to improve
+efficiency and resource utilization. In irregular and dispersed plantations,
+traditional grid-based CPP often causes redundant coverage over non-vegetated
+areas, leading to waste and pollution. To overcome these limitations, we
+propose CPP-DIP, a multi-objective CPP framework designed for Micro Air
+Vehicles (MAVs). The framework transforms the CPP task into a Traveling
+Salesman Problem (TSP) and optimizes flight paths by minimizing travel
+distance, turning angles, and intersection counts. Unlike conventional
+approaches, our method does not rely on GPS-based environmental modeling.
+Instead, it uses aerial imagery and a Histogram of Oriented Gradients
+(HOG)-based approach to detect trees and extract image coordinates. A
+density-aware waypoint strategy is applied: Kernel Density Estimation (KDE) is
+used to reduce redundant waypoints in dense regions, while a greedy algorithm
+ensures complete coverage in sparse areas. To verify the generality of the
+framework, we solve the resulting TSP using three different methods: Greedy
+Heuristic Insertion (GHI), Ant Colony Optimization (ACO), and Monte Carlo
+Reinforcement Learning (MCRL). Then an object-based optimization is applied to
+further refine the resulting path. Additionally, CPP-DIP integrates ForaNav,
+our insect-inspired navigation method, for accurate tree localization and
+tracking. The experimental results show that MCRL offers a balanced solution,
+reducing the travel distance by 16.9 % compared to ACO while maintaining a
+similar performance to GHI. It also improves path smoothness by reducing
+turning angles by 28.3 % and 59.9 % relative to ACO and GHI, respectively, and
+effectively eliminates intersections. These results confirm the robustness and
+effectiveness of CPP-DIP in different TSP solvers.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
