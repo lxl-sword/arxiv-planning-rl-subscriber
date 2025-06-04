@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-06-04</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-06-04</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02658v1' target='_blank'>Computational Thinking Reasoning in Large Language Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Kechi Zhang, Ge Li, Jia Li, Huangzhao Zhang, Jingjing Xu, Hao Zhu, Lecheng Wang, Jia Li, Yihong Dong, Jing Mai, Bin Gu, Zhi Jin</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-03 09:11:15</h6>
+<p class='card-text'>While large language models (LLMs) have demonstrated remarkable reasoning
+capabilities, they often struggle with complex tasks that require specific
+thinking paradigms, such as divide-and-conquer and procedural deduction, \etc
+Previous researches integrate external, reliable tools to alleviate logical
+inconsistencies and hallucinations in LLMs' problem-solving processes. However,
+we argue that the root challenge is more profound: LLMs lack the complex
+thinking paradigms (\ie, computational thinking) during reasoning. In this
+paper, we propose Computational Thinking Model (CTM), a novel framework that
+incorporates computational thinking paradigms into LLMs. This framework enables
+LLMs to reformulate complex problems through decomposition, abstraction,
+reduction, and simulation, among other techniques. Specifically, live code
+execution is seamlessly integrated into the reasoning process, allowing CTM to
+think by computing. CTM directly instills computational thinking objectives
+into LLMs through tailored reinforcement learning rewards, which encourages
+problem simplification, modular planning, and iterative verification. We
+conduct extensive evaluations on multiple code generation and mathematical
+benchmarks. The results demonstrate that CTM outperforms conventional reasoning
+models and tool-augmented baselines in terms of accuracy, interpretability, and
+generalizability. We hope this study offers valuable insights for AI reasoning,
+where LLMs can transform problems into robust, verifiable, and scalable
+computational workflows, much like computer scientists do.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02649v1' target='_blank'>From Prompts to Protection: Large Language Model-Enabled In-Context
+  Learning for Smart Public Safety UAV</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yousef Emami, Hao Zhou, Miguel Gutierrez Gaitan, Kai Li, Luis Almeida, Zhu Han</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-03 09:01:33</h6>
+<p class='card-text'>A public safety Unmanned Aerial Vehicle (UAV) enhances situational awareness
+in emergency response. Its agility and ability to optimize mobility and
+establish Line-of-Sight (LoS) communication make it increasingly vital for
+managing emergencies such as disaster response, search and rescue, and wildfire
+monitoring. While Deep Reinforcement Learning (DRL) has been applied to
+optimize UAV navigation and control, its high training complexity, low sample
+efficiency, and simulation-to-reality gap limit its practicality in public
+safety. Recent advances in Large Language Models (LLMs) offer a compelling
+alternative. With strong reasoning and generalization capabilities, LLMs can
+adapt to new tasks through In-Context Learning (ICL), which enables task
+adaptation via natural language prompts and example-based guidance, without
+retraining. Deploying LLMs at the network edge, rather than in the cloud,
+further reduces latency and preserves data privacy, thereby making them
+suitable for real-time, mission-critical public safety UAVs. This paper
+proposes the integration of LLM-enabled ICL with public safety UAV to address
+the key functions, such as path planning and velocity control, in the context
+of emergency response. We present a case study on data collection scheduling
+where the LLM-enabled ICL framework can significantly reduce packet loss
+compared to conventional approaches, while also mitigating potential
+jailbreaking vulnerabilities. Finally, we discuss LLM optimizers and specify
+future research directions. The ICL framework enables adaptive, context-aware
+decision-making for public safety UAV, thus offering a lightweight and
+efficient solution for enhancing UAV autonomy and responsiveness in
+emergencies.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02593v1' target='_blank'>A Hybrid Approach to Indoor Social Navigation: Integrating Reactive
+  Local Planning and Proactive Global Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Arnab Debnath, Gregory J. Stein, Jana Kosecka</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-03 08:12:55</h6>
+<p class='card-text'>We consider the problem of indoor building-scale social navigation, where the
+robot must reach a point goal as quickly as possible without colliding with
+humans who are freely moving around. Factors such as varying crowd densities,
+unpredictable human behavior, and the constraints of indoor spaces add
+significant complexity to the navigation task, necessitating a more advanced
+approach. We propose a modular navigation framework that leverages the
+strengths of both classical methods and deep reinforcement learning (DRL). Our
+approach employs a global planner to generate waypoints, assigning soft costs
+around anticipated pedestrian locations, encouraging caution around potential
+future positions of humans. Simultaneously, the local planner, powered by DRL,
+follows these waypoints while avoiding collisions. The combination of these
+planners enables the agent to perform complex maneuvers and effectively
+navigate crowded and constrained environments while improving reliability. Many
+existing studies on social navigation are conducted in simplistic or open
+environments, limiting the ability of trained models to perform well in
+complex, real-world settings. To advance research in this area, we introduce a
+new 2D benchmark designed to facilitate development and testing of social
+navigation strategies in indoor environments. We benchmark our method against
+traditional and RL-based navigation strategies, demonstrating that our approach
+outperforms both.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02286v1' target='_blank'>Efficient Manipulation-Enhanced Semantic Mapping With
+  Uncertainty-Informed Action Selection</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Nils Dengler, Jesper Mücke, Rohit Menon, Maren Bennewitz</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-02 21:57:53</h6>
+<p class='card-text'>Service robots operating in cluttered human environments such as homes,
+offices, and schools cannot rely on predefined object arrangements and must
+continuously update their semantic and spatial estimates while dealing with
+possible frequent rearrangements. Efficient and accurate mapping under such
+conditions demands selecting informative viewpoints and targeted manipulations
+to reduce occlusions and uncertainty. In this work, we present a
+manipulation-enhanced semantic mapping framework for occlusion-heavy shelf
+scenes that integrates evidential metric-semantic mapping with
+reinforcement-learning-based next-best view planning and targeted action
+selection. Our method thereby exploits uncertainty estimates from the Dirichlet
+and Beta distributions in the semantic and occupancy prediction networks to
+guide both active sensor placement and object manipulation, focusing on areas
+of limited knowledge and selecting actions with high expected information gain.
+For object manipulation, we introduce an uncertainty-informed push strategy
+that targets occlusion-critical objects and generates minimally invasive
+actions to reveal hidden regions. The experimental evaluation shows that our
+framework highly reduces object displacement and drops while achieving a 95%
+reduction in planning time compared to the state-of-the-art, thereby realizing
+real-world applicability.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02255v1' target='_blank'>SafeOR-Gym: A Benchmark Suite for Safe Reinforcement Learning Algorithms
+  on Practical Operations Research Problems</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Asha Ramanujam, Adam Elyoumi, Hao Chen, Sai Madhukiran Kompalli, Akshdeep Singh Ahluwalia, Shraman Pal, Dimitri J. Papageorgiou, Can Li</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-02 20:59:45</h6>
+<p class='card-text'>Most existing safe reinforcement learning (RL) benchmarks focus on robotics
+and control tasks, offering limited relevance to high-stakes domains that
+involve structured constraints, mixed-integer decisions, and industrial
+complexity. This gap hinders the advancement and deployment of safe RL in
+critical areas such as energy systems, manufacturing, and supply chains. To
+address this limitation, we present SafeOR-Gym, a benchmark suite of nine
+operations research (OR) environments tailored for safe RL under complex
+constraints. Each environment captures a realistic planning, scheduling, or
+control problems characterized by cost-based constraint violations, planning
+horizons, and hybrid discrete-continuous action spaces. The suite integrates
+seamlessly with the Constrained Markov Decision Process (CMDP) interface
+provided by OmniSafe. We evaluate several state-of-the-art safe RL algorithms
+across these environments, revealing a wide range of performance: while some
+tasks are tractable, others expose fundamental limitations in current
+approaches. SafeOR-Gym provides a challenging and practical testbed that aims
+to catalyze future research in safe RL for real-world decision-making problems.
+The SafeOR-Gym framework and all accompanying code are available at:
+https://github.com/li-group/SafeOR-Gym.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.01442v1' target='_blank'>Agentic Episodic Control</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Xidong Yang, Wenhao Li, Junjie Sheng, Chuyun Shen, Yun Hua, Xiangfeng Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-02 08:57:37</h6>
+<p class='card-text'>Reinforcement learning (RL) has driven breakthroughs in AI, from game-play to
+scientific discovery and AI alignment. However, its broader applicability
+remains limited by challenges such as low data efficiency and poor
+generalizability. Recent advances suggest that large language models, with
+their rich world knowledge and reasoning capabilities, could complement RL by
+enabling semantic state modeling and task-agnostic planning. In this work, we
+propose the Agentic Episodic Control (AEC), a novel architecture that
+integrates RL with LLMs to enhance decision-making. The AEC can leverage a
+large language model (LLM) to map the observations into language-grounded
+embeddings, which further can be stored in an episodic memory for rapid
+retrieval of high-value experiences. Simultaneously, a World-Graph working
+memory module is utilized to capture structured environmental dynamics in order
+to enhance relational reasoning. Furthermore, a lightweight critical state
+detector dynamically arbitrates between the episodic memory recall and the
+world-model-guided exploration. On the whole, by combining the trial-and-error
+learning scheme with LLM-derived semantic priors, the proposed AEC can improve
+both data efficiency and generalizability in reinforcement learning. In
+experiments on BabyAI-Text benchmark tasks, AEC demonstrates substantial
+improvements over existing baselines, especially on complex and generalization
+tasks like FindObj, where it outperforms the best baseline by up to 76%. The
+proposed AEC framework bridges the strengths of numeric reinforcement learning
+and symbolic reasoning, which provides a pathway toward more adaptable and
+sample-efficient agents.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.01378v1' target='_blank'>From Turbulence to Tranquility: AI-Driven Low-Altitude Network</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Kürşat Tekbıyık, Amir Hossein Fahim Raouf, İsmail Güvenç, Mingzhe Chen, Güneş Karabulut Kurt, Antoine Lesage-Landry</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-02 07:12:44</h6>
+<p class='card-text'>Low Altitude Economy (LAE) networks own transformative potential in urban
+mobility, emergency response, and aerial logistics. However, these networks
+face significant challenges in spectrum management, interference mitigation,
+and real-time coordination across dynamic and resource-constrained
+environments. After addressing these challenges, this study explores three core
+elements for enabling intelligent LAE networks as follows machine
+learning-based spectrum sensing and coexistence, artificial intelligence
+(AI)-optimized resource allocation and trajectory planning, and testbed-driven
+validation and standardization. We highlight how federated and reinforcement
+learning techniques support decentralized, adaptive decision-making under
+mobility and energy constraints. In addition, we discuss the role of real-world
+platforms such as AERPAW in bridging the gap between simulation and deployment
+and enabling iterative system refinement under realistic conditions. This study
+aims to provide a forward-looking roadmap toward developing efficient and
+interoperable AI-driven LAE ecosystems.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.00917v1' target='_blank'>Q-learning with Posterior Sampling</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Priyank Agrawal, Shipra Agrawal, Azmat Azati</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-01 09:11:24</h6>
+<p class='card-text'>Bayesian posterior sampling techniques have demonstrated superior empirical
+performance in many exploration-exploitation settings. However, their
+theoretical analysis remains a challenge, especially in complex settings like
+reinforcement learning. In this paper, we introduce Q-Learning with Posterior
+Sampling (PSQL), a simple Q-learning-based algorithm that uses Gaussian
+posteriors on Q-values for exploration, akin to the popular Thompson Sampling
+algorithm in the multi-armed bandit setting. We show that in the tabular
+episodic MDP setting, PSQL achieves a regret bound of $\tilde
+O(H^2\sqrt{SAT})$, closely matching the known lower bound of
+$\Omega(H\sqrt{SAT})$. Here, S, A denote the number of states and actions in
+the underlying Markov Decision Process (MDP), and $T=KH$ with $K$ being the
+number of episodes and $H$ being the planning horizon. Our work provides
+several new technical insights into the core challenges in combining posterior
+sampling with dynamic programming and TD-learning-based RL algorithms, along
+with novel ideas for resolving those difficulties. We hope this will form a
+starting point for analyzing this efficient and important algorithmic technique
+in even more complex RL settings.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.00895v1' target='_blank'>State-Covering Trajectory Stitching for Diffusion Planners</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Kyowoon Lee, Jaesik Choi</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-01 08:32:22</h6>
+<p class='card-text'>Diffusion-based generative models are emerging as powerful tools for
+long-horizon planning in reinforcement learning (RL), particularly with offline
+datasets. However, their performance is fundamentally limited by the quality
+and diversity of training data. This often restricts their generalization to
+tasks outside their training distribution or longer planning horizons. To
+overcome this challenge, we propose State-Covering Trajectory Stitching
+(SCoTS), a novel reward-free trajectory augmentation method that incrementally
+stitches together short trajectory segments, systematically generating diverse
+and extended trajectories. SCoTS first learns a temporal distance-preserving
+latent representation that captures the underlying temporal structure of the
+environment, then iteratively stitches trajectory segments guided by
+directional exploration and novelty to effectively cover and expand this latent
+space. We demonstrate that SCoTS significantly improves the performance and
+generalization capabilities of diffusion planners on offline goal-conditioned
+benchmarks requiring stitching and long-horizon reasoning. Furthermore,
+augmented trajectories generated by SCoTS significantly improve the performance
+of widely used offline goal-conditioned RL algorithms across diverse
+environments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.00867v1' target='_blank'>Local Manifold Approximation and Projection for Manifold-Aware Diffusion
+  Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Kyowoon Lee, Jaesik Choi</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-01 07:16:39</h6>
+<p class='card-text'>Recent advances in diffusion-based generative modeling have demonstrated
+significant promise in tackling long-horizon, sparse-reward tasks by leveraging
+offline datasets. While these approaches have achieved promising results, their
+reliability remains inconsistent due to the inherent stochastic risk of
+producing infeasible trajectories, limiting their applicability in
+safety-critical applications. We identify that the primary cause of these
+failures is inaccurate guidance during the sampling procedure, and demonstrate
+the existence of manifold deviation by deriving a lower bound on the guidance
+gap. To address this challenge, we propose Local Manifold Approximation and
+Projection (LoMAP), a training-free method that projects the guided sample onto
+a low-rank subspace approximated from offline datasets, preventing infeasible
+trajectory generation. We validate our approach on standard offline
+reinforcement learning benchmarks that involve challenging long-horizon
+planning. Furthermore, we show that, as a standalone module, LoMAP can be
+incorporated into the hierarchical diffusion planner, providing further
+performance enhancements.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.00845v1' target='_blank'>Generalizable LLM Learning of Graph Synthetic Data with Reinforcement
+  Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yizhuo Zhang, Heng Wang, Shangbin Feng, Zhaoxuan Tan, Xinyun Liu, Yulia Tsvetkov</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-01 05:39:56</h6>
+<p class='card-text'>Previous research has sought to enhance the graph reasoning capabilities of
+LLMs by supervised fine-tuning on synthetic graph data. While these led to
+specialized LLMs better at solving graph algorithm problems, we don't need LLMs
+for shortest path: we need generalization from synthetic graph data to
+real-world tasks with implicit graph structures. In this work, we propose to
+unlock generalizable learning of graph synthetic data with reinforcement
+learning. We first design solution-based and process-based rewards for
+synthetic graph problems: instead of rigid memorizing response patterns in
+direct fine-tuning, we posit that RL would help LLMs grasp the essentials
+underlying graph reasoning and alleviate overfitting. We employ RL algorithms
+such as GRPO and DPO, aligning both off-the-shelf LLMs and LLMs fine-tuned on
+synthetic graph data. We then compare them against existing settings on both
+in-domain synthetic tasks and out-of-domain real-world tasks with implicit
+graph structures such as multi-hop QA, structured planning, and more. Extensive
+experiments demonstrate that our RL recipe leads to statistically significant
+improvement on 5 datasets, with an average gain of 12.9\% over baseline
+settings. Further analysis reveals that process-based rewards consistently
+outperform solution-based rewards, mixing synthetic and real-world task data
+yields potential gains, while compositionality and explainable intermediate
+steps remains a critical challenge even after RL.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.00417v1' target='_blank'>World Models for Cognitive Agents: Transforming Edge Intelligence in
+  Future Networks</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Changyuan Zhao, Ruichen Zhang, Jiacheng Wang, Gaosheng Zhao, Dusit Niyato, Geng Sun, Shiwen Mao, Dong In Kim</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-31 06:43:00</h6>
+<p class='card-text'>World models are emerging as a transformative paradigm in artificial
+intelligence, enabling agents to construct internal representations of their
+environments for predictive reasoning, planning, and decision-making. By
+learning latent dynamics, world models provide a sample-efficient framework
+that is especially valuable in data-constrained or safety-critical scenarios.
+In this paper, we present a comprehensive overview of world models,
+highlighting their architecture, training paradigms, and applications across
+prediction, generation, planning, and causal reasoning. We compare and
+distinguish world models from related concepts such as digital twins, the
+metaverse, and foundation models, clarifying their unique role as embedded
+cognitive engines for autonomous agents. We further propose Wireless Dreamer, a
+novel world model-based reinforcement learning framework tailored for wireless
+edge intelligence optimization, particularly in low-altitude wireless networks
+(LAWNs). Through a weather-aware UAV trajectory planning case study, we
+demonstrate the effectiveness of our framework in improving learning efficiency
+and decision quality.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.24875v1' target='_blank'>ReasonGen-R1: CoT for Autoregressive Image generation models through SFT
+  and RL</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yu Zhang, Yunqi Li, Yifan Yang, Rui Wang, Yuqing Yang, Dai Qi, Jianmin Bao, Dongdong Chen, Chong Luo, Lili Qiu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-30 17:59:48</h6>
+<p class='card-text'>Although chain-of-thought reasoning and reinforcement learning (RL) have
+driven breakthroughs in NLP, their integration into generative vision models
+remains underexplored. We introduce ReasonGen-R1, a two-stage framework that
+first imbues an autoregressive image generator with explicit text-based
+"thinking" skills via supervised fine-tuning on a newly generated reasoning
+dataset of written rationales, and then refines its outputs using Group
+Relative Policy Optimization. To enable the model to reason through text before
+generating images, We automatically generate and release a corpus of model
+crafted rationales paired with visual prompts, enabling controlled planning of
+object layouts, styles, and scene compositions. Our GRPO algorithm uses reward
+signals from a pretrained vision language model to assess overall visual
+quality, optimizing the policy in each update. Evaluations on GenEval, DPG, and
+the T2I benchmark demonstrate that ReasonGen-R1 consistently outperforms strong
+baselines and prior state-of-the-art models. More: aka.ms/reasongen.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.00084v1' target='_blank'>Navigation of a Three-Link Microswimmer via Deep Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yuyang Lai, Sina Heydari, On Shun Pak, Yi Man</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-30 03:44:45</h6>
+<p class='card-text'>Motile microorganisms develop effective swimming gaits to adapt to complex
+biological environments. Translating this adaptability to smart microrobots
+presents significant challenges in motion planning and stroke design. In this
+work, we explore the use of reinforcement learning (RL) to develop stroke
+patterns for targeted navigation in a three-link swimmer model at low Reynolds
+numbers. Specifically, we design two RL-based strategies: one focusing on
+maximizing velocity (Velocity-Focused Strategy) and another balancing velocity
+with energy consumption (Energy-Aware Strategy). Our results demonstrate how
+the use of different reward functions influences the resulting stroke patterns
+developed via RL, which are compared with those obtained from traditional
+optimization methods. Furthermore, we showcase the capability of the RL-powered
+swimmer in adapting its stroke patterns in performing different navigation
+tasks, including tracing complex trajectories and pursuing moving targets.
+Taken together, this work highlights the potential of reinforcement learning as
+a versatile tool for designing efficient and adaptive microswimmers capable of
+sophisticated maneuvers in complex environments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.24113v1' target='_blank'>Distributed Neural Policy Gradient Algorithm for Global Convergence of
+  Networked Multi-Agent Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Pengcheng Dai, Yuanqiu Mo, Wenwu Yu, Wei Ren</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-30 01:23:14</h6>
+<p class='card-text'>This paper studies the networked multi-agent reinforcement learning (NMARL)
+problem, where the objective of agents is to collaboratively maximize the
+discounted average cumulative rewards. Different from the existing methods that
+suffer from poor expression due to linear function approximation, we propose a
+distributed neural policy gradient algorithm that features two innovatively
+designed neural networks, specifically for the approximate Q-functions and
+policy functions of agents. This distributed neural policy gradient algorithm
+consists of two key components: the distributed critic step and the
+decentralized actor step. In the distributed critic step, agents receive the
+approximate Q-function parameters from their neighboring agents via a
+time-varying communication networks to collaboratively evaluate the joint
+policy. In contrast, in the decentralized actor step, each agent updates its
+local policy parameter solely based on its own approximate Q-function. In the
+convergence analysis, we first establish the global convergence of agents for
+the joint policy evaluation in the distributed critic step. Subsequently, we
+rigorously demonstrate the global convergence of the overall distributed neural
+policy gradient algorithm with respect to the objective function. Finally, the
+effectiveness of the proposed algorithm is demonstrated by comparing it with a
+centralized algorithm through simulation in the robot path planning
+environment.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.23885v1' target='_blank'>OWL: Optimized Workforce Learning for General Multi-Agent Assistance in
+  Real-World Task Automation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mengkang Hu, Yuhang Zhou, Wendong Fan, Yuzhou Nie, Bowei Xia, Tao Sun, Ziyu Ye, Zhaoxuan Jin, Yingru Li, Qiguang Chen, Zeyu Zhang, Yifeng Wang, Qianshuo Ye, Bernard Ghanem, Ping Luo, Guohao Li</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-29 17:51:58</h6>
+<p class='card-text'>Large Language Model (LLM)-based multi-agent systems show promise for
+automating real-world tasks but struggle to transfer across domains due to
+their domain-specific nature. Current approaches face two critical
+shortcomings: they require complete architectural redesign and full retraining
+of all components when applied to new domains. We introduce Workforce, a
+hierarchical multi-agent framework that decouples strategic planning from
+specialized execution through a modular architecture comprising: (i) a
+domain-agnostic Planner for task decomposition, (ii) a Coordinator for subtask
+management, and (iii) specialized Workers with domain-specific tool-calling
+capabilities. This decoupling enables cross-domain transferability during both
+inference and training phases: During inference, Workforce seamlessly adapts to
+new domains by adding or modifying worker agents; For training, we introduce
+Optimized Workforce Learning (OWL), which improves generalization across
+domains by optimizing a domain-agnostic planner with reinforcement learning
+from real-world feedback. To validate our approach, we evaluate Workforce on
+the GAIA benchmark, covering various realistic, multi-domain agentic tasks.
+Experimental results demonstrate Workforce achieves open-source
+state-of-the-art performance (69.70%), outperforming commercial systems like
+OpenAI's Deep Research by 2.34%. More notably, our OWL-trained 32B model
+achieves 52.73% accuracy (+16.37%) and demonstrates performance comparable to
+GPT-4o on challenging tasks. To summarize, by enabling scalable generalization
+and modular domain transfer, our work establishes a foundation for the next
+generation of general-purpose AI assistants.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.23614v1' target='_blank'>Inference-time Scaling of Diffusion Models through Classical Search</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Xiangcheng Zhang, Haowei Lin, Haotian Ye, James Zou, Jianzhu Ma, Yitao Liang, Yilun Du</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-29 16:22:40</h6>
+<p class='card-text'>Classical search algorithms have long underpinned modern artificial
+intelligence. In this work, we tackle the challenge of inference-time control
+in diffusion models -- adapting generated outputs to meet diverse test-time
+objectives -- using principles from classical search. We propose a general
+framework that orchestrates local and global search to efficiently navigate the
+generative space. It employs a theoretically grounded local search via annealed
+Langevin MCMC and performs compute-efficient global exploration using
+breadth-first and depth-first tree search. We evaluate our approach on a range
+of challenging domains, including planning, offline reinforcement learning, and
+image generation. Across all tasks, we observe significant gains in both
+performance and efficiency. These results show that classical search provides a
+principled and practical foundation for inference-time scaling in diffusion
+models. Project page at diffusion-inference-scaling.github.io.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.23519v1' target='_blank'>Individual differences in the cognitive mechanisms of planning strategy
+  discovery</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ruiqi He, Falk Lieder</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-29 14:57:34</h6>
+<p class='card-text'>People employ efficient planning strategies. But how are these strategies
+acquired? Previous research suggests that people can discover new planning
+strategies through learning from reinforcements, a process known as
+metacognitive reinforcement learning (MCRL). While prior work has shown that
+MCRL models can learn new planning strategies and explain more participants'
+experience-driven discovery better than alternative mechanisms, it also
+revealed significant individual differences in metacognitive learning.
+Furthermore, when fitted to human data, these models exhibit a slower rate of
+strategy discovery than humans. In this study, we investigate whether
+incorporating cognitive mechanisms that might facilitate human strategy
+discovery can bring models of MCRL closer to human performance. Specifically,
+we consider intrinsically generated metacognitive pseudo-rewards, subjective
+effort valuation, and termination deliberation. Analysis of planning task data
+shows that a larger proportion of participants used at least one of these
+mechanisms, with significant individual differences in their usage and varying
+impacts on strategy discovery. Metacognitive pseudo-rewards, subjective effort
+valuation, and learning the value of acting without further planning were found
+to facilitate strategy discovery. While these enhancements provided valuable
+insights into individual differences and the effect of these mechanisms on
+strategy discovery, they did not fully close the gap between model and human
+performance, prompting further exploration of additional factors that people
+might use to discover new planning strategies.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.22942v1' target='_blank'>WorkForceAgent-R1: Incentivizing Reasoning Capability in LLM-based Web
+  Agents via Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yuchen Zhuang, Di Jin, Jiaao Chen, Wenqi Shi, Hanrui Wang, Chao Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-28 23:45:28</h6>
+<p class='card-text'>Large language models (LLMs)-empowered web agents enables automating complex,
+real-time web navigation tasks in enterprise environments. However, existing
+web agents relying on supervised fine-tuning (SFT) often struggle with
+generalization and robustness due to insufficient reasoning capabilities when
+handling the inherently dynamic nature of web interactions. In this study, we
+introduce WorkForceAgent-R1, an LLM-based web agent trained using a rule-based
+R1-style reinforcement learning framework designed explicitly to enhance
+single-step reasoning and planning for business-oriented web navigation tasks.
+We employ a structured reward function that evaluates both adherence to output
+formats and correctness of actions, enabling WorkForceAgent-R1 to implicitly
+learn robust intermediate reasoning without explicit annotations or extensive
+expert demonstrations. Extensive experiments on the WorkArena benchmark
+demonstrate that WorkForceAgent-R1 substantially outperforms SFT baselines by
+10.26-16.59%, achieving competitive performance relative to proprietary
+LLM-based agents (gpt-4o) in workplace-oriented web navigation tasks.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2505.22756v1' target='_blank'>Decomposing Elements of Problem Solving: What "Math" Does RL Teach?</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Tian Qin, Core Francisco Park, Mujin Kwun, Aaron Walsman, Eran Malach, Nikhil Anand, Hidenori Tanaka, David Alvarez-Melis</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-05-28 18:18:49</h6>
+<p class='card-text'>Mathematical reasoning tasks have become prominent benchmarks for assessing
+the reasoning capabilities of LLMs, especially with reinforcement learning (RL)
+methods such as GRPO showing significant performance gains. However, accuracy
+metrics alone do not support fine-grained assessment of capabilities and fail
+to reveal which problem-solving skills have been internalized. To better
+understand these capabilities, we propose to decompose problem solving into
+fundamental capabilities: Plan (mapping questions to sequences of steps),
+Execute (correctly performing solution steps), and Verify (identifying the
+correctness of a solution). Empirically, we find that GRPO mainly enhances the
+execution skill-improving execution robustness on problems the model already
+knows how to solve-a phenomenon we call temperature distillation. More
+importantly, we show that RL-trained models struggle with fundamentally new
+problems, hitting a 'coverage wall' due to insufficient planning skills. To
+explore RL's impact more deeply, we construct a minimal, synthetic
+solution-tree navigation task as an analogy for mathematical problem-solving.
+This controlled setup replicates our empirical findings, confirming RL
+primarily boosts execution robustness. Importantly, in this setting, we
+identify conditions under which RL can potentially overcome the coverage wall
+through improved exploration and generalization to new solution paths. Our
+findings provide insights into the role of RL in enhancing LLM reasoning,
+expose key limitations, and suggest a path toward overcoming these barriers.
+Code is available at https://github.com/cfpark00/RL-Wall.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
