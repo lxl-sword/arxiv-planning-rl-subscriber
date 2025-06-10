@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-06-10</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-06-10</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.07980v1' target='_blank'>Realistic Urban Traffic Generator using Decentralized Federated Learning
+  for the SUMO simulator</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Alberto Bazán-Guillén, Carlos Beis-Penedo, Diego Cajaraville-Aboy, Pablo Barbecho-Bautista, Rebeca P. Díaz-Redondo, Luis J. de la Cruz Llopis, Ana Fernández-Vilas, Mónica Aguilar Igartua, Manuel Fernández-Veiga</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-09 17:51:45</h6>
+<p class='card-text'>Realistic urban traffic simulation is essential for sustainable urban
+planning and the development of intelligent transportation systems. However,
+generating high-fidelity, time-varying traffic profiles that accurately reflect
+real-world conditions, especially in large-scale scenarios, remains a major
+challenge. Existing methods often suffer from limitations in accuracy,
+scalability, or raise privacy concerns due to centralized data processing. This
+work introduces DesRUTGe (Decentralized Realistic Urban Traffic Generator), a
+novel framework that integrates Deep Reinforcement Learning (DRL) agents with
+the SUMO simulator to generate realistic 24-hour traffic patterns. A key
+innovation of DesRUTGe is its use of Decentralized Federated Learning (DFL),
+wherein each traffic detector and its corresponding urban zone function as an
+independent learning node. These nodes train local DRL models using minimal
+historical data and collaboratively refine their performance by exchanging
+model parameters with selected peers (e.g., geographically adjacent zones),
+without requiring a central coordinator. Evaluated using real-world data from
+the city of Barcelona, DesRUTGe outperforms standard SUMO-based tools such as
+RouteSampler, as well as other centralized learning approaches, by delivering
+more accurate and privacy-preserving traffic pattern generation.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.07976v1' target='_blank'>Thinking vs. Doing: Agents that Reason by Scaling Test-Time Interaction</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Junhong Shen, Hao Bai, Lunjun Zhang, Yifei Zhou, Amrith Setlur, Shengbang Tong, Diego Caples, Nan Jiang, Tong Zhang, Ameet Talwalkar, Aviral Kumar</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-09 17:50:02</h6>
+<p class='card-text'>The current paradigm of test-time scaling relies on generating long reasoning
+traces ("thinking" more) before producing a response. In agent problems that
+require interaction, this can be done by generating thinking traces before
+acting in the world. However, this process does not allow agents to acquire new
+information from the environment or adapt their behavior over time. In this
+work, we propose to scale test-time interaction, an untapped dimension of
+test-time scaling that increases the agent's interaction horizon to enable
+running rich behaviors such as exploration, backtracking, and dynamic
+re-planning within a single rollout. To demonstrate the promise of this scaling
+dimension, we study the domain of web agents. We first show that even
+prompting-based interaction scaling without any training can improve task
+success on web benchmarks non-trivially. Building on this, we introduce TTI
+(Test-Time Interaction), a curriculum-based online reinforcement learning (RL)
+approach that trains agents by adaptively adjusting their rollout lengths.
+Using a Gemma 3 12B model, TTI produces state-of-the-art open-source, open-data
+web agents on WebVoyager and WebArena benchmarks. We further show that TTI
+enables agents to balance exploration and exploitation adaptively. Our results
+establish interaction scaling as a powerful, complementary axis to scaling
+per-step compute, offering new avenues for training adaptive agents.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.07822v1' target='_blank'>Accelerating Diffusion Models in Offline RL via Reward-Aware Consistency
+  Trajectory Distillation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Xintong Duan, Yutong He, Fahim Tajwar, Ruslan Salakhutdinov, J. Zico Kolter, Jeff Schneider</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-09 14:48:19</h6>
+<p class='card-text'>Although diffusion models have achieved strong results in decision-making
+tasks, their slow inference speed remains a key limitation. While the
+consistency model offers a potential solution, its applications to
+decision-making often struggle with suboptimal demonstrations or rely on
+complex concurrent training of multiple networks. In this work, we propose a
+novel approach to consistency distillation for offline reinforcement learning
+that directly incorporates reward optimization into the distillation process.
+Our method enables single-step generation while maintaining higher performance
+and simpler training. Empirical evaluations on the Gym MuJoCo benchmarks and
+long horizon planning demonstrate that our approach can achieve an 8.7%
+improvement over previous state-of-the-art while offering up to 142x speedup
+over diffusion counterparts in inference time.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.07527v1' target='_blank'>Learning What Reinforcement Learning Can't: Interleaved Online
+  Fine-Tuning for Hardest Questions</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Lu Ma, Hao Liang, Meiyi Qiang, Lexiang Tang, Xiaochen Ma, Zhen Hao Wong, Junbo Niu, Chengyu Shen, Runming He, Bin Cui, Wentao Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-09 08:11:20</h6>
+<p class='card-text'>Recent advances in large language model (LLM) reasoning have shown that
+sophisticated behaviors such as planning and self-reflection can emerge through
+reinforcement learning (RL). However, despite these successes, RL in its
+current form remains insufficient to induce capabilities that exceed the
+limitations of the base model, as it is primarily optimized based on existing
+knowledge of the model rather than facilitating the acquisition of new
+information. To address this limitation, we employ supervised fine-tuning (SFT)
+to learn what RL cannot, which enables the incorporation of new knowledge and
+reasoning patterns by leveraging high-quality demonstration data. We analyze
+the training dynamics of RL and SFT for LLM reasoning and find that RL excels
+at maintaining and improving performance on questions within the model's
+original capabilities, while SFT is more effective at enabling progress on
+questions beyond the current scope of the model. Motivated by the complementary
+strengths of RL and SFT, we introduce a novel training approach,
+\textbf{ReLIFT} (\textbf{Re}inforcement \textbf{L}earning \textbf{I}nterleaved
+with Online \textbf{F}ine-\textbf{T}uning). In ReLIFT, the model is primarily
+trained using RL, but when it encounters challenging questions, high-quality
+solutions are collected for fine-tuning, and the training process alternates
+between RL and fine-tuning to enhance the model's reasoning abilities. ReLIFT
+achieves an average improvement of over +5.2 points across five
+competition-level benchmarks and one out-of-distribution benchmark compared to
+other zero-RL models. Furthermore, we demonstrate that ReLIFT outperforms both
+RL and SFT while using only 13\% of the detailed demonstration data,
+highlighting its scalability. These results provide compelling evidence that
+ReLIFT overcomes the fundamental limitations of RL and underscores the
+significant potential.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.07468v1' target='_blank'>Chasing Moving Targets with Online Self-Play Reinforcement Learning for
+  Safer Language Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mickel Liu, Liwei Jiang, Yancheng Liang, Simon Shaolei Du, Yejin Choi, Tim Althoff, Natasha Jaques</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-09 06:35:12</h6>
+<p class='card-text'>Conventional language model (LM) safety alignment relies on a reactive,
+disjoint procedure: attackers exploit a static model, followed by defensive
+fine-tuning to patch exposed vulnerabilities. This sequential approach creates
+a mismatch -- attackers overfit to obsolete defenses, while defenders
+perpetually lag behind emerging threats. To address this, we propose
+Self-RedTeam, an online self-play reinforcement learning algorithm where an
+attacker and defender agent co-evolve through continuous interaction. We cast
+safety alignment as a two-player zero-sum game, where a single model alternates
+between attacker and defender roles -- generating adversarial prompts and
+safeguarding against them -- while a reward LM adjudicates outcomes. This
+enables dynamic co-adaptation. Grounded in the game-theoretic framework of
+zero-sum games, we establish a theoretical safety guarantee which motivates the
+design of our method: if self-play converges to a Nash Equilibrium, the
+defender will reliably produce safe responses to any adversarial input.
+Empirically, Self-RedTeam uncovers more diverse attacks (+21.8% SBERT) compared
+to attackers trained against static defenders and achieves higher robustness on
+safety benchmarks (e.g., +65.5% on WildJailBreak) than defenders trained
+against static attackers. We further propose hidden Chain-of-Thought, allowing
+agents to plan privately, which boosts adversarial diversity and reduces
+over-refusals. Our results motivate a shift from reactive patching to proactive
+co-evolution in LM safety training, enabling scalable, autonomous, and robust
+self-improvement of LMs via multi-agent reinforcement learning (MARL).</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.07232v1' target='_blank'>Learn as Individuals, Evolve as a Team: Multi-agent LLMs Adaptation in
+  Embodied Environments</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Xinran Li, Chenjia Bai, Zijian Li, Jiakun Zheng, Ting Xiao, Jun Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-08 17:32:03</h6>
+<p class='card-text'>Large language models (LLMs) possess extensive knowledge bases and strong
+reasoning capabilities, making them promising tools for complex, multi-agent
+planning in embodied environments. However, despite LLMs' advanced abilities
+and the sophisticated modular design of agentic methods, existing LLM-based
+planning algorithms remain limited by weak adaptation capabilities to
+multi-agent embodied scenarios. We address this limitation by introducing a
+framework that enables LLM agents to learn and evolve both before and during
+test time, equipping them with environment-relevant knowledge for better
+planning and enhanced communication for improved cooperation. Inspired by
+centralized training with decentralized execution in multi-agent reinforcement
+learning, we propose a \textit{Learn as Individuals, Evolve as a Team (LIET)}
+paradigm for multi-agent LLMs adaptation. At the individual level, LLM agents
+learn a local utility function from exploratory datasets to better comprehend
+the embodied environment, which is then queried during test time to support
+informed decision-making. At the team level, LLM agents collaboratively and
+iteratively maintain and update a shared cooperation knowledge list based on
+new experiences, using it to guide more effective communication. By combining
+individual learning with team evolution, LIET enables comprehensive and
+flexible adaptation for LLM agents. Our experiments on Communicative
+Watch-And-Help and ThreeD-World Multi-Agent Transport benchmarks demonstrate
+that LIET, instantiated with both LLaMA and GPT-4o, outperforms existing
+baselines and exhibits strong cooperative planning abilities.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.06981v1' target='_blank'>Deep RL Needs Deep Behavior Analysis: Exploring Implicit Planning by
+  Model-Free Agents in Open-Ended Environments</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Riley Simmons-Edler, Ryan P. Badman, Felix Baastad Berg, Raymond Chua, John J. Vastola, Joshua Lunger, William Qian, Kanaka Rajan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-08 03:43:48</h6>
+<p class='card-text'>Understanding the behavior of deep reinforcement learning (DRL) agents --
+particularly as task and agent sophistication increase -- requires more than
+simple comparison of reward curves, yet standard methods for behavioral
+analysis remain underdeveloped in DRL. We apply tools from neuroscience and
+ethology to study DRL agents in a novel, complex, partially observable
+environment, ForageWorld, designed to capture key aspects of real-world animal
+foraging -- including sparse, depleting resource patches, predator threats, and
+spatially extended arenas. We use this environment as a platform for applying
+joint behavioral and neural analysis to agents, revealing detailed,
+quantitatively grounded insights into agent strategies, memory, and planning.
+Contrary to common assumptions, we find that model-free RNN-based DRL agents
+can exhibit structured, planning-like behavior purely through emergent dynamics
+-- without requiring explicit memory modules or world models. Our results show
+that studying DRL agents like animals -- analyzing them with
+neuroethology-inspired tools that reveal structure in both behavior and neural
+dynamics -- uncovers rich structure in their learning dynamics that would
+otherwise remain invisible. We distill these tools into a general analysis
+framework linking core behavioral and representational features to diagnostic
+methods, which can be reused for a wide range of tasks and agents. As agents
+grow more complex and autonomous, bridging neuroscience, cognitive science, and
+AI will be essential -- not just for understanding their behavior, but for
+ensuring safe alignment and maximizing desirable behaviors that are hard to
+measure via reward. We show how this can be done by drawing on lessons from how
+biological intelligence is studied.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.06261v1' target='_blank'>Reflect-then-Plan: Offline Model-Based Planning through a Doubly
+  Bayesian Lens</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jihwan Jeong, Xiaoyu Wang, Jingmin Wang, Scott Sanner, Pascal Poupart</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-06 17:40:12</h6>
+<p class='card-text'>Offline reinforcement learning (RL) is crucial when online exploration is
+costly or unsafe but often struggles with high epistemic uncertainty due to
+limited data. Existing methods rely on fixed conservative policies, restricting
+adaptivity and generalization. To address this, we propose Reflect-then-Plan
+(RefPlan), a novel doubly Bayesian offline model-based (MB) planning approach.
+RefPlan unifies uncertainty modeling and MB planning by recasting planning as
+Bayesian posterior estimation. At deployment, it updates a belief over
+environment dynamics using real-time observations, incorporating uncertainty
+into MB planning via marginalization. Empirical results on standard benchmarks
+show that RefPlan significantly improves the performance of conservative
+offline RL policies. In particular, RefPlan maintains robust performance under
+high epistemic uncertainty and limited data, while demonstrating resilience to
+changing environment dynamics, improving the flexibility, generalizability, and
+robustness of offline-learned policies.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.06094v1' target='_blank'>On-board Mission Replanning for Adaptive Cooperative Multi-Robot Systems</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Elim Kwan, Rehman Qureshi, Liam Fletcher, Colin Laganier, Victoria Nockles, Richard Walters</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-06 13:54:19</h6>
+<p class='card-text'>Cooperative autonomous robotic systems have significant potential for
+executing complex multi-task missions across space, air, ground, and maritime
+domains. But they commonly operate in remote, dynamic and hazardous
+environments, requiring rapid in-mission adaptation without reliance on fragile
+or slow communication links to centralised compute. Fast, on-board replanning
+algorithms are therefore needed to enhance resilience. Reinforcement Learning
+shows strong promise for efficiently solving mission planning tasks when
+formulated as Travelling Salesperson Problems (TSPs), but existing methods: 1)
+are unsuitable for replanning, where agents do not start at a single location;
+2) do not allow cooperation between agents; 3) are unable to model tasks with
+variable durations; or 4) lack practical considerations for on-board
+deployment. Here we define the Cooperative Mission Replanning Problem as a
+novel variant of multiple TSP with adaptations to overcome these issues, and
+develop a new encoder/decoder-based model using Graph Attention Networks and
+Attention Models to solve it effectively and efficiently. Using a simple
+example of cooperative drones, we show our replanner consistently (90% of the
+time) maintains performance within 10% of the state-of-the-art LKH3 heuristic
+solver, whilst running 85-370 times faster on a Raspberry Pi. This work paves
+the way for increased resilience in autonomous multi-agent systems.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.05997v1' target='_blank'>Improving Long-Range Navigation with Spatially-Enhanced Recurrent Memory
+  via End-to-End Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Fan Yang, Per Frivik, David Hoeller, Chen Wang, Cesar Cadena, Marco Hutter</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-06 11:35:48</h6>
+<p class='card-text'>Recent advancements in robot navigation, especially with end-to-end learning
+approaches like reinforcement learning (RL), have shown remarkable efficiency
+and effectiveness. Yet, successful navigation still relies on two key
+capabilities: mapping and planning, whether explicit or implicit. Classical
+approaches use explicit mapping pipelines to register ego-centric observations
+into a coherent map frame for the planner. In contrast, end-to-end learning
+achieves this implicitly, often through recurrent neural networks (RNNs) that
+fuse current and past observations into a latent space for planning. While
+architectures such as LSTM and GRU capture temporal dependencies, our findings
+reveal a key limitation: their inability to perform effective spatial
+memorization. This skill is essential for transforming and integrating
+sequential observations from varying perspectives to build spatial
+representations that support downstream planning. To address this, we propose
+Spatially-Enhanced Recurrent Units (SRUs), a simple yet effective modification
+to existing RNNs, designed to enhance spatial memorization capabilities. We
+introduce an attention-based architecture with SRUs, enabling long-range
+navigation using a single forward-facing stereo camera. Regularization
+techniques are employed to ensure robust end-to-end recurrent training via RL.
+Experimental results show our approach improves long-range navigation by 23.5%
+compared to existing RNNs. Furthermore, with SRU memory, our method outperforms
+the RL baseline with explicit mapping and memory modules, achieving a 29.6%
+improvement in diverse environments requiring long-horizon mapping and
+memorization. Finally, we address the sim-to-real gap by leveraging large-scale
+pretraining on synthetic depth data, enabling zero-shot transfer to diverse and
+complex real-world environments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.05168v1' target='_blank'>Fabrica: Dual-Arm Assembly of General Multi-Part Objects via Integrated
+  Planning and Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yunsheng Tian, Joshua Jacob, Yijiang Huang, Jialiang Zhao, Edward Gu, Pingchuan Ma, Annan Zhang, Farhad Javid, Branden Romero, Sachin Chitta, Shinjiro Sueda, Hui Li, Wojciech Matusik</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-05 15:43:52</h6>
+<p class='card-text'>Multi-part assembly poses significant challenges for robots to execute
+long-horizon, contact-rich manipulation with generalization across complex
+geometries. We present Fabrica, a dual-arm robotic system capable of end-to-end
+planning and control for autonomous assembly of general multi-part objects. For
+planning over long horizons, we develop hierarchies of precedence, sequence,
+grasp, and motion planning with automated fixture generation, enabling general
+multi-step assembly on any dual-arm robots. The planner is made efficient
+through a parallelizable design and is optimized for downstream control
+stability. For contact-rich assembly steps, we propose a lightweight
+reinforcement learning framework that trains generalist policies across object
+geometries, assembly directions, and grasp poses, guided by equivariance and
+residual actions obtained from the plan. These policies transfer zero-shot to
+the real world and achieve 80% successful steps. For systematic evaluation, we
+propose a benchmark suite of multi-part assemblies resembling industrial and
+daily objects across diverse categories and geometries. By integrating
+efficient global planning and robust local control, we showcase the first
+system to achieve complete and generalizable real-world multi-part assembly
+without domain knowledge or human demonstrations. Project website:
+http://fabrica.csail.mit.edu/</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.04828v1' target='_blank'>Safe Planning and Policy Optimization via World Model Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Artem Latyshev, Gregory Gorbov, Aleksandr I. Panov</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-05 09:50:02</h6>
+<p class='card-text'>Reinforcement Learning (RL) applications in real-world scenarios must
+prioritize safety and reliability, which impose strict constraints on agent
+behavior. Model-based RL leverages predictive world models for action planning
+and policy optimization, but inherent model inaccuracies can lead to
+catastrophic failures in safety-critical settings. We propose a novel
+model-based RL framework that jointly optimizes task performance and safety. To
+address world model errors, our method incorporates an adaptive mechanism that
+dynamically switches between model-based planning and direct policy execution.
+We resolve the objective mismatch problem of traditional model-based approaches
+using an implicit world model. Furthermore, our framework employs dynamic
+safety thresholds that adapt to the agent's evolving capabilities, consistently
+selecting actions that surpass safe policy suggestions in both performance and
+safety. Experiments demonstrate significant improvements over non-adaptive
+methods, showing that our approach optimizes safety and performance
+simultaneously rather than merely meeting minimum safety requirements. The
+proposed framework achieves robust performance on diverse safety-critical
+continuous control tasks, outperforming existing methods.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.04723v1' target='_blank'>Beyond Accuracy: Dissecting Mathematical Reasoning for LLMs Under
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jiayu Wang, Yifei Ming, Zixuan Ke, Caiming Xiong, Shafiq Joty, Aws Albarghouthi, Frederic Sala</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-05 07:53:59</h6>
+<p class='card-text'>Reinforcement learning (RL) has become the dominant paradigm for endowing
+language models with advanced reasoning capabilities. Despite the substantial
+empirical gains demonstrated by RL-based training methods like GRPO, a granular
+understanding of their advantages is still lacking. To address this gap, we
+introduce a fine-grained analytic framework to dissect the impact of RL on
+reasoning. Our framework specifically investigates key elements that have been
+hypothesized to benefit from RL training: (1) plan-following and execution, (2)
+problem decomposition, and (3) improved reasoning and knowledge utilization.
+Using this framework, we gain insights beyond mere accuracy. For instance,
+providing models with explicit step-by-step plans surprisingly degrades
+performance on the most challenging benchmarks, yet RL-tuned models exhibit
+greater robustness, experiencing markedly smaller performance drops than their
+base counterparts. This suggests that RL may not primarily enhance the
+execution of external plans but rather empower models to formulate and follow
+internal strategies better suited to their reasoning processes. Conversely, we
+observe that RL enhances the model's capacity to integrate provided knowledge
+into its reasoning process, leading to performance improvements across diverse
+tasks. We also study difficulty, showing improved training by developing new
+ways to exploit hard problems. Our findings lay a foundation for more
+principled training and evaluation of reasoning models.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.05422v1' target='_blank'>Constructive Symbolic Reinforcement Learning via Intuitionistic Logic
+  and Goal-Chaining Inference</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Andrei T. Patrascu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-05 04:49:31</h6>
+<p class='card-text'>We introduce a novel learning and planning framework that replaces
+traditional reward-based optimisation with constructive logical inference. In
+our model, actions, transitions, and goals are represented as logical
+propositions, and decision-making proceeds by building constructive proofs
+under intuitionistic logic. This method ensures that state transitions and
+policies are accepted only when supported by verifiable preconditions --
+eschewing probabilistic trial-and-error in favour of guaranteed logical
+validity. We implement a symbolic agent operating in a structured gridworld,
+where reaching a goal requires satisfying a chain of intermediate subgoals
+(e.g., collecting keys to open doors), each governed by logical constraints.
+Unlike conventional reinforcement learning agents, which require extensive
+exploration and suffer from unsafe or invalid transitions, our constructive
+agent builds a provably correct plan through goal chaining, condition tracking,
+and knowledge accumulation. Empirical comparison with Q-learning demonstrates
+that our method achieves perfect safety, interpretable behaviour, and efficient
+convergence with no invalid actions, highlighting its potential for safe
+planning, symbolic cognition, and trustworthy AI. This work presents a new
+direction for reinforcement learning grounded not in numeric optimisation, but
+in constructive logic and proof theory.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02658v2' target='_blank'>Computational Thinking Reasoning in Large Language Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Kechi Zhang, Ge Li, Jia Li, Huangzhao Zhang, Jingjing Xu, Hao Zhu, Lecheng Wang, Jia Li, Yihong Dong, Jing Mai, Bin Gu, Zhi Jin</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-03 09:11:15</h6>
+<p class='card-text'>While large language models (LLMs) have demonstrated remarkable reasoning
+capabilities, they often struggle with complex tasks that require specific
+thinking paradigms, such as divide-and-conquer and procedural deduction, \etc
+Previous researches integrate external, reliable tools to alleviate logical
+inconsistencies and hallucinations in LLMs' problem-solving processes. However,
+we argue that the root challenge is more profound: LLMs lack the complex
+thinking paradigms (\ie, computational thinking) during reasoning. In this
+paper, we propose Computational Thinking Model (CTM), a novel framework that
+incorporates computational thinking paradigms into LLMs. This framework enables
+LLMs to reformulate complex problems through decomposition, abstraction,
+reduction, and simulation, among other techniques. Specifically, live code
+execution is seamlessly integrated into the reasoning process, allowing CTM to
+think by computing. CTM directly instills computational thinking objectives
+into LLMs through tailored reinforcement learning rewards, which encourages
+problem simplification, modular planning, and iterative verification. We
+conduct extensive evaluations on multiple code generation and mathematical
+benchmarks. The results demonstrate that CTM outperforms conventional reasoning
+models and tool-augmented baselines in terms of accuracy, interpretability, and
+generalizability. We hope this study offers valuable insights for AI reasoning,
+where LLMs can transform problems into robust, verifiable, and scalable
+computational workflows, much like computer scientists do.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02649v1' target='_blank'>From Prompts to Protection: Large Language Model-Enabled In-Context
+  Learning for Smart Public Safety UAV</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yousef Emami, Hao Zhou, Miguel Gutierrez Gaitan, Kai Li, Luis Almeida, Zhu Han</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-03 09:01:33</h6>
+<p class='card-text'>A public safety Unmanned Aerial Vehicle (UAV) enhances situational awareness
+in emergency response. Its agility and ability to optimize mobility and
+establish Line-of-Sight (LoS) communication make it increasingly vital for
+managing emergencies such as disaster response, search and rescue, and wildfire
+monitoring. While Deep Reinforcement Learning (DRL) has been applied to
+optimize UAV navigation and control, its high training complexity, low sample
+efficiency, and simulation-to-reality gap limit its practicality in public
+safety. Recent advances in Large Language Models (LLMs) offer a compelling
+alternative. With strong reasoning and generalization capabilities, LLMs can
+adapt to new tasks through In-Context Learning (ICL), which enables task
+adaptation via natural language prompts and example-based guidance, without
+retraining. Deploying LLMs at the network edge, rather than in the cloud,
+further reduces latency and preserves data privacy, thereby making them
+suitable for real-time, mission-critical public safety UAVs. This paper
+proposes the integration of LLM-enabled ICL with public safety UAV to address
+the key functions, such as path planning and velocity control, in the context
+of emergency response. We present a case study on data collection scheduling
+where the LLM-enabled ICL framework can significantly reduce packet loss
+compared to conventional approaches, while also mitigating potential
+jailbreaking vulnerabilities. Finally, we discuss LLM optimizers and specify
+future research directions. The ICL framework enables adaptive, context-aware
+decision-making for public safety UAV, thus offering a lightweight and
+efficient solution for enhancing UAV autonomy and responsiveness in
+emergencies.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02593v1' target='_blank'>A Hybrid Approach to Indoor Social Navigation: Integrating Reactive
+  Local Planning and Proactive Global Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Arnab Debnath, Gregory J. Stein, Jana Kosecka</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-03 08:12:55</h6>
+<p class='card-text'>We consider the problem of indoor building-scale social navigation, where the
+robot must reach a point goal as quickly as possible without colliding with
+humans who are freely moving around. Factors such as varying crowd densities,
+unpredictable human behavior, and the constraints of indoor spaces add
+significant complexity to the navigation task, necessitating a more advanced
+approach. We propose a modular navigation framework that leverages the
+strengths of both classical methods and deep reinforcement learning (DRL). Our
+approach employs a global planner to generate waypoints, assigning soft costs
+around anticipated pedestrian locations, encouraging caution around potential
+future positions of humans. Simultaneously, the local planner, powered by DRL,
+follows these waypoints while avoiding collisions. The combination of these
+planners enables the agent to perform complex maneuvers and effectively
+navigate crowded and constrained environments while improving reliability. Many
+existing studies on social navigation are conducted in simplistic or open
+environments, limiting the ability of trained models to perform well in
+complex, real-world settings. To advance research in this area, we introduce a
+new 2D benchmark designed to facilitate development and testing of social
+navigation strategies in indoor environments. We benchmark our method against
+traditional and RL-based navigation strategies, demonstrating that our approach
+outperforms both.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02286v1' target='_blank'>Efficient Manipulation-Enhanced Semantic Mapping With
+  Uncertainty-Informed Action Selection</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Nils Dengler, Jesper Mücke, Rohit Menon, Maren Bennewitz</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-02 21:57:53</h6>
+<p class='card-text'>Service robots operating in cluttered human environments such as homes,
+offices, and schools cannot rely on predefined object arrangements and must
+continuously update their semantic and spatial estimates while dealing with
+possible frequent rearrangements. Efficient and accurate mapping under such
+conditions demands selecting informative viewpoints and targeted manipulations
+to reduce occlusions and uncertainty. In this work, we present a
+manipulation-enhanced semantic mapping framework for occlusion-heavy shelf
+scenes that integrates evidential metric-semantic mapping with
+reinforcement-learning-based next-best view planning and targeted action
+selection. Our method thereby exploits uncertainty estimates from the Dirichlet
+and Beta distributions in the semantic and occupancy prediction networks to
+guide both active sensor placement and object manipulation, focusing on areas
+of limited knowledge and selecting actions with high expected information gain.
+For object manipulation, we introduce an uncertainty-informed push strategy
+that targets occlusion-critical objects and generates minimally invasive
+actions to reveal hidden regions. The experimental evaluation shows that our
+framework highly reduces object displacement and drops while achieving a 95%
+reduction in planning time compared to the state-of-the-art, thereby realizing
+real-world applicability.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.02255v1' target='_blank'>SafeOR-Gym: A Benchmark Suite for Safe Reinforcement Learning Algorithms
+  on Practical Operations Research Problems</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Asha Ramanujam, Adam Elyoumi, Hao Chen, Sai Madhukiran Kompalli, Akshdeep Singh Ahluwalia, Shraman Pal, Dimitri J. Papageorgiou, Can Li</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-02 20:59:45</h6>
+<p class='card-text'>Most existing safe reinforcement learning (RL) benchmarks focus on robotics
+and control tasks, offering limited relevance to high-stakes domains that
+involve structured constraints, mixed-integer decisions, and industrial
+complexity. This gap hinders the advancement and deployment of safe RL in
+critical areas such as energy systems, manufacturing, and supply chains. To
+address this limitation, we present SafeOR-Gym, a benchmark suite of nine
+operations research (OR) environments tailored for safe RL under complex
+constraints. Each environment captures a realistic planning, scheduling, or
+control problems characterized by cost-based constraint violations, planning
+horizons, and hybrid discrete-continuous action spaces. The suite integrates
+seamlessly with the Constrained Markov Decision Process (CMDP) interface
+provided by OmniSafe. We evaluate several state-of-the-art safe RL algorithms
+across these environments, revealing a wide range of performance: while some
+tasks are tractable, others expose fundamental limitations in current
+approaches. SafeOR-Gym provides a challenging and practical testbed that aims
+to catalyze future research in safe RL for real-world decision-making problems.
+The SafeOR-Gym framework and all accompanying code are available at:
+https://github.com/li-group/SafeOR-Gym.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.01442v1' target='_blank'>Agentic Episodic Control</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Xidong Yang, Wenhao Li, Junjie Sheng, Chuyun Shen, Yun Hua, Xiangfeng Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-02 08:57:37</h6>
+<p class='card-text'>Reinforcement learning (RL) has driven breakthroughs in AI, from game-play to
+scientific discovery and AI alignment. However, its broader applicability
+remains limited by challenges such as low data efficiency and poor
+generalizability. Recent advances suggest that large language models, with
+their rich world knowledge and reasoning capabilities, could complement RL by
+enabling semantic state modeling and task-agnostic planning. In this work, we
+propose the Agentic Episodic Control (AEC), a novel architecture that
+integrates RL with LLMs to enhance decision-making. The AEC can leverage a
+large language model (LLM) to map the observations into language-grounded
+embeddings, which further can be stored in an episodic memory for rapid
+retrieval of high-value experiences. Simultaneously, a World-Graph working
+memory module is utilized to capture structured environmental dynamics in order
+to enhance relational reasoning. Furthermore, a lightweight critical state
+detector dynamically arbitrates between the episodic memory recall and the
+world-model-guided exploration. On the whole, by combining the trial-and-error
+learning scheme with LLM-derived semantic priors, the proposed AEC can improve
+both data efficiency and generalizability in reinforcement learning. In
+experiments on BabyAI-Text benchmark tasks, AEC demonstrates substantial
+improvements over existing baselines, especially on complex and generalization
+tasks like FindObj, where it outperforms the best baseline by up to 76%. The
+proposed AEC framework bridges the strengths of numeric reinforcement learning
+and symbolic reasoning, which provides a pathway toward more adaptable and
+sample-efficient agents.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
