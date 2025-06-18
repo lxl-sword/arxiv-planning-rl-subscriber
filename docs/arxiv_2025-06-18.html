@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-06-18</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-06-18</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.14391v1' target='_blank'>HiLight: A Hierarchical Reinforcement Learning Framework with Global
+  Adversarial Guidance for Large-Scale Traffic Signal Control</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yaqiao Zhu, Hongkai Wen, Geyong Min, Man Luo</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-17 10:39:42</h6>
+<p class='card-text'>Efficient traffic signal control (TSC) is essential for mitigating urban
+congestion, yet existing reinforcement learning (RL) methods face challenges in
+scaling to large networks while maintaining global coordination. Centralized RL
+suffers from scalability issues, while decentralized approaches often lack
+unified objectives, resulting in limited network-level efficiency. In this
+paper, we propose HiLight, a hierarchical reinforcement learning framework with
+global adversarial guidance for large-scale TSC. HiLight consists of a
+high-level Meta-Policy, which partitions the traffic network into subregions
+and generates sub-goals using a Transformer-LSTM architecture, and a low-level
+Sub-Policy, which controls individual intersections with global awareness. To
+improve the alignment between global planning and local execution, we introduce
+an adversarial training mechanism, where the Meta-Policy generates challenging
+yet informative sub-goals, and the Sub-Policy learns to surpass these targets,
+leading to more effective coordination. We evaluate HiLight across both
+synthetic and real-world benchmarks, and additionally construct a large-scale
+Manhattan network with diverse traffic conditions, including peak transitions,
+adverse weather, and holiday surges. Experimental results show that HiLight
+exhibits significant advantages in large-scale scenarios and remains
+competitive across standard benchmarks of varying sizes.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.14045v1' target='_blank'>Discovering Temporal Structure: An Overview of Hierarchical
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Martin Klissarov, Akhil Bagaria, Ziyan Luo, George Konidaris, Doina Precup, Marlos C. Machado</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-16 22:36:32</h6>
+<p class='card-text'>Developing agents capable of exploring, planning and learning in complex
+open-ended environments is a grand challenge in artificial intelligence (AI).
+Hierarchical reinforcement learning (HRL) offers a promising solution to this
+challenge by discovering and exploiting the temporal structure within a stream
+of experience. The strong appeal of the HRL framework has led to a rich and
+diverse body of literature attempting to discover a useful structure. However,
+it is still not clear how one might define what constitutes good structure in
+the first place, or the kind of problems in which identifying it may be
+helpful. This work aims to identify the benefits of HRL from the perspective of
+the fundamental challenges in decision-making, as well as highlight its impact
+on the performance trade-offs of AI agents. Through these benefits, we then
+cover the families of methods that discover temporal structure in HRL, ranging
+from learning directly from online experience to offline datasets, to
+leveraging large language models (LLMs). Finally, we highlight the challenges
+of temporal structure discovery and the domains that are particularly
+well-suited for such endeavours.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.14039v1' target='_blank'>Quadrotor Morpho-Transition: Learning vs Model-Based Control Strategies</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ioannis Mandralis, Richard M. Murray, Morteza Gharib</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-16 22:23:28</h6>
+<p class='card-text'>Quadrotor Morpho-Transition, or the act of transitioning from air to ground
+through mid-air transformation, involves complex aerodynamic interactions and a
+need to operate near actuator saturation, complicating controller design. In
+recent work, morpho-transition has been studied from a model-based control
+perspective, but these approaches remain limited due to unmodeled dynamics and
+the requirement for planning through contacts. Here, we train an end-to-end
+Reinforcement Learning (RL) controller to learn a morpho-transition policy and
+demonstrate successful transfer to hardware. We find that the RL control policy
+achieves agile landing, but only transfers to hardware if motor dynamics and
+observation delays are taken into account. On the other hand, a baseline MPC
+controller transfers out-of-the-box without knowledge of the actuator dynamics
+and delays, at the cost of reduced recovery from disturbances in the event of
+unknown actuator failures. Our work opens the way for more robust control of
+agile in-flight quadrotor maneuvers that require mid-air transformation.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.11957v1' target='_blank'>Automated Treatment Planning for Interstitial HDR Brachytherapy for
+  Locally Advanced Cervical Cancer using Deep Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mohammadamin Moradi, Runyu Jiang, Yingzi Liu, Malvern Madondo, Tianming Wu, James J. Sohn, Xiaofeng Yang, Yasmin Hasan, Zhen Tian</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-13 17:07:30</h6>
+<p class='card-text'>High-dose-rate (HDR) brachytherapy plays a critical role in the treatment of
+locally advanced cervical cancer but remains highly dependent on manual
+treatment planning expertise. The objective of this study is to develop a fully
+automated HDR brachytherapy planning framework that integrates reinforcement
+learning (RL) and dose-based optimization to generate clinically acceptable
+treatment plans with improved consistency and efficiency. We propose a
+hierarchical two-stage autoplanning framework. In the first stage, a deep
+Q-network (DQN)-based RL agent iteratively selects treatment planning
+parameters (TPPs), which control the trade-offs between target coverage and
+organ-at-risk (OAR) sparing. The agent's state representation includes both
+dose-volume histogram (DVH) metrics and current TPP values, while its reward
+function incorporates clinical dose objectives and safety constraints,
+including D90, V150, V200 for targets, and D2cc for all relevant OARs (bladder,
+rectum, sigmoid, small bowel, and large bowel). In the second stage, a
+customized Adam-based optimizer computes the corresponding dwell time
+distribution for the selected TPPs using a clinically informed loss function.
+The framework was evaluated on a cohort of patients with complex applicator
+geometries. The proposed framework successfully learned clinically meaningful
+TPP adjustments across diverse patient anatomies. For the unseen test patients,
+the RL-based automated planning method achieved an average score of 93.89%,
+outperforming the clinical plans which averaged 91.86%. These findings are
+notable given that score improvements were achieved while maintaining full
+target coverage and reducing CTV hot spots in most cases.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.11723v1' target='_blank'>Dynamic Collaborative Material Distribution System for Intelligent
+  Robots In Smart Manufacturing</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ziren Xiao, Ruxin Xiao, Chang Liu, Xinheng Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-13 12:37:26</h6>
+<p class='card-text'>The collaboration and interaction of multiple robots have become integral
+aspects of smart manufacturing. Effective planning and management play a
+crucial role in achieving energy savings and minimising overall costs. This
+paper addresses the real-time Dynamic Multiple Sources to Single Destination
+(DMS-SD) navigation problem, particularly with a material distribution case for
+multiple intelligent robots in smart manufacturing. Enumerated solutions, such
+as in \cite{xiao2022efficient}, tackle the problem by generating as many
+optimal or near-optimal solutions as possible but do not learn patterns from
+the previous experience, whereas the method in \cite{xiao2023collaborative}
+only uses limited information from the earlier trajectories. Consequently,
+these methods may take a considerable amount of time to compute results on
+large maps, rendering real-time operations impractical. To overcome this
+challenge, we propose a lightweight Deep Reinforcement Learning (DRL) method to
+address the DMS-SD problem. The proposed DRL method can be efficiently trained
+and rapidly converges to the optimal solution using the designed target-guided
+reward function. A well-trained DRL model significantly reduces the computation
+time for the next movement to a millisecond level, which improves the time up
+to 100 times in our experiments compared to the enumerated solutions. Moreover,
+the trained DRL model can be easily deployed on lightweight devices in smart
+manufacturing, such as Internet of Things devices and mobile phones, which only
+require limited computational resources.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.11425v1' target='_blank'>Agent-RLVR: Training Software Engineering Agents via Guidance and
+  Environment Rewards</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jeff Da, Clinton Wang, Xiang Deng, Yuntao Ma, Nikhil Barhate, Sean Hendryx</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-13 02:46:53</h6>
+<p class='card-text'>Reinforcement Learning from Verifiable Rewards (RLVR) has been widely adopted
+as the de facto method for enhancing the reasoning capabilities of large
+language models and has demonstrated notable success in verifiable domains like
+math and competitive programming tasks. However, the efficacy of RLVR
+diminishes significantly when applied to agentic environments. These settings,
+characterized by multi-step, complex problem solving, lead to high failure
+rates even for frontier LLMs, as the reward landscape is too sparse for
+effective model training via conventional RLVR. In this work, we introduce
+Agent-RLVR, a framework that makes RLVR effective in challenging agentic
+settings, with an initial focus on software engineering tasks. Inspired by
+human pedagogy, Agent-RLVR introduces agent guidance, a mechanism that actively
+steers the agent towards successful trajectories by leveraging diverse
+informational cues. These cues, ranging from high-level strategic plans to
+dynamic feedback on the agent's errors and environmental interactions, emulate
+a teacher's guidance, enabling the agent to navigate difficult solution spaces
+and promotes active self-improvement via additional environment exploration. In
+the Agent-RLVR training loop, agents first attempt to solve tasks to produce
+initial trajectories, which are then validated by unit tests and supplemented
+with agent guidance. Agents then reattempt with guidance, and the agent policy
+is updated with RLVR based on the rewards of these guided trajectories.
+Agent-RLVR elevates the pass@1 performance of Qwen-2.5-72B-Instruct from 9.4%
+to 22.4% on SWE-Bench Verified. We find that our guidance-augmented RLVR data
+is additionally useful for test-time reward model training, shown by further
+boosting pass@1 to 27.8%. Agent-RLVR lays the groundwork for training agents
+with RLVR in complex, real-world environments where conventional RL methods
+struggle.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.12095v1' target='_blank'>DoublyAware: Dual Planning and Policy Awareness for Temporal Difference
+  Learning in Humanoid Locomotion</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Khang Nguyen, An T. Le, Jan Peters, Minh Nhat Vu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-12 11:39:21</h6>
+<p class='card-text'>Achieving robust robot learning for humanoid locomotion is a fundamental
+challenge in model-based reinforcement learning (MBRL), where environmental
+stochasticity and randomness can hinder efficient exploration and learning
+stability. The environmental, so-called aleatoric, uncertainty can be amplified
+in high-dimensional action spaces with complex contact dynamics, and further
+entangled with epistemic uncertainty in the models during learning phases. In
+this work, we propose DoublyAware, an uncertainty-aware extension of Temporal
+Difference Model Predictive Control (TD-MPC) that explicitly decomposes
+uncertainty into two disjoint interpretable components, i.e., planning and
+policy uncertainties. To handle the planning uncertainty, DoublyAware employs
+conformal prediction to filter candidate trajectories using quantile-calibrated
+risk bounds, ensuring statistical consistency and robustness against stochastic
+dynamics. Meanwhile, policy rollouts are leveraged as structured informative
+priors to support the learning phase with Group-Relative Policy Constraint
+(GRPC) optimizers that impose a group-based adaptive trust-region in the latent
+action space. This principled combination enables the robot agent to prioritize
+high-confidence, high-reward behavior while maintaining effective, targeted
+exploration under uncertainty. Evaluated on the HumanoidBench locomotion suite
+with the Unitree 26-DoF H1-2 humanoid, DoublyAware demonstrates improved sample
+efficiency, accelerated convergence, and enhanced motion feasibility compared
+to RL baselines. Our simulation results emphasize the significance of
+structured uncertainty modeling for data-efficient and reliable decision-making
+in TD-MPC-based humanoid locomotion learning.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.10357v1' target='_blank'>Optimus-3: Towards Generalist Multimodal Minecraft Agents with Scalable
+  Task Experts</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zaijing Li, Yuquan Xie, Rui Shao, Gongwei Chen, Weili Guan, Dongmei Jiang, Liqiang Nie</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-12 05:29:40</h6>
+<p class='card-text'>Recently, agents based on multimodal large language models (MLLMs) have
+achieved remarkable progress across various domains. However, building a
+generalist agent with capabilities such as perception, planning, action,
+grounding, and reflection in open-world environments like Minecraft remains
+challenges: insufficient domain-specific data, interference among heterogeneous
+tasks, and visual diversity in open-world settings. In this paper, we address
+these challenges through three key contributions. 1) We propose a
+knowledge-enhanced data generation pipeline to provide scalable and
+high-quality training data for agent development. 2) To mitigate interference
+among heterogeneous tasks, we introduce a Mixture-of-Experts (MoE) architecture
+with task-level routing. 3) We develop a Multimodal Reasoning-Augmented
+Reinforcement Learning approach to enhance the agent's reasoning ability for
+visual diversity in Minecraft. Built upon these innovations, we present
+Optimus-3, a general-purpose agent for Minecraft. Extensive experimental
+results demonstrate that Optimus-3 surpasses both generalist multimodal large
+language models and existing state-of-the-art agents across a wide range of
+tasks in the Minecraft environment. Project page:
+https://cybertronagent.github.io/Optimus-3.github.io/</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.10161v1' target='_blank'>Can LLMs Generate Good Stories? Insights and Challenges from a Narrative
+  Planning Perspective</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yi Wang, Max Kreminski</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 20:27:08</h6>
+<p class='card-text'>Story generation has been a prominent application of Large Language Models
+(LLMs). However, understanding LLMs' ability to produce high-quality stories
+remains limited due to challenges in automatic evaluation methods and the high
+cost and subjectivity of manual evaluation. Computational narratology offers
+valuable insights into what constitutes a good story, which has been applied in
+the symbolic narrative planning approach to story generation. This work aims to
+deepen the understanding of LLMs' story generation capabilities by using them
+to solve narrative planning problems. We present a benchmark for evaluating
+LLMs on narrative planning based on literature examples, focusing on causal
+soundness, character intentionality, and dramatic conflict. Our experiments
+show that GPT-4 tier LLMs can generate causally sound stories at small scales,
+but planning with character intentionality and dramatic conflict remains
+challenging, requiring LLMs trained with reinforcement learning for complex
+reasoning. The results offer insights on the scale of stories that LLMs can
+generate while maintaining quality from different aspects. Our findings also
+highlight interesting problem solving behaviors and shed lights on challenges
+and considerations for applying LLM narrative planning in game environments.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.10138v1' target='_blank'>Interpreting learned search: finding a transition model and value
+  function in an RNN that plays Sokoban</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Mohammad Taufeeque, Aaron David Tucker, Adam Gleave, Adrià Garriga-Alonso</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 19:36:17</h6>
+<p class='card-text'>We partially reverse-engineer a convolutional recurrent neural network (RNN)
+trained to play the puzzle game Sokoban with model-free reinforcement learning.
+Prior work found that this network solves more levels with more test-time
+compute. Our analysis reveals several mechanisms analogous to components of
+classic bidirectional search. For each square, the RNN represents its plan in
+the activations of channels associated with specific directions. These
+state-action activations are analogous to a value function - their magnitudes
+determine when to backtrack and which plan branch survives pruning. Specialized
+kernels extend these activations (containing plan and value) forward and
+backward to create paths, forming a transition model. The algorithm is also
+unlike classical search in some ways. State representation is not unified;
+instead, the network considers each box separately. Each layer has its own plan
+representation and value function, increasing search depth. Far from being
+inscrutable, the mechanisms leveraging test-time compute learned in this
+network by model-free training can be understood in familiar terms.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.10073v1' target='_blank'>Patient-Specific Deep Reinforcement Learning for Automatic Replanning in
+  Head-and-Neck Cancer Proton Therapy</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Malvern Madondo, Yuan Shao, Yingzi Liu, Jun Zhou, Xiaofeng Yang, Zhen Tian</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 18:00:06</h6>
+<p class='card-text'>Anatomical changes during intensity-modulated proton therapy (IMPT) for
+head-and-neck cancer (HNC) can shift Bragg peaks, risking tumor underdosing and
+organ-at-risk overdosing. As a result, treatment replanning is often required
+to maintain clinically acceptable treatment quality. However, current manual
+replanning processes are resource-intensive and time-consuming. We propose a
+patient-specific deep reinforcement learning (DRL) framework for automated IMPT
+replanning, with a reward-shaping mechanism based on a $150$-point plan quality
+score addressing competing clinical objectives. We formulate the planning
+process as an RL problem where agents learn control policies to adjust
+optimization priorities, maximizing plan quality. Unlike population-based
+approaches, our framework trains personalized agents for each patient using
+their planning CT (Computed Tomography) and augmented anatomies simulating
+anatomical changes (tumor progression and regression). This patient-specific
+approach leverages anatomical similarities throughout treatment, enabling
+effective plan adaptation. We implemented two DRL algorithms, Deep Q-Network
+and Proximal Policy Optimization, using dose-volume histograms (DVHs) as state
+representations and a $22$-dimensional action space of priority adjustments.
+Evaluation on five HNC patients using actual replanning CT data showed both DRL
+agents improved initial plan scores from $120.63 \pm 21.40$ to $139.78 \pm
+6.84$ (DQN) and $142.74 \pm 5.16$ (PPO), surpassing manual replans generated by
+a human planner ($137.20 \pm 5.58$). Clinical validation confirms that
+improvements translate to better tumor coverage and OAR sparing across diverse
+anatomical changes. This work demonstrates DRL's potential in addressing
+geometric and dosimetric complexities of adaptive proton therapy, offering
+efficient offline adaptation solutions and advancing online adaptive proton
+therapy.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.09901v1' target='_blank'>"What are my options?": Explaining RL Agents with Diverse Near-Optimal
+  Alternatives (Extended)</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Noel Brindise, Vijeth Hebbar, Riya Shah, Cedric Langbort</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 16:15:56</h6>
+<p class='card-text'>In this work, we provide an extended discussion of a new approach to
+explainable Reinforcement Learning called Diverse Near-Optimal Alternatives
+(DNA), first proposed at L4DC 2025. DNA seeks a set of reasonable "options" for
+trajectory-planning agents, optimizing policies to produce qualitatively
+diverse trajectories in Euclidean space. In the spirit of explainability, these
+distinct policies are used to "explain" an agent's options in terms of
+available trajectory shapes from which a human user may choose. In particular,
+DNA applies to value function-based policies on Markov decision processes where
+agents are limited to continuous trajectories. Here, we describe DNA, which
+uses reward shaping in local, modified Q-learning problems to solve for
+distinct policies with guaranteed epsilon-optimality. We show that it
+successfully returns qualitatively different policies that constitute
+meaningfully different "options" in simulation, including a brief comparison to
+related approaches in the stochastic optimization field of Quality Diversity.
+Beyond the explanatory motivation, this work opens new possibilities for
+exploration and adaptive planning in RL.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.09859v1' target='_blank'>Hierarchical Learning-Enhanced MPC for Safe Crowd Navigation with
+  Heterogeneous Constraints</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Huajian Liu, Yixuan Feng, Wei Dong, Kunpeng Fan, Chao Wang, Yongzhuo Gao</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 15:31:25</h6>
+<p class='card-text'>In this paper, we propose a novel hierarchical framework for robot navigation
+in dynamic environments with heterogeneous constraints. Our approach leverages
+a graph neural network trained via reinforcement learning (RL) to efficiently
+estimate the robot's cost-to-go, formulated as local goal recommendations. A
+spatio-temporal path-searching module, which accounts for kinematic
+constraints, is then employed to generate a reference trajectory to facilitate
+solving the non-convex optimization problem used for explicit constraint
+enforcement. More importantly, we introduce an incremental action-masking
+mechanism and a privileged learning strategy, enabling end-to-end training of
+the proposed planner. Both simulation and real-world experiments demonstrate
+that the proposed method effectively addresses local planning in complex
+dynamic environments, achieving state-of-the-art (SOTA) performance. Compared
+with existing learning-optimization hybrid methods, our approach eliminates the
+dependency on high-fidelity simulation environments, offering significant
+advantages in computational efficiency and training scalability. The code will
+be released as open-source upon acceptance of the paper.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.09805v1' target='_blank'>Automatic Treatment Planning using Reinforcement Learning for
+  High-dose-rate Prostate Brachytherapy</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Tonghe Wang, Yining Feng, Xiaofeng Yang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 14:46:42</h6>
+<p class='card-text'>Purpose: In high-dose-rate (HDR) prostate brachytherapy procedures, the
+pattern of needle placement solely relies on physician experience. We
+investigated the feasibility of using reinforcement learning (RL) to provide
+needle positions and dwell times based on patient anatomy during pre-planning
+stage. This approach would reduce procedure time and ensure consistent plan
+quality. Materials and Methods: We train a RL agent to adjust the position of
+one selected needle and all the dwell times on it to maximize a pre-defined
+reward function after observing the environment. After adjusting, the RL agent
+then moves on to the next needle, until all needles are adjusted. Multiple
+rounds are played by the agent until the maximum number of rounds is reached.
+Plan data from 11 prostate HDR boost patients (1 for training, and 10 for
+testing) treated in our clinic were included in this study. The dosimetric
+metrics and the number of used needles of RL plan were compared to those of the
+clinical results (ground truth). Results: On average, RL plans and clinical
+plans have very similar prostate coverage (Prostate V100) and Rectum D2cc (no
+statistical significance), while RL plans have less prostate hotspot (Prostate
+V150) and Urethra D20% plans with statistical significance. Moreover, RL plans
+use 2 less needles than clinical plan on average. Conclusion: We present the
+first study demonstrating the feasibility of using reinforcement learning to
+autonomously generate clinically practical HDR prostate brachytherapy plans.
+This RL-based method achieved equal or improved plan quality compared to
+conventional clinical approaches while requiring fewer needles. With minimal
+data requirements and strong generalizability, this approach has substantial
+potential to standardize brachytherapy planning, reduce clinical variability,
+and enhance patient outcomes.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.09800v1' target='_blank'>Reinforced Refinement with Self-Aware Expansion for End-to-End
+  Autonomous Driving</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Haochen Liu, Tianyu Li, Haohan Yang, Li Chen, Caojun Wang, Ke Guo, Haochen Tian, Hongchen Li, Hongyang Li, Chen Lv</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 14:42:11</h6>
+<p class='card-text'>End-to-end autonomous driving has emerged as a promising paradigm for
+directly mapping sensor inputs to planning maneuvers using learning-based
+modular integrations. However, existing imitation learning (IL)-based models
+suffer from generalization to hard cases, and a lack of corrective feedback
+loop under post-deployment. While reinforcement learning (RL) offers a
+potential solution to tackle hard cases with optimality, it is often hindered
+by overfitting to specific driving cases, resulting in catastrophic forgetting
+of generalizable knowledge and sample inefficiency. To overcome these
+challenges, we propose Reinforced Refinement with Self-aware Expansion (R2SE),
+a novel learning pipeline that constantly refines hard domain while keeping
+generalizable driving policy for model-agnostic end-to-end driving systems.
+Through reinforcement fine-tuning and policy expansion that facilitates
+continuous improvement, R2SE features three key components: 1) Generalist
+Pretraining with hard-case allocation trains a generalist imitation learning
+(IL) driving system while dynamically identifying failure-prone cases for
+targeted refinement; 2) Residual Reinforced Specialist Fine-tuning optimizes
+residual corrections using reinforcement learning (RL) to improve performance
+in hard case domain while preserving global driving knowledge; 3) Self-aware
+Adapter Expansion dynamically integrates specialist policies back into the
+generalist model, enhancing continuous performance improvement. Experimental
+results in closed-loop simulation and real-world datasets demonstrate
+improvements in generalization, safety, and long-horizon policy robustness over
+state-of-the-art E2E systems, highlighting the effectiveness of reinforce
+refinement for scalable autonomous driving.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.09790v1' target='_blank'>ComfyUI-R1: Exploring Reasoning Models for Workflow Generation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zhenran Xu, Yiyu Wang, Xue Yang, Longyue Wang, Weihua Luo, Kaifu Zhang, Baotian Hu, Min Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 14:35:15</h6>
+<p class='card-text'>AI-generated content has evolved from monolithic models to modular workflows,
+particularly on platforms like ComfyUI, enabling customization in creative
+pipelines. However, crafting effective workflows requires great expertise to
+orchestrate numerous specialized components, presenting a steep learning curve
+for users. To address this challenge, we introduce ComfyUI-R1, the first large
+reasoning model for automated workflow generation. Starting with our curated
+dataset of 4K workflows, we construct long chain-of-thought (CoT) reasoning
+data, including node selection, workflow planning, and code-level workflow
+representation. ComfyUI-R1 is trained through a two-stage framework: (1) CoT
+fine-tuning for cold start, adapting models to the ComfyUI domain; (2)
+reinforcement learning for incentivizing reasoning capability, guided by a
+fine-grained rule-metric hybrid reward, ensuring format validity, structural
+integrity, and node-level fidelity. Experiments show that our 7B-parameter
+model achieves a 97\% format validity rate, along with high pass rate,
+node-level and graph-level F1 scores, significantly surpassing prior
+state-of-the-art methods that employ leading closed-source models such as
+GPT-4o and Claude series. Further analysis highlights the critical role of the
+reasoning process and the advantage of transforming workflows into code.
+Qualitative comparison reveals our strength in synthesizing intricate workflows
+with diverse nodes, underscoring the potential of long CoT reasoning in AI art
+creation.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.09588v1' target='_blank'>Attention-Based Map Encoding for Learning Generalized Legged Locomotion</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Junzhe He, Chong Zhang, Fabian Jenelten, Ruben Grandia, Moritz BÄcher, Marco Hutter</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 10:38:59</h6>
+<p class='card-text'>Dynamic locomotion of legged robots is a critical yet challenging topic in
+expanding the operational range of mobile robots. It requires precise planning
+when possible footholds are sparse, robustness against uncertainties and
+disturbances, and generalizability across diverse terrains. While traditional
+model-based controllers excel at planning on complex terrains, they struggle
+with real-world uncertainties. Learning-based controllers offer robustness to
+such uncertainties but often lack precision on terrains with sparse steppable
+areas. Hybrid methods achieve enhanced robustness on sparse terrains by
+combining both methods but are computationally demanding and constrained by the
+inherent limitations of model-based planners. To achieve generalized legged
+locomotion on diverse terrains while preserving the robustness of
+learning-based controllers, this paper proposes to learn an attention-based map
+encoding conditioned on robot proprioception, which is trained as part of the
+end-to-end controller using reinforcement learning. We show that the network
+learns to focus on steppable areas for future footholds when the robot
+dynamically navigates diverse and challenging terrains. We synthesize behaviors
+that exhibit robustness against uncertainties while enabling precise and agile
+traversal of sparse terrains. Additionally, our method offers a way to
+interpret the topographical perception of a neural network. We have trained two
+controllers for a 12-DoF quadrupedal robot and a 23-DoF humanoid robot
+respectively and tested the resulting controllers in the real world under
+various challenging indoor and outdoor scenarios, including ones unseen during
+training.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.09499v1' target='_blank'>A Unified Theory of Compositionality, Modularity, and Interpretability
+  in Markov Decision Processes</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Thomas J. Ringstrom, Paul R. Schrater</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-11 08:21:22</h6>
+<p class='card-text'>We introduce Option Kernel Bellman Equations (OKBEs) for a new reward-free
+Markov Decision Process. Rather than a value function, OKBEs directly construct
+and optimize a predictive map called a state-time option kernel (STOK) to
+maximize the probability of completing a goal while avoiding constraint
+violations. STOKs are compositional, modular, and interpretable
+initiation-to-termination transition kernels for policies in the Options
+Framework of Reinforcement Learning. This means: 1) STOKs can be composed using
+Chapman-Kolmogorov equations to make spatiotemporal predictions for multiple
+policies over long horizons, 2) high-dimensional STOKs can be represented and
+computed efficiently in a factorized and reconfigurable form, and 3) STOKs
+record the probabilities of semantically interpretable goal-success and
+constraint-violation events, needed for formal verification. Given a
+high-dimensional state-transition model for an intractable planning problem, we
+can decompose it with local STOKs and goal-conditioned policies that are
+aggregated into a factorized goal kernel, making it possible to forward-plan at
+the level of goals in high-dimensions to solve the problem. These properties
+lead to highly flexible agents that can rapidly synthesize meta-policies, reuse
+planning representations across many tasks, and justify goals using
+empowerment, an intrinsic motivation function. We argue that
+reward-maximization is in conflict with the properties of compositionality,
+modularity, and interpretability. Alternatively, OKBEs facilitate these
+properties to support verifiable long-horizon planning and intrinsic motivation
+that scales to dynamic high-dimensional world-models.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.09049v1' target='_blank'>VIKI-R: Coordinating Embodied Multi-Agent Cooperation via Reinforcement
+  Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Li Kang, Xiufeng Song, Heng Zhou, Yiran Qin, Jie Yang, Xiaohong Liu, Philip Torr, Lei Bai, Zhenfei Yin</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-10 17:59:44</h6>
+<p class='card-text'>Coordinating multiple embodied agents in dynamic environments remains a core
+challenge in artificial intelligence, requiring both perception-driven
+reasoning and scalable cooperation strategies. While recent works have
+leveraged large language models (LLMs) for multi-agent planning, a few have
+begun to explore vision-language models (VLMs) for visual reasoning. However,
+these VLM-based approaches remain limited in their support for diverse
+embodiment types. In this work, we introduce VIKI-Bench, the first hierarchical
+benchmark tailored for embodied multi-agent cooperation, featuring three
+structured levels: agent activation, task planning, and trajectory perception.
+VIKI-Bench includes diverse robot embodiments, multi-view visual observations,
+and structured supervision signals to evaluate reasoning grounded in visual
+inputs. To demonstrate the utility of VIKI-Bench, we propose VIKI-R, a
+two-stage framework that fine-tunes a pretrained vision-language model (VLM)
+using Chain-of-Thought annotated demonstrations, followed by reinforcement
+learning under multi-level reward signals. Our extensive experiments show that
+VIKI-R significantly outperforms baselines method across all task levels.
+Furthermore, we show that reinforcement learning enables the emergence of
+compositional cooperation patterns among heterogeneous agents. Together,
+VIKI-Bench and VIKI-R offer a unified testbed and method for advancing
+multi-agent, visual-driven cooperation in embodied AI systems.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.08639v1' target='_blank'>Deep Reinforcement Learning-Based Motion Planning and PDE Control for
+  Flexible Manipulators</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Amir Hossein Barjini, Seyed Adel Alizadeh Kolagar, Sadeq Yaqubi, Jouni Mattila</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-10 09:53:57</h6>
+<p class='card-text'>This article presents a motion planning and control framework for flexible
+robotic manipulators, integrating deep reinforcement learning (DRL) with a
+nonlinear partial differential equation (PDE) controller. Unlike conventional
+approaches that focus solely on control, we demonstrate that the desired
+trajectory significantly influences endpoint vibrations. To address this, a DRL
+motion planner, trained using the soft actor-critic (SAC) algorithm, generates
+optimized trajectories that inherently minimize vibrations. The PDE nonlinear
+controller then computes the required torques to track the planned trajectory
+while ensuring closed-loop stability using Lyapunov analysis. The proposed
+methodology is validated through both simulations and real-world experiments,
+demonstrating superior vibration suppression and tracking accuracy compared to
+traditional methods. The results underscore the potential of combining
+learning-based motion planning with model-based control for enhancing the
+precision and stability of flexible robotic manipulators.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
