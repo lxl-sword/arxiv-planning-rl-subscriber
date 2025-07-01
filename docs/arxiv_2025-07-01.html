@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>arXiv Papers - 2025-07-01</title>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+<style>
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #f5f7fa;
+padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-weight: 700;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1 class='text-center my-4'><i class='fas fa-book'></i>arXiv Papers - 2025-07-01</h1>
+<div class='row'>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.23127v1' target='_blank'>Unleashing Embodied Task Planning Ability in LLMs via Reinforcement
+  Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Zhaoye Fei, Li Ji, Siyin Wang, Junhao Shi, Jingjing Gong, Xipeng Qiu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-29 07:31:24</h6>
+<p class='card-text'>Large Language Models (LLMs) have demonstrated remarkable capabilities across
+various tasks, yet they face significant challenges in embodied task planning
+scenarios that require continuous environmental understanding and action
+generation. Existing approaches generate open-loop action scripts based on
+static knowledge, making it difficult to learn causal relationships between
+actions and environmental feedback, particularly in partially observable
+environments. We introduce Embodied Planner-R1, a novel outcome-driven
+reinforcement learning framework that enables LLMs to develop interactive
+capabilities through autonomous exploration with minimal supervision. Our
+framework incorporates three key innovations: (1) Without human annotations, we
+employ pure reinforcement learning with group rollout, incorporating
+in-environment interaction through parallel exploration; (2) completion-driven
+sparse reward; and (3) Interactive Policy Optimization (IPO) for efficient
+learning from grouped trajectories. Across two challenging text-based Embodied
+planning benchmarks, Embodied Planner-R1 achieves impressive completion rates
+of 97.78% on ALFWorld and 79.92% on ScienceWorld, surpassing prior methods by a
+large margin, and suffers only a -3.66% drop in previously unseen environments,
+evidencing strong generalization.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.22950v1' target='_blank'>Infinite Sampling: Efficient and Stable Grouped RL Training for Large
+  Language Models</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Liangyu Wang, Huanyi Xie, Xinhai Wang, Tianjin Huang, Mengdi Li, Di Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-28 16:52:29</h6>
+<p class='card-text'>Group-based reinforcement learning algorithms such as Group Reward Policy
+Optimization (GRPO) have proven effective for fine-tuning large language models
+(LLMs) with human feedback. However, generating and storing multiple responses
+per prompt incurs substantial memory overhead, especially as the sample group
+size increases, limiting scalability under constrained hardware.
+  We propose Infinite Sampling, a framework that enables efficient and stable
+GRPO training by decoupling group size from GPU memory usage. It consists of:
+(1) micro sampling groups that decompose large groups into memory-feasible
+rounds; (2) continuous sampling that interleaves generation across groups to
+improve utilization; and (3) a length-aware scheduler combining
+token-conditioned sequence length prediction with a two-stage plan: global
+grouping via FPTAS and runtime refill via SJF.
+  Experiments show that our Micro Sampling Groups reduce peak memory usage by
+over 50% compared to full-group decoding (e.g., from 21.55 GB to 10.64 GB on
+Qwen3-1.7B). Building on this, Infinite Sampling improves throughput by over
+25% compared to the naive micro sampling group method, reducing decoding steps
+while maintaining full-length completions and memory usage. Our hybrid
+scheduling ensures efficient and stable GRPO training with larger groups under
+realistic GPU memory constraints.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.22894v1' target='_blank'>Safe Reinforcement Learning with a Predictive Safety Filter for Motion
+  Planning and Control: A Drifting Vehicle Example</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Bei Zhou, Baha Zarrouki, Mattia Piccinini, Cheng Hu, Lei Xie, Johannes Betz</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-28 14:10:32</h6>
+<p class='card-text'>Autonomous drifting is a complex and crucial maneuver for safety-critical
+scenarios like slippery roads and emergency collision avoidance, requiring
+precise motion planning and control. Traditional motion planning methods often
+struggle with the high instability and unpredictability of drifting,
+particularly when operating at high speeds. Recent learning-based approaches
+have attempted to tackle this issue but often rely on expert knowledge or have
+limited exploration capabilities. Additionally, they do not effectively address
+safety concerns during learning and deployment. To overcome these limitations,
+we propose a novel Safe Reinforcement Learning (RL)-based motion planner for
+autonomous drifting. Our approach integrates an RL agent with model-based drift
+dynamics to determine desired drift motion states, while incorporating a
+Predictive Safety Filter (PSF) that adjusts the agent's actions online to
+prevent unsafe states. This ensures safe and efficient learning, and stable
+drift operation. We validate the effectiveness of our method through
+simulations on a Matlab-Carsim platform, demonstrating significant improvements
+in drift performance, reduced tracking errors, and computational efficiency
+compared to traditional methods. This strategy promises to extend the
+capabilities of autonomous vehicles in safety-critical maneuvers.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.21853v2' target='_blank'>Skill-Nav: Enhanced Navigation with Versatile Quadrupedal Locomotion via
+  Waypoint Interface</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Dewei Wang, Chenjia Bai, Chenhui Li, Jiyuan Shi, Yan Ding, Chi Zhang, Bin Zhao</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-27 02:08:40</h6>
+<p class='card-text'>Quadrupedal robots have demonstrated exceptional locomotion capabilities
+through Reinforcement Learning (RL), including extreme parkour maneuvers.
+However, integrating locomotion skills with navigation in quadrupedal robots
+has not been fully investigated, which holds promise for enhancing
+long-distance movement capabilities. In this paper, we propose Skill-Nav, a
+method that incorporates quadrupedal locomotion skills into a hierarchical
+navigation framework using waypoints as an interface. Specifically, we train a
+waypoint-guided locomotion policy using deep RL, enabling the robot to
+autonomously adjust its locomotion skills to reach targeted positions while
+avoiding obstacles. Compared with direct velocity commands, waypoints offer a
+simpler yet more flexible interface for high-level planning and low-level
+control. Utilizing waypoints as the interface allows for the application of
+various general planning tools, such as large language models (LLMs) and path
+planning algorithms, to guide our locomotion policy in traversing terrains with
+diverse obstacles. Extensive experiments conducted in both simulated and
+real-world scenarios demonstrate that Skill-Nav can effectively traverse
+complex terrains and complete challenging navigation tasks.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.21782v1' target='_blank'>M3PO: Massively Multi-Task Model-Based Policy Optimization</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Aditya Narendra, Dmitry Makarov, Aleksandr Panov</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-26 21:39:01</h6>
+<p class='card-text'>We introduce Massively Multi-Task Model-Based Policy Optimization (M3PO), a
+scalable model-based reinforcement learning (MBRL) framework designed to
+address sample inefficiency in single-task settings and poor generalization in
+multi-task domains. Existing model-based approaches like DreamerV3 rely on
+pixel-level generative models that neglect control-centric representations,
+while model-free methods such as PPO suffer from high sample complexity and
+weak exploration. M3PO integrates an implicit world model, trained to predict
+task outcomes without observation reconstruction, with a hybrid exploration
+strategy that combines model-based planning and model-free uncertainty-driven
+bonuses. This eliminates the bias-variance trade-off in prior methods by using
+discrepancies between model-based and model-free value estimates to guide
+exploration, while maintaining stable policy updates through a trust-region
+optimizer. M3PO provides an efficient and robust alternative to existing
+model-based policy optimization approaches and achieves state-of-the-art
+performance across multiple benchmarks.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.21121v1' target='_blank'>GoIRL: Graph-Oriented Inverse Reinforcement Learning for Multimodal
+  Trajectory Prediction</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Muleilan Pei, Shaoshuai Shi, Lu Zhang, Peiliang Li, Shaojie Shen</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-26 09:46:53</h6>
+<p class='card-text'>Trajectory prediction for surrounding agents is a challenging task in
+autonomous driving due to its inherent uncertainty and underlying
+multimodality. Unlike prevailing data-driven methods that primarily rely on
+supervised learning, in this paper, we introduce a novel Graph-oriented Inverse
+Reinforcement Learning (GoIRL) framework, which is an IRL-based predictor
+equipped with vectorized context representations. We develop a feature adaptor
+to effectively aggregate lane-graph features into grid space, enabling seamless
+integration with the maximum entropy IRL paradigm to infer the reward
+distribution and obtain the policy that can be sampled to induce multiple
+plausible plans. Furthermore, conditioned on the sampled plans, we implement a
+hierarchical parameterized trajectory generator with a refinement module to
+enhance prediction accuracy and a probability fusion strategy to boost
+prediction confidence. Extensive experimental results showcase our approach not
+only achieves state-of-the-art performance on the large-scale Argoverse &
+nuScenes motion forecasting benchmarks but also exhibits superior
+generalization abilities compared to existing supervised models.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.21039v1' target='_blank'>Strict Subgoal Execution: Reliable Long-Horizon Planning in Hierarchical
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Jaebak Hwang, Sanghyeon Lee, Jeongmo Kim, Seungyul Han</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-26 06:35:42</h6>
+<p class='card-text'>Long-horizon goal-conditioned tasks pose fundamental challenges for
+reinforcement learning (RL), particularly when goals are distant and rewards
+are sparse. While hierarchical and graph-based methods offer partial solutions,
+they often suffer from subgoal infeasibility and inefficient planning. We
+introduce Strict Subgoal Execution (SSE), a graph-based hierarchical RL
+framework that enforces single-step subgoal reachability by structurally
+constraining high-level decision-making. To enhance exploration, SSE employs a
+decoupled exploration policy that systematically traverses underexplored
+regions of the goal space. Furthermore, a failure-aware path refinement, which
+refines graph-based planning by dynamically adjusting edge costs according to
+observed low-level success rates, thereby improving subgoal reliability.
+Experimental results across diverse long-horizon benchmarks demonstrate that
+SSE consistently outperforms existing goal-conditioned RL and hierarchical RL
+approaches in both efficiency and success rate.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.20639v2' target='_blank'>DiffuCoder: Understanding and Improving Masked Diffusion Models for Code
+  Generation</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Shansan Gong, Ruixiang Zhang, Huangjie Zheng, Jiatao Gu, Navdeep Jaitly, Lingpeng Kong, Yizhe Zhang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-25 17:35:47</h6>
+<p class='card-text'>Diffusion large language models (dLLMs) are compelling alternatives to
+autoregressive (AR) models because their denoising models operate over the
+entire sequence. The global planning and iterative refinement features of dLLMs
+are particularly useful for code generation. However, current training and
+inference mechanisms for dLLMs in coding are still under-explored. To demystify
+the decoding behavior of dLLMs and unlock their potential for coding, we
+systematically investigate their denoising processes and reinforcement learning
+(RL) methods. We train a 7B dLLM, \textbf{DiffuCoder}, on 130B tokens of code.
+Using this model as a testbed, we analyze its decoding behavior, revealing how
+it differs from that of AR models: (1) dLLMs can decide how causal their
+generation should be without relying on semi-AR decoding, and (2) increasing
+the sampling temperature diversifies not only token choices but also their
+generation order. This diversity creates a rich search space for RL rollouts.
+For RL training, to reduce the variance of token log-likelihood estimates and
+maintain training efficiency, we propose \textbf{coupled-GRPO}, a novel
+sampling scheme that constructs complementary mask noise for completions used
+in training. In our experiments, coupled-GRPO significantly improves
+DiffuCoder's performance on code generation benchmarks (+4.4\% on EvalPlus) and
+reduces reliance on AR bias during decoding. Our work provides deeper insight
+into the machinery of dLLM generation and offers an effective, diffusion-native
+RL training framework. https://github.com/apple/ml-diffucoder.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.19843v1' target='_blank'>Temporal-IRL: Modeling Port Congestion and Berth Scheduling with Inverse
+  Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Guo Li, Zixiang Xu, Wei Zhang, Yikuan Hu, Xinyu Yang, Nikolay Aristov, Mingjie Tang, Elenna R Dugundji</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-24 17:59:12</h6>
+<p class='card-text'>Predicting port congestion is crucial for maintaining reliable global supply
+chains. Accurate forecasts enableimprovedshipment planning, reducedelaysand
+costs, and optimizeinventoryanddistributionstrategies, thereby ensuring timely
+deliveries and enhancing supply chain resilience. To achieve accurate
+predictions, analyzing vessel behavior and their stay times at specific port
+terminals is essential, focusing particularly on berth scheduling under various
+conditions. Crucially, the model must capture and learn the underlying
+priorities and patterns of berth scheduling. Berth scheduling and planning are
+influenced by a range of factors, including incoming vessel size, waiting
+times, and the status of vessels within the port terminal. By observing
+historical Automatic Identification System (AIS) positions of vessels, we
+reconstruct berth schedules, which are subsequently utilized to determine the
+reward function via Inverse Reinforcement Learning (IRL). For this purpose, we
+modeled a specific terminal at the Port of New York/New Jersey and developed
+Temporal-IRL. This Temporal-IRL model learns berth scheduling to predict vessel
+sequencing at the terminal and estimate vessel port stay, encompassing both
+waiting and berthing times, to forecast port congestion. Utilizing data from
+Maher Terminal spanning January 2015 to September 2023, we trained and tested
+the model, achieving demonstrably excellent results.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.19703v1' target='_blank'>Learning-aided Bigraph Matching Approach to Multi-Crew Restoration of
+  Damaged Power Networks Coupled with Road Transportation Networks</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Nathan Maurer, Harshal Kaushik, Roshni Anna Jacob, Jie Zhang, Souma Chowdhury</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-24 15:12:45</h6>
+<p class='card-text'>The resilience of critical infrastructure networks (CINs) after disruptions,
+such as those caused by natural hazards, depends on both the speed of
+restoration and the extent to which operational functionality can be regained.
+Allocating resources for restoration is a combinatorial optimal planning
+problem that involves determining which crews will repair specific network
+nodes and in what order. This paper presents a novel graph-based formulation
+that merges two interconnected graphs, representing crew and transportation
+nodes and power grid nodes, into a single heterogeneous graph. To enable
+efficient planning, graph reinforcement learning (GRL) is integrated with
+bigraph matching. GRL is utilized to design the incentive function for
+assigning crews to repair tasks based on the graph-abstracted state of the
+environment, ensuring generalization across damage scenarios. Two learning
+techniques are employed: a graph neural network trained using Proximal Policy
+Optimization and another trained via Neuroevolution. The learned incentive
+functions inform a bipartite graph that links crews to repair tasks, enabling
+weighted maximum matching for crew-to-task allocations. An efficient simulation
+environment that pre-computes optimal node-to-node path plans is used to train
+the proposed restoration planning methods. An IEEE 8500-bus power distribution
+test network coupled with a 21 square km transportation network is used as the
+case study, with scenarios varying in terms of numbers of damaged nodes,
+depots, and crews. Results demonstrate the approach's generalizability and
+scalability across scenarios, with learned policies providing 3-fold better
+performance than random policies, while also outperforming optimization-based
+solutions in both computation time (by several orders of magnitude) and power
+restored.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.19686v2' target='_blank'>From Memories to Maps: Mechanisms of In-Context Reinforcement Learning
+  in Transformers</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ching Fang, Kanaka Rajan</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-24 14:55:43</h6>
+<p class='card-text'>Humans and animals show remarkable learning efficiency, adapting to new
+environments with minimal experience. This capability is not well captured by
+standard reinforcement learning algorithms that rely on incremental value
+updates. Rapid adaptation likely depends on episodic memory -- the ability to
+retrieve specific past experiences to guide decisions in novel contexts.
+Transformers provide a useful setting for studying these questions because of
+their ability to learn rapidly in-context and because their key-value
+architecture resembles episodic memory systems in the brain. We train a
+transformer to in-context reinforcement learn in a distribution of planning
+tasks inspired by rodent behavior. We then characterize the learning algorithms
+that emerge in the model. We first find that representation learning is
+supported by in-context structure learning and cross-context alignment, where
+representations are aligned across environments with different sensory stimuli.
+We next demonstrate that the reinforcement learning strategies developed by the
+model are not interpretable as standard model-free or model-based planning.
+Instead, we show that in-context reinforcement learning is supported by caching
+intermediate computations within the model's memory tokens, which are then
+accessed at decision time. Overall, we find that memory may serve as a
+computational resource, storing both raw experience and cached computations to
+support flexible behavior. Furthermore, the representations developed in the
+model resemble computations associated with the hippocampal-entorhinal system
+in the brain, suggesting that our findings may be relevant for natural
+cognition. Taken together, our work offers a mechanistic hypothesis for the
+rapid adaptation that underlies in-context learning in artificial and natural
+settings.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.18847v2' target='_blank'>Offline Goal-Conditioned Reinforcement Learning with Projective
+  Quasimetric Planning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Anthony Kobanda, Waris Radji, Mathieu Petitbois, Odalric-Ambrym Maillard, Rémy Portelas</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-23 17:07:20</h6>
+<p class='card-text'>Offline Goal-Conditioned Reinforcement Learning seeks to train agents to
+reach specified goals from previously collected trajectories. Scaling that
+promises to long-horizon tasks remains challenging, notably due to compounding
+value-estimation errors. Principled geometric offers a potential solution to
+address these issues. Following this insight, we introduce Projective
+Quasimetric Planning (ProQ), a compositional framework that learns an
+asymmetric distance and then repurposes it, firstly as a repulsive energy
+forcing a sparse set of keypoints to uniformly spread over the learned latent
+space, and secondly as a structured directional cost guiding towards proximal
+sub-goals. In particular, ProQ couples this geometry with a Lagrangian
+out-of-distribution detector to ensure the learned keypoints stay within
+reachable areas. By unifying metric learning, keypoint coverage, and
+goal-conditioned control, our approach produces meaningful sub-goals and
+robustly drives long-horizon goal-reaching on diverse a navigation benchmarks.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.18841v1' target='_blank'>LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement
+  Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yuhao Wu, Yushi Bai, Zhiqiang Hu, Roy Ka-Wei Lee, Juanzi Li</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-23 16:59:02</h6>
+<p class='card-text'>Ultra-long generation by large language models (LLMs) is a widely demanded
+scenario, yet it remains a significant challenge due to their maximum
+generation length limit and overall quality degradation as sequence length
+increases. Previous approaches, exemplified by LongWriter, typically rely on
+''teaching'', which involves supervised fine-tuning (SFT) on synthetic
+long-form outputs. However, this strategy heavily depends on synthetic SFT
+data, which is difficult and costly to construct, often lacks coherence and
+consistency, and tends to be overly artificial and structurally monotonous. In
+this work, we propose an incentivization-based approach that, starting entirely
+from scratch and without relying on any annotated or synthetic data, leverages
+reinforcement learning (RL) to foster the emergence of ultra-long, high-quality
+text generation capabilities in LLMs. We perform RL training starting from a
+base model, similar to R1-Zero, guiding it to engage in reasoning that
+facilitates planning and refinement during the writing process. To support
+this, we employ specialized reward models that steer the LLM towards improved
+length control, writing quality, and structural formatting. Experimental
+evaluations show that our LongWriter-Zero model, trained from Qwen2.5-32B,
+consistently outperforms traditional SFT methods on long-form writing tasks,
+achieving state-of-the-art results across all metrics on WritingBench and
+Arena-Write, and even surpassing 100B+ models such as DeepSeek R1 and
+Qwen3-235B. We open-source our data and model checkpoints under
+https://huggingface.co/THU-KEG/LongWriter-Zero-32B</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.18234v1' target='_blank'>Drive-R1: Bridging Reasoning and Planning in VLMs for Autonomous Driving
+  with Reinforcement Learning</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yue Li, Meng Tian, Dechang Zhu, Jiangtong Zhu, Zhenyu Lin, Zhiwei Xiong, Xinhai Zhao</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-23 01:57:14</h6>
+<p class='card-text'>Large vision-language models (VLMs) for autonomous driving (AD) are evolving
+beyond perception and cognition tasks toward motion planning. However, we
+identify two critical challenges in this direction: (1) VLMs tend to learn
+shortcuts by relying heavily on history input information, achieving seemingly
+strong planning results without genuinely understanding the visual inputs; and
+(2) the chain-ofthought (COT) reasoning processes are always misaligned with
+the motion planning outcomes, and how to effectively leverage the complex
+reasoning capability to enhance planning remains largely underexplored. In this
+paper, we start from a small-scale domain-specific VLM and propose Drive-R1
+designed to bridges the scenario reasoning and motion planning for AD. Drive-R1
+first undergoes the supervised finetuning on a elaborate dataset containing
+both long and short COT data. Drive-R1 is encouraged to reason step-by-step
+from visual input to final planning decisions. Subsequently, Drive-R1 is
+trained within a reinforcement learning framework that incentivizes the
+discovery of reasoning paths that are more informative for planning, guided by
+rewards based on predicted trajectories and meta actions. Experimental
+evaluations on the nuScenes and DriveLM-nuScenes benchmarks demonstrate that
+Drive-R1 achieves superior performance compared to existing state-of-the-art
+VLMs. We believe that Drive-R1 presents a promising direction for bridging
+reasoning and planning in AD, offering methodological insights for future
+research and applications.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.18019v2' target='_blank'>Graphs Meet AI Agents: Taxonomy, Progress, and Future Opportunities</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yuanchen Bei, Weizhi Zhang, Siwen Wang, Weizhi Chen, Sheng Zhou, Hao Chen, Yong Li, Jiajun Bu, Shirui Pan, Yizhou Yu, Irwin King, Fakhri Karray, Philip S. Yu</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-22 12:59:12</h6>
+<p class='card-text'>AI agents have experienced a paradigm shift, from early dominance by
+reinforcement learning (RL) to the rise of agents powered by large language
+models (LLMs), and now further advancing towards a synergistic fusion of RL and
+LLM capabilities. This progression has endowed AI agents with increasingly
+strong abilities. Despite these advances, to accomplish complex real-world
+tasks, agents are required to plan and execute effectively, maintain reliable
+memory, and coordinate smoothly with other agents. Achieving these capabilities
+involves contending with ever-present intricate information, operations, and
+interactions. In light of this challenge, data structurization can play a
+promising role by transforming intricate and disorganized data into
+well-structured forms that agents can more effectively understand and process.
+In this context, graphs, with their natural advantage in organizing, managing,
+and harnessing intricate data relationships, present a powerful data paradigm
+for structurization to support the capabilities demanded by advanced AI agents.
+To this end, this survey presents a first systematic review of how graphs can
+empower AI agents. Specifically, we explore the integration of graph techniques
+with core agent functionalities, highlight notable applications, and identify
+prospective avenues for future research. By comprehensively surveying this
+burgeoning intersection, we hope to inspire the development of next-generation
+AI agents equipped to tackle increasingly sophisticated challenges with graphs.
+Related resources are collected and continuously updated for the community in
+the Github link.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.17945v1' target='_blank'>Optimization of Flying Ad Hoc Network Topology and Collaborative Path
+  Planning for Multiple UAVs</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Ming He, Peizhao Wang, Haihua Chen, Bin Sun, Hongpeng Wang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-22 08:41:27</h6>
+<p class='card-text'>Multiple unmanned aerial vehicles (UAVs) play a vital role in monitoring and
+data collection in wide area environments with harsh conditions. In most
+scenarios, issues such as real-time data retrieval and real-time UAV
+positioning are often disregarded, essentially neglecting the communication
+constraints. In this paper, we comprehensively address both the coverage of the
+target area and the data transmission capabilities of the flying ad hoc network
+(FANET). The data throughput of the network is therefore maximized by
+optimizing the network topology and the UAV trajectories. The resultant
+optimization problem is effectively solved by the proposed reinforcement
+learning-based trajectory planning (RL-TP) algorithm and the convex-based
+topology optimization (C-TOP) algorithm sequentially. The RL-TP optimizes the
+UAV paths while considering the constraints of FANET. The C-TOP maximizes the
+data throughput of the network while simultaneously constraining the neighbors
+and transmit powers of the UAVs, which is shown to be a convex problem that can
+be efficiently solved in polynomial time. Simulations and field experimental
+results show that the proposed optimization strategy can effectively plan the
+UAV trajectories and significantly improve the data throughput of the FANET
+over the adaptive local minimum spanning tree (A-LMST) and cyclic
+pruning-assisted power optimization (CPAPO) methods.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.16764v1' target='_blank'>Reinforcement learning for hybrid charging stations planning and
+  operation considering fixed and mobile chargers</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Yanchen Zhu, Honghui Zou, Chufan Liu, Yuyu Luo, Yuankai Wu, Yuxuan Liang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-20 05:51:02</h6>
+<p class='card-text'>The success of vehicle electrification, which brings significant societal and
+environmental benefits, is contingent upon the availability of efficient and
+adaptable charging infrastructure. Traditional fixed-location charging stations
+often face issues like underutilization or congestion due to the dynamic nature
+of charging demand. Mobile chargers have emerged as a flexible solution,
+capable of relocating to align with these demand fluctuations. This paper
+addresses the optimal planning and operation of hybrid charging
+infrastructures, integrating both fixed and mobile chargers within urban road
+networks. We introduce the Hybrid Charging Station Planning and Operation
+(HCSPO) problem, which simultaneously optimizes the location and configuration
+of fixed charging stations and schedules mobile chargers for dynamic
+operations. Our approach incorporates a charging demand prediction model
+grounded in Model Predictive Control (MPC) to enhance decision-making. To solve
+the HCSPO problem, we propose a deep reinforcement learning method, augmented
+with heuristic scheduling techniques, to effectively bridge the planning of
+fixed chargers with the real-time operation of mobile chargers. Extensive case
+studies using real-world urban scenarios demonstrate that our method
+significantly improves the availability of charging infrastructure and reduces
+user inconvenience compared to existing solutions and baselines.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.16720v1' target='_blank'>DRARL: Disengagement-Reason-Augmented Reinforcement Learning for
+  Efficient Improvement of Autonomous Driving Policy</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Weitao Zhou, Bo Zhang, Zhong Cao, Xiang Li, Qian Cheng, Chunyang Liu, Yaqin Zhang, Diange Yang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-20 03:32:01</h6>
+<p class='card-text'>With the increasing presence of automated vehicles on open roads under driver
+supervision, disengagement cases are becoming more prevalent. While some
+data-driven planning systems attempt to directly utilize these disengagement
+cases for policy improvement, the inherent scarcity of disengagement data
+(often occurring as a single instances) restricts training effectiveness.
+Furthermore, some disengagement data should be excluded since the disengagement
+may not always come from the failure of driving policies, e.g. the driver may
+casually intervene for a while. To this end, this work proposes
+disengagement-reason-augmented reinforcement learning (DRARL), which enhances
+driving policy improvement process according to the reason of disengagement
+cases. Specifically, the reason of disengagement is identified by a
+out-of-distribution (OOD) state estimation model. When the reason doesn't
+exist, the case will be identified as a casual disengagement case, which
+doesn't require additional policy adjustment. Otherwise, the policy can be
+updated under a reason-augmented imagination environment, improving the policy
+performance of disengagement cases with similar reasons. The method is
+evaluated using real-world disengagement cases collected by autonomous driving
+robotaxi. Experimental results demonstrate that the method accurately
+identifies policy-related disengagement reasons, allowing the agent to handle
+both original and semantically similar cases through reason-augmented training.
+Furthermore, the approach prevents the agent from becoming overly conservative
+after policy adjustments. Overall, this work provides an efficient way to
+improve driving policy performance with disengagement cases.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.16546v1' target='_blank'>BIDA: A Bi-level Interaction Decision-making Algorithm for Autonomous
+  Vehicles in Dynamic Traffic Scenarios</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Liyang Yu, Tianyi Wang, Junfeng Jiao, Fengwu Shan, Hongqing Chu, Bingzhao Gao</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-19 19:03:40</h6>
+<p class='card-text'>In complex real-world traffic environments, autonomous vehicles (AVs) need to
+interact with other traffic participants while making real-time and
+safety-critical decisions accordingly. The unpredictability of human behaviors
+poses significant challenges, particularly in dynamic scenarios, such as
+multi-lane highways and unsignalized T-intersections. To address this gap, we
+design a bi-level interaction decision-making algorithm (BIDA) that integrates
+interactive Monte Carlo tree search (MCTS) with deep reinforcement learning
+(DRL), aiming to enhance interaction rationality, efficiency and safety of AVs
+in dynamic key traffic scenarios. Specifically, we adopt three types of DRL
+algorithms to construct a reliable value network and policy network, which
+guide the online deduction process of interactive MCTS by assisting in value
+update and node selection. Then, a dynamic trajectory planner and a trajectory
+tracking controller are designed and implemented in CARLA to ensure smooth
+execution of planned maneuvers. Experimental evaluations demonstrate that our
+BIDA not only enhances interactive deduction and reduces computational costs,
+but also outperforms other latest benchmarks, which exhibits superior safety,
+efficiency and interaction rationality under varying traffic conditions.</p>
+</div>
+</div>
+</div>
+<div class='col-md-6 mb-4'>
+<div class='card'>
+<div class='card-body'>
+<h4 class='card-title'><a href='http://arxiv.org/abs/2506.16311v1' target='_blank'>Towards Emergency Scenarios: An Integrated Decision-making Framework of
+  Multi-lane Platoon Reorganization</a></h5>
+<h5 class='card-subtitle mb-2 text-muted'>Authors:Aijing Kong, Chengkai Xu, Xian Wu, Xinbo Chen, Peng Hang</h6>
+<h6 class='card-subtitle mb-2 text-muted'>Date:2025-06-19 13:35:27</h6>
+<p class='card-text'>To enhance the ability for vehicle platoons to respond to emergency
+scenarios, a platoon distribution reorganization decision-making framework is
+proposed. This framework contains platoon distribution layer, vehicle
+cooperative decision-making layer and vehicle planning and control layer.
+Firstly, a reinforcement-learning-based platoon distribution model is
+presented, where a risk potential field is established to quantitatively assess
+driving risks, and a reward function tailored to the platoon reorganization
+process is constructed. Then, a coalition-game-based vehicle cooperative
+decision-making model is put forward, modeling the cooperative relationships
+among vehicles through dividing coalitions and generating the optimal decision
+results for each vehicle. Additionally, a novel graph-theory-based Platoon
+Disposition Index (PDI) is incorporated into the game reward function to
+measure the platoon's distribution state during the reorganization process, in
+order to accelerating the reorganization process. Finally, the validation of
+the proposed framework is conducted in two high-risk scenarios under random
+traffic flows. The results show that, compared to the baseline models, the
+proposed method can significantly reduce the collision rate and improve driving
+efficiency. Moreover, the model with PDI can significantly decrease the platoon
+formation reorganization time and improve the reorganization efficiency.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
